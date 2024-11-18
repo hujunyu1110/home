@@ -1,0 +1,252 @@
+<!DOCTYPE>
+<html height:100% width:100%>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/webfont.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/utils/common.js"></script>
+    <script src="./script/utils/weather.js"></script>
+    <script src="./script/mian.js"></script>
+</head>
+
+<body height:100% width:95%>
+
+    <p id="weathertoday" class="weatherClass mouseOn" onclick="openPage('./nerd.html')">weathertoday</p>
+    <div id="holiday" class="holidayClass mouseOn">
+        <div onclick="openPage('./holiday/tree.html')">
+            <p></p>
+            <i class="nf nf-fa-tree"></i>
+        </div>
+    </div>
+
+    <div class="containerMain">
+
+        
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 firstFlowoo searchImgEx4"></div>
+            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div id="baidueng" class="firstFlowFirstColm searchengine mouseOn">
+                        <i class="nf nf-md-card_search" style="color: #1E90FF;"></i> 
+                        <p class="btntitle"> Baidu </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div  id="bingeng" class="firstFlowFirstColm searchengine mouseOn engon">
+                        <i class="nf nf-md-microsoft_bing" style="color: #20B2AA;"></i> 
+                        <p class="btntitle"> Bing </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div id="googleeng" class="firstFlowFirstColm searchengine mouseOn">
+                        <i class="nf nf-fa-google" style="color: #EEAD0E;"></i> 
+                        <p class="btntitle"> Google </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-5 firstFlowoo searchImgEx5"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5 col-sm-3 firstFlow searchExCh"></div>
+            <div class="col-xs-5 col-sm-5 firstFlow searchCh">
+                <input type="text" name="" value="" id="Oinput">
+            </div>
+            <div class="col-xs-5 col-sm-1 firstFlowoo">
+                <div class="divhei" style="padding: 0px;">
+                    <div id="search" class="firstFlowFirstColmo
+                            mouseOn"><i class="nf nf-fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5 col-sm-3 firstFlow searchExCh"></div>
+        </div>
+
+        <!--链接-->
+        <div class="row" id="linklist">
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('./congya.html')">
+                        <i class="nf nf-md-duck" style="color: #EEB422;"></i> 
+                        <p class="btntitle"> Congya </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://QuickConnect.cn/springduck')">
+                        <i class="nf nf-md-nas" style="color: 	#7A8B8B;"></i> 
+                        <p class="btntitle"> Synology </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://www.icloud.com.cn/')">
+                        <i class="nf nf-dev-apple" style="color: #708090;"></i> 
+                        <p class="btntitle"> iCloud </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://www.office.com/')">
+                        <i class="nf nf-md-microsoft_office" style="color: #EE4000;"></i> 
+                        <p class="btntitle"> Office </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://tb.alicdn.com/snapshot/index.html')">
+                        <i class="nf nf-fa-shopping_cart" style="color: #FF8C00;"></i> 
+                        <p class="btntitle"> Taobao </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://youku.com')">
+                        <i class="nf nf-seti-video" style="color: #7A67EE;"></i> 
+                        <p class="btntitle"> Youku </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://www.bilibili.com/')">
+                        <i class="nf nf-md-television_classic" style="color: #FF69B4;"></i> 
+                        <p class="btntitle"> BiliBili </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://mail.qq.com/')">
+                        <i class="nf nf-oct-mail" style="color: #EEAD0E;"></i> 
+                        <p class="btntitle"> QQMail </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://mp.weixin.qq.com')">
+                        <i class="nf nf-md-wechat" style="color: #32CD32;"></i> 
+                        <p class="btntitle"> WeChat </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://gitee.com')">
+                        <i class="nf nf-dev-git" style="color: #FF0000;"></i> 
+                        <p class="btntitle"> Gitee </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://next.itellyou.cn/')">
+                        <i class="nf nf-custom-msdos" style="color: #32CD32;"></i> 
+                        <p class="btntitle"> MSDN </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://boardmix.cn/app/my-space')">
+                        <i class="nf nf-md-developer_board" style="color: #BA55D3;"></i> 
+                        <p class="btntitle"> BoardMix </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://www.zhihu.com/')">
+                        <i class="nf nf-fa-book" style="color: #2b8ef1;"></i> 
+                        <p class="btntitle"> zhihu </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://console.ucloud.cn/dashboard')">
+                        <i class="nf nf-fae-cloud" style="color: #003cff;"></i> 
+                        <p class="btntitle"> UCloud </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://console.cloud.tencent.com')">
+                        <i class="nf nf-cod-cloud" style="color: #1E90FF;"></i> 
+                        <p class="btntitle"> Tencent </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://kimi.moonshot.cn/')">
+                        <i class="nf nf-md-star_four_points" style="color: #080808;"></i> 
+                        <p class="btntitle"> Kimi </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('./ssr.html')">
+                        <i class="nf nf-md-vpn" style="color: #48D1CC;"></i> 
+                        <p class="btntitle"> SSR </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('./sph.html')">
+                        <i class="nf nf-fae-medicine" style="color: #00BFFF;"></i> 
+                        <p class="btntitle"> Sph </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!--备案号<div style="color: rgba(0, 0, 0, 0.5);padding-left: 5%;margin-top: 40px;">备案号：<a href="https://beian.miit.gov.cn/" target="_blank" style="color: rgba(0, 0, 0, 0.5);">京ICP备2022023900号-1</a></div>-->
+
+
+    </div>
+
+</body>
+
+</html>

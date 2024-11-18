@@ -1,0 +1,395 @@
+<!DOCTYPE>
+<html height:100% width:100%>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Keyuanmed</title>
+    <link rel="icon" href="./img/sph/sph.png" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/webfont.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/utils/common.js"></script>
+    <script src="./script/utils/weather.js"></script>
+    <script src="./script/mian.js"></script>
+</head>
+
+<body height:100% width:95%>
+
+    <p id="weathertoday" class="weatherClass mouseOn" onclick="openPage('./nerd.html')">weathertoday</p>
+    <div id="holiday" class="holidayClass mouseOn">
+        <div onclick="openPage('./holiday/tree.html')">
+            <p></p>
+            <i class="nf nf-fa-tree"></i>
+        </div>
+    </div>
+
+    <div class="containerMain">
+
+        
+        <div class="row" style="margin-top: -3%;">
+            <div class="col-xs-6 col-sm-4 firstFlowoo searchImgEx4"></div>
+            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div id="baidueng" class="firstFlowFirstColm searchengine mouseOn">
+                        <i class="nf nf-md-card_search" style="color: #1E90FF;"></i> 
+                        <p class="btntitle"> Baidu </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div  id="bingeng" class="firstFlowFirstColm searchengine mouseOn engon">
+                        <i class="nf nf-md-microsoft_bing"  style="color: #20B2AA;"></i> 
+                        <p class="btntitle"> Bing </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div id="googleeng" class="firstFlowFirstColm searchengine mouseOn">
+                        <i class="nf nf-fa-google" style="color: #EEAD0E;"></i> 
+                        <p class="btntitle"> Google </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-5 firstFlowoo searchImgEx5"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5 col-sm-3 firstFlow searchExCh"></div>
+            <div class="col-xs-5 col-sm-5 firstFlow searchCh">
+                <input type="text" name="" value="" id="Oinput">
+            </div>
+            <div class="col-xs-5 col-sm-1 firstFlowoo">
+                <div class="divhei" style="padding: 0px;">
+                    <div id="search" class="firstFlowFirstColmo
+                            mouseOn"><i class="nf nf-fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5 col-sm-3 firstFlow searchExCh"></div>
+        </div>
+
+        <!--链接-->
+        <div class="row" id="linklist">
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://vpn.kymy.vip:8443/')">
+                        <i class="nf nf-md-vpn" style="color: #008B8B;"></i> 
+                        <p class="btntitle"> KYMY VPN </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.121.115')">
+                        <i class="nf nf-oct-fiscal_host" style="color: #008B00;"></i> 
+                        <p class="btntitle"> KYMY Bastion host </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://hr.kymy.vip:7070/ess')">
+                        <i class="nf nf-md-contacts" style="color: 	#B22222;"></i> 
+                        <p class="btntitle"> KYMY EHR </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://docs.qq.com/sheet/DRW13d01rTlZyZFpp?tab=imq9vh')">
+                        <i class="nf nf-md-microsoft_excel" style="color: #9ACD32;"></i> 
+                        <p class="btntitle"> Work Collection </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://kymy.vip')">
+                        <i class="nf nf-fa-building_o" style="color: #00BFFF;"></i> 
+                        <p class="btntitle"> KYMY </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://k-eip.sphkeyuan.com/')">
+                        <i class="nf nf-fa-building" style="color: #1E90FF;"></i> 
+                        <p class="btntitle"> Keyuan </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://dl.sphchina.com/idp/authcenter/ActionAuthChain?entityId=OA')">
+                        <i class="nf nf-dev-google_cloud_platform" style="color: #008B45;"></i> 
+                        <p class="btntitle"> OA </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://pan.kymy.vip:9999/')">
+                        <i class="nf nf-fa-hdd_o" style="color: #4169E1	;"></i> 
+                        <p class="btntitle"> Lenovo Disk </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.118.55:8081')">
+                        <i class="nf nf-cod-symbol_enum" style="color: #0000CD;"></i> 
+                        <p class="btntitle"> SAP->BI </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.118.135:8050/')">
+                        <i class="nf nf-md-hospital_box_outline" style="color: #A52A2A;"></i> 
+                        <p class="btntitle"> Social </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://lgapi.kymy.vip:8093/prd/services?wsdl')">
+                        <i class="nf nf-md-alpha_g_circle" style="color: #B22222;"></i> 
+                        <p class="btntitle"> LG </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://mailh.qiye.163.com/')">
+                        <i class="nf nf-cod-mail" style="color: #8B3A3A;"></i> 
+                        <p class="btntitle"> Mail </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://10.100.107.38')">
+                        <i class="nf nf-oct-fiscal_host" style="color: #008B45;"></i> 
+                        <p class="btntitle"> Keyuan Bastion host </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://192.168.120.10')">
+                        <i class="nf nf-oct-server" style="color: #EE7621;"></i> 
+                        <p class="btntitle"> VCenter F </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://192.168.121.25')">
+                        <i class="nf nf-oct-server" style="color: #1E90FF;"></i> 
+                        <p class="btntitle"> VCenter S </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://192.168.111.252:5001')">
+                        <i class="nf nf-md-nas" style="color: #EE7621;"></i> 
+                        <p class="btntitle"> Nas F </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://192.168.122.8:5001')">
+                        <i class="nf nf-md-nas" style="color: #1E90FF;"></i> 
+                        <p class="btntitle"> Nas S </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://vdi.sphkeyuan.cn/admin/')">
+                        <i class="nf nf-cod-vm_active" style="color: #EE7621;"></i> 
+                        <p class="btntitle"> Horizen Admin </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://vdi.sphkeyuan.cn/')">
+                        <i class="nf nf-cod-vm" style="color: #1E90FF;"></i> 
+                        <p class="btntitle"> Horizen </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.118.121')">
+                        <i class="nf nf-md-api" style="color: #EE7621;"></i> 
+                        <p class="btntitle"> ESB QA WSDL </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.118.63')">
+                        <i class="nf nf-md-api" style="color: #1E90FF;"></i> 
+                        <p class="btntitle"> ESB PRO </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.118.47:8090')">
+                        <i class="nf nf-md-alpha_g_circle_outline" style="color: #B22222;"></i> 
+                        <p class="btntitle"> LG-WMS QA </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.118.54:8090')">
+                        <i class="nf nf-md-alpha_g_circle_outline" style="color: #B22222;"></i> 
+                        <p class="btntitle"> LG-WMS PRD </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.118.42:8090')">
+                        <i class="nf nf-md-truck_delivery" style="color: #CDCD00;"></i> 
+                        <p class="btntitle"> SFWL </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://lgapi.kymy.vip:8092/qa/services?wsdl')">
+                        <i class="nf nf-md-alpha_g_circle_outline" style="color: #B22222;"></i> 
+                        <p class="btntitle"> LG-3PL QA </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://lgapi.kymy.vip:8093/prd/services?wsdl')">
+                        <i class="nf nf-md-alpha_g_circle_outline" style="color: #B22222;"></i> 
+                        <p class="btntitle"> LG-3PL PRD </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.118.2:8888/baota')">
+                        <i class="nf nf-dev-nginx" style="color: #228B22;"></i> 
+                        <p class="btntitle"> nginx </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://192.168.118.2:7878/')">
+                        <i class="nf nf-dev-nginx" style="color: #228B22;"></i> 
+                        <p class="btntitle"> nginx-test </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.118.2:5001/services?wsdl')">
+                        <i class="nf nf-dev-nginx" style="color: #228B22;"></i> 
+                        <p class="btntitle"> nginx-DDI </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('https://nginx-bi.kymy.vip/webroot/decision/login')">
+                        <i class="nf nf-dev-nginx" style="color: #228B22;"></i> 
+                        <p class="btntitle"> Nginx-BI </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://apis-ddi.kymy.vip:5001/services?wsdl')">
+                        <i class="nf nf-dev-nginx" style="color: #228B22;"></i> 
+                        <p class="btntitle"> Nginx-DDI </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://kyttms.sphkeyuan.com:18080/logincenter/wmslogin#home')">
+                        <i class="nf nf-md-oci" style="color: #d12b20;"></i> 
+                        <p class="btntitle"> Flux-WMS </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://kyttms.sphkeyuan.com:28080/logincenter/tmslogin#home')">
+                        <i class="nf nf-md-oci" style="color: #d12b20;"></i> 
+                        <p class="btntitle"> Flux-TMS </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.111.197')">
+                        <i class="nf nf-md-printer" style="color: #CD853F;"></i> 
+                        <p class="btntitle"> Printer-Colorful </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 firstFlow">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" onclick="openPage('http://192.168.111.198')">
+                        <i class="nf nf-md-printer" style="color: #CD853F;"></i> 
+                        <p class="btntitle"> Printer-Colorless </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
