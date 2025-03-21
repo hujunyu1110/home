@@ -2,19 +2,23 @@ function weather() {
     /* Wheather */
     $.ajax({
         type: "GET",
-        url: "https://yiketianqi.com/api?version=v6&appid=88698826&appsecret=JgR7ocUb&cityid=101010100",
+        url: "https://restapi.amap.com/v3/weather/weatherInfo?key=c4c1852df655e3f701e2989729041c23&city=110000&extensions=all",
         //dataType: "json",
         success: function (res) {
-            //console.log(res);
             var obj = res;
             //var obj = JSON.parse(res);
-            var tem = obj['tem'];
-            var tem1 = obj['tem1'];
-            var tem2 = obj['tem2'];
-            var wea = obj['wea'];
-            var datenow = obj['date'] + " " + obj['week'];
+            var forecasts = obj['forecasts']
+            var forecasts0 = forecasts[0]
+            var casts = forecasts0['casts']
+            var casts0 = casts[0]
+            var tem = casts0['tem'];
+            var tem1 = casts0['nighttemp_float'];
+            var tem2 = casts0['daytemp_float'];
+            var wea = casts0['dayweather'];
+            var datenow = casts0['date'] + " " + casts0['week'];
             var showTitle = "";
-            $("#weathertoday").text(datenow + " | " + tem2 + "~" + tem1 + " | " + wea);
+            console.log(casts0)
+            $("#weathertoday").text(datenow + " | " + tem1 + "℃ ~ " + tem2 + "℃ | " + wea);
             //$("#weathertomorrow").text(forecast[1]['date'] + " | " + forecast[1]['high'] + "~" + forecast[1]['low'] + " | " + forecast[1]['type']);
             /*
             for (var i = 0; i < forecast.length; i++) {
