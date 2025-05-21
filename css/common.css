@@ -128,7 +128,9 @@ div .firstFlowFirstColmo {
     width: 100px;
 }
 
-
+/**
+ * @decision: 搜索引擎选中发光效果
+ */
 .engon{
     /*text-decoration: underline;*/
     text-decoration-style: wavy;
