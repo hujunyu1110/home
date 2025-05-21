@@ -10,7 +10,9 @@ function judgeScreen() {
     if (he < wi) { }
     else {
 
-        $("p").attr("style", "font-size:23px");
+        $(".all_link").attr("style", "transform: scale(1.3); margin-left:10%; margin-top:10%;");
+
+        $("p").attr("style", "font-size:23px;");
 
         $(".searchImgEx4").removeClass("col-sm-4");
         $(".searchImgEx5").removeClass("col-sm-5");
