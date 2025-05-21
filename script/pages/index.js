@@ -127,7 +127,7 @@ $(document).ready(function () {
 
 
   for(var i = 0; i < data.length; i++){
-    var new_el = '            <div class=\"col-xs-6 col-sm-2 firstFlow\">\n'
+    var new_el = '            <div class=\"col-md-2 col-sm-4 firstFlow\">\n'
     new_el = new_el + '                <div class=\"divhei\" style=\"padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;\">\n'
     new_el = new_el + '                    <div class=\"firstFlowFirstColm mouseOn\" onclick=\"openPage(\'' + data[i].url + '\')\">\n'
     new_el = new_el + '                        <i class=\"' + data[i].icon_class +'\" style=\"color: ' + data[i].icon_color + ';\"></i>\n'

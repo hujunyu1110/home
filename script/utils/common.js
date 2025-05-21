@@ -34,5 +34,6 @@ function judgeScreen() {
         $(".googleclass").attr("style", "height: 30px; margin-top:4px;");
         $("#weathertoday").attr("style", "font-size: 23px; top: 8px;");
         $("#weathertomorrow").attr("style", "font-size: 23px; top: 35px;");
+
     }
 }   // 屏幕比例判断
