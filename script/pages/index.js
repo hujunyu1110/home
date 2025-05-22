@@ -118,7 +118,7 @@ $(document).ready(function () {
     },
     {
       index: '3 6',
-      url: './sph.html',
+      url: './work.html',
       icon_class: 'nf nf-fae-medicine',
       icon_color: '#00BFFF',
       name_txt: ' Work '
