@@ -1,0 +1,83 @@
+<!DOCTYPE>
+<html height:100% width:100%>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Keyuanmed</title>
+    <link rel="icon" href="./img/sph/sph.png" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/webfont.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
+    <script src="./script/utils/common.js"></script>
+    <script src="./script/utils/weather.js"></script>
+    <script src="./script/mian.js"></script>
+    <script src="./script/pages/work.js"></script>
+</head>
+
+<body height:100% width:95%>
+
+    <p id="weathertoday" class="weatherClass mouseOn" onclick="openPage('./nerd.html')">weathertoday</p>
+    <div id="holiday" class="holidayClass mouseOn">
+        <div onclick="openPage('./holiday/tree.html')">
+            <p></p>
+            <i class="nf nf-fa-tree"></i>
+        </div>
+    </div>
+
+    <div class="containerMain">
+
+        
+        <div class="row" style="margin-top: -3%;">
+            <div class="col-xs-6 col-sm-4 firstFlowoo searchImgEx4"></div>
+            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div id="baidueng" class="firstFlowFirstColm searchengine mouseOn">
+                        <i class="nf nf-md-card_search" style="color: #1E90FF;"></i> 
+                        <p class="btntitle"> Baidu </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div  id="bingeng" class="firstFlowFirstColm searchengine mouseOn engon">
+                        <i class="nf nf-md-microsoft_bing"  style="color: #20B2AA;"></i> 
+                        <p class="btntitle"> Bing </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div id="googleeng" class="firstFlowFirstColm searchengine mouseOn">
+                        <i class="nf nf-fa-google" style="color: #EEAD0E;"></i> 
+                        <p class="btntitle"> Google </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-5 firstFlowoo searchImgEx5"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5 col-sm-3 firstFlow searchExCh"></div>
+            <div class="col-xs-5 col-sm-5 firstFlow searchCh">
+                <input type="text" name="" value="" id="Oinput">
+            </div>
+            <div class="col-xs-5 col-sm-1 firstFlowoo">
+                <div class="divhei" style="padding: 0px;">
+                    <div id="search" class="firstFlowFirstColmo
+                            mouseOn"><i class="nf nf-fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5 col-sm-3 firstFlow searchExCh"></div>
+        </div>
+
+        <!--链接-->
+        <div class="row all_link" id="linklist">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
