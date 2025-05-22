@@ -112,7 +112,7 @@ $(document).ready(function () {
     },    {
       index: '3 5',
       url: './ssr.html',
-      icon_class: 'nf nf-md-vpn',
+      icon_class: 'nf nf-fa-paper_plane',
       icon_color: '#48D1CC',
       name_txt: ' SSR '
     },
