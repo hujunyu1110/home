@@ -81,6 +81,11 @@ body {
     margin-left: 2%;
 }
 
+.firstFlowcc:hover{
+    text-shadow: 1px 1px 1px #c5c5c5;
+    transform: scale(1.1);
+}
+
 div .firstFlowFirstColm {
     width: 100%;
     height: 100%;
@@ -94,6 +99,11 @@ div .firstFlowFirstColm {
     font-size: 15px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.5);
+}
+
+div .all_link .firstFlow:hover{
+    text-shadow: 1px 1px 1px #c5c5c5;
+    transform: scale(1.1)
 }
 
 div .firstFlowFirstColmo {
@@ -132,10 +142,11 @@ div .firstFlowFirstColmo {
  * @decision: 搜索引擎选中发光效果
  */
 .engon{
-    /*text-decoration: underline;*/
     text-decoration-style: wavy;
     transform: scale(1.2);
-    text-shadow: 2px 2px 1px #b3b3b3;
+    text-shadow: 4px 1px 2px #b3b3b3;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .divhei {
@@ -264,4 +275,18 @@ div .firstFlowFirstColmo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#search i{
+    width: 100%;
+    text-align: center;
+    padding-right: 5%;
+}
+
+#search i:hover{
+    transform: scale(1.07);
+}
+
+#Oinput:hover{
+    box-shadow: 0 0 5px #c7c7c7;
 }
