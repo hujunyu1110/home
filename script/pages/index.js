@@ -42,7 +42,7 @@ $(document).ready(function () {
       name_txt: ' Red '
     },
         {
-      index: '1 1',
+      index: '2 1',
       url: 'https://www.bilibili.com/',
       icon_class: 'nf nf-md-television_classic',
       icon_color: '#FF69B4',
