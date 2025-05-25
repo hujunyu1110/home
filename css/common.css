@@ -1,53 +1,60 @@
-body {
-    background-color: #e9e9e9;
-    /*background-image: url("../img/alist.svg");*/
-    font-family: MapleMono, DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial, PMingLiu, MingLiu;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+@font-face {
+    font-family: "MapleMono";
+    src: url("../fonts/MapleMono-CN-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'MapleMono';
-    src: url('../fonts/MapleMono-CN-Regular.ttf') format('truetype');
+    font-family: "MapleMonoLight";
+    src: url("../fonts/MapleMono-CN-Light.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'MapleMonoLight';
-    src: url('../fonts/MapleMono-CN-Light.ttf') format('truetype');
+    font-family: "MapleMonoLighter";
+    src: url("../fonts/MapleMono-CN-ExtraLight.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'MapleMonoLighter';
-    src: url('../fonts/MapleMono-CN-ExtraLight.ttf') format('truetype');
+    font-family: "0xProtoNerdFontMono";
+    src: url("../fonts/0xProtoNerdFontMono-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: '0xProtoNerdFontMono';
-    src: url('../fonts/0xProtoNerdFontMono-Regular.ttf') format('truetype');
+    font-family: "AgaveNerdFontMono";
+    src: url("../fonts/AgaveNerdFontMono-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'AgaveNerdFontMono';
-    src: url('../fonts/AgaveNerdFontMono-Regular.ttf') format('truetype');
+    font-family: "DaddyTimeMonoNerdFontMono";
+    src: url("../fonts/DaddyTimeMonoNerdFontMono-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'DaddyTimeMonoNerdFontMono';
-    src: url('../fonts/DaddyTimeMonoNerdFontMono-Regular.ttf') format('truetype');
+    font-family: "HackNerdFontMono";
+    src: url("../fonts/HackNerdFontMono-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'HackNerdFontMono';
-    src: url('../fonts/HackNerdFontMono-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+
+body {
+    background-color: #e9e9e9;
+    /*background-image: url("../img/alist.svg");*/
+    font-family: MapleMono, DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial,
+        PMingLiu, MingLiu;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
 }
 
 .containerMain {
@@ -62,7 +69,6 @@ body {
     right: 8%;
     /*margin-left: 5%;*/
 }
-
 
 .firstFlow {
     padding: 0px;
@@ -80,7 +86,7 @@ body {
     margin-left: 2%;
 }
 
-.firstFlowcc:hover{
+.firstFlowcc:hover {
     text-shadow: 1px 1px 1px #c5c5c5;
     transform: scale(1.1);
 }
@@ -100,9 +106,9 @@ div .firstFlowFirstColm {
     color: rgba(0, 0, 0, 0.5);
 }
 
-div .all_link .firstFlow:hover{
+div .all_link .firstFlow:hover {
     text-shadow: 1px 1px 1px #c5c5c5;
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 div .firstFlowFirstColmo {
@@ -119,7 +125,6 @@ div .firstFlowFirstColmo {
     /*color: rgba(0, 0, 0, 0.5);*/
     border-radius: 0px 8px 8px 0px;
 }
-
 
 .mouseOn {
     cursor: pointer;
@@ -140,7 +145,7 @@ div .firstFlowFirstColmo {
 /**
  * @decision: 搜索引擎选中发光效果
  */
-.engon{
+.engon {
     text-decoration-style: wavy;
     transform: scale(1.2);
     text-shadow: 4px 1px 2px #b3b3b3;
@@ -154,26 +159,6 @@ div .firstFlowFirstColmo {
 
 .btntitle {
     margin: 0px 0px 0px 5%;
-}
-
-.weatherClass {
-    margin: 0px;
-    height: 20px;
-    position: absolute;
-    padding-left: 10px;
-    right: 20px;
-    color: rgba(0, 0, 0, 0.4);
-    font-weight: bold;
-}
-
-.holidayClass {
-    margin: 0px;
-    height: 20px;
-    position: absolute;
-    padding-right: 10px;
-    left: 20px;
-    color: rgba(0, 0, 0, 0.4);
-    font-weight: bold;
 }
 
 #weathertoday {
@@ -265,7 +250,6 @@ div .firstFlowFirstColmo {
     margin-bottom: 5px;
 }
 
-
 .addURLInput {
     color: #b3b3b3;
     font-size: 20px;
@@ -276,16 +260,94 @@ div .firstFlowFirstColmo {
     align-items: center;
 }
 
-#search i{
+#search i {
     width: 100%;
     text-align: center;
     padding-right: 5%;
 }
 
-#search i:hover{
+#search i:hover {
     transform: scale(1.07);
 }
 
-#Oinput:hover{
+#Oinput:hover {
     box-shadow: 0 0 5px #c7c7c7;
+}
+
+/* TODO:横屏 */
+@media (orientation: landscape) {
+    .weatherClass {
+        margin: 0px;
+        height: 20px;
+        position: absolute;
+        padding-left: 10px;
+        right: 20px;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+    }
+
+    .holidayClass {
+        margin: 0px;
+        height: 20px;
+        position: absolute;
+        padding-right: 10px;
+        left: 20px;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+    }
+}
+
+/* TODO:竖屏 */
+@media (orientation: portrait) {
+    p {
+        font-size: 23px;
+    }
+
+    #Oinput {
+        height: 80px;
+        margin-bottom: 80px;
+    }
+
+    #search {
+        height: 80px;
+        margin-bottom: 80px;
+    }
+
+    .all_link {
+        transform: scale(1.3);
+        margin-left: 10%;
+        margin-top: 10%;
+        font-size: 35px;
+    }
+
+    .searchModel {
+        transform: scale(1.2);
+        margin-left: 1%;
+    }
+
+    .weatherClass {
+        margin: 0px;
+        height: 10px;
+        position: absolute;
+        padding-left: 10px; 
+        right: 5px;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        transform: scale(1.1);
+    }
+
+    .holidayClass {
+        margin: 0px;
+        height: 20px;
+        position: absolute;
+        padding-right: 10px;
+        left: 20px;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        transform: scale(1.3);
+    }
+
+    #search i {
+        transform: scale(1.5);
+    }
 }
