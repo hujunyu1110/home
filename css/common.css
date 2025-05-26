@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "MapleMonoItalic";
-    src: url("../fonts/MapleMono-CN-Italic.woff2") format("truetype");
+    src: url("../fonts/MapleMono-CN-Italic.woff") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
