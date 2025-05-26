@@ -82,6 +82,72 @@ function judgeSearch() {
 }   // 搜索引擎判断
 
 
+function openPage(url) {
+    window.open(url, "_blank");
+    //window.open(url, "_self");
+}   // 打开页面
+
+function judgeScreen() {
+    var he = document.body.clientHeight;
+    var wi = document.body.clientWidth;
+    if (he < wi) { }
+    else {
+        $(".searchImgEx4").removeClass("col-sm-4");
+        $(".searchImgEx5").removeClass("col-sm-5");
+        $(".searchImgEx4").addClass("col-sm-3");
+        $(".searchImg").removeClass("col-sm-1");
+        $(".searchImg").addClass("col-sm-3");
+
+        $(".searchExCh").removeClass("col-xs-6 col-sm-3");
+        $(".searchExCh").addClass("col-xs-6 col-sm-1");
+        $(".searchCh").removeClass("col-xs-6 col-sm-5");
+        $(".searchCh").addClass("col-xs-6 col-sm-9");
+
+        $(".firstFlowcc").attr("style", "width: 15%;")
+        $(".baiduclass").attr("style", "height: 30px;margin-left: 8px");
+        $(".bingclass").attr("style", " height: 30px; margin-top:2px; margin-left: 14%;");
+        $(".googleclass").attr("style", "height: 30px; margin-top:4px;");
+        $("#weathertoday").attr("style", "font-size: 23px; top: 8px;");
+        $("#weathertomorrow").attr("style", "font-size: 23px; top: 35px;");
+
+    }
+}   // 屏幕比例判断
+
+function weather() {
+    /* Wheather */
+    $.ajax({
+        type: "GET",
+        url: "https://restapi.amap.com/v3/weather/weatherInfo?key=c4c1852df655e3f701e2989729041c23&city=110000&extensions=all",
+        //dataType: "json",
+        success: function (res) {
+            var obj = res;
+            //var obj = JSON.parse(res);
+            var forecasts = obj['forecasts']
+            var forecasts0 = forecasts[0]
+            var casts = forecasts0['casts']
+            var casts0 = casts[0]
+            var tem = casts0['tem'];
+            var tem1 = casts0['nighttemp_float'];
+            var tem2 = casts0['daytemp_float'];
+            var wea = casts0['dayweather'];
+            var datenow = casts0['date'] + " " + casts0['week'];
+            var showTitle = "";
+            console.log(casts0)
+            $("#weathertoday").text(datenow + " | " + tem1 + "℃ ~ " + tem2 + "℃ | " + wea);
+            //$("#weathertomorrow").text(forecast[1]['date'] + " | " + forecast[1]['high'] + "~" + forecast[1]['low'] + " | " + forecast[1]['type']);
+            /*
+            for (var i = 0; i < forecast.length; i++) {
+                showTitle = showTitle + forecast[i]['date'] + " | " + forecast[i]['high'] + "~" + forecast[i]['low'] + " | " + forecast[i]['type'] + "\n";
+            }
+            */
+            $("#weathertoday").attr("title", showTitle);
+            //$("#weathertoday").attr("onclick", "openPage(\"https://springduck.xyz/count\")");
+            //$("#weathertomorrow").attr("title", showTitle);
+        }
+    });
+}   // 天气模块
+
+
 
 $(document).ready(function () {
     judgeScreen();
