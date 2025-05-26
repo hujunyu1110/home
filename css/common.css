@@ -275,17 +275,6 @@ div .firstFlowFirstColmo {
     box-shadow: 0 0 5px #c7c7c7;
 }
 
-.icon_logo {
-    transform: scale(1.3);
-    margin-top: 4%;
-}
-
-.search_logo {
-    transform: scale(1.3);
-    /* margin-top:  1%; */
-    margin-bottom: 1%;
-}
-
 /* TODO:横屏 */
 @media (orientation: landscape) {
     .weatherClass {
@@ -312,7 +301,7 @@ div .firstFlowFirstColmo {
 /* TODO:竖屏 */
 @media (orientation: portrait) {
     p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #Oinput {
@@ -366,6 +355,16 @@ div .firstFlowFirstColmo {
 
     .search_logo {
         transform: scale(1.4);
+        margin-bottom: 1%;
+    }
+
+    .icon_logo {
+        transform: scale(1.5);
+        /* margin-top: 4%; */
+    }
+
+    .search_logo {
+        transform: scale(1.3);
         margin-bottom: 1%;
     }
 }

@@ -150,7 +150,7 @@ $(document).ready(function () {
     var new_el = '            <div class=\"col-md-2 col-sm-4 firstFlow\">\n'
     new_el = new_el + '                <div class=\"divhei\" style=\"padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;\">\n'
     new_el = new_el + '                    <div class=\"firstFlowFirstColm mouseOn\" onclick=\"openPage(\'' + data[i].url + '\')\">\n'
-    new_el = new_el + '                        <p class=\"' + data[i].icon_class +' icon_logo\" style=\"color: ' + data[i].icon_color + ';\"></i>\n'
+    new_el = new_el + '                        <i class=\"' + data[i].icon_class +' icon_logo\" style=\"color: ' + data[i].icon_color + ';\"></i>\n'
     // new_el = new_el + '                        <p class=\"btntitle icon_logo\" style=\"color: ' + data[i].icon_color + ';\">'+ data[i].icon_str + '</p>\n'
     new_el = new_el + '                        <p class=\"btntitle\">'+ data[i].name_txt + '</p>\n'
     new_el = new_el + '                    </div>\n'
