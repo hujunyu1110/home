@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "MapleMono";
+    src: url("../fonts/MapleMono-CN-Regular.woff") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MapleMonoItalic";
+    src: url("../fonts/MapleMono-CN-Italic.woff") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DaddyTimeMonoNerdFontMono";
+    src: url("../fonts/DaddyTimeMonoNFM.woff2") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 98%;
+    padding-left: 3%;
+    background-color: #eef1f7;
+}
+
+.everyModel {
+    /* background-color: rgb(151, 151, 151); */
+    border-color: ebeff5;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0.7%;
+    width: 15%;
+    /* height: 324px; */
+    padding: 0px;
+    padding-bottom: 2px;
+    background-color: #ebeff5;
+    box-shadow: 1px 1px 8px #bfc3c7;
+}
+
+.everyModel:hover {
+    box-shadow: 3px 3px 8px #afb2b6;
+    /* transform: scale(1.01); */
+}
+
+
+#app {
+    margin-top: 20px;
+}
+
+.card_img {
+    margin: 1%;
+    /* height: 116px; */
+    width: 98%;
+    object-fit: cover;
+    aspect-ratio: 1.59;
+    border-radius: 4px;
+}
+
+.tittle_name {
+    font-family: DaddyTimeMonoNerdFontMono;
+    padding-left: 3px;
+    display: inline;
+    font-weight: bold;
+    /* text-align: center; */
+    font-size: 15px;
+}
+
+.detial_name {
+    display: inline;
+    /* text-align: center; */
+    text-align: right;
+    position: absolute;
+    right: 2px;
+    font-size: 12px;
+    margin-top: 3px;
+    padding-right: 2px;
+}
+
+.bank_name {
+    font-family: DaddyTimeMonoNerdFontMono;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.bill_date {
+    font-weight: bold;
+}
+
+.loan, .card_tax, .card_name {
+    font-family: MapleMono;
+}
+.card_name {
+    font-weight: bold;
+}
+
+.card_union, .card_level {
+    font-family: MapleMonoItalic;
+}
+
+.tax_free, .tax_status, .ext {
+    font-family: DaddyTimeMonoNerdFontMono;
+}

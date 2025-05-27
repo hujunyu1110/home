@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html height:100% width:100%>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Card</title>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/card.css" rel="stylesheet" />
+    <script src="https://cdn.staticfile.net/vue/2.2.2/vue.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="col-sm-4 co-md-2 col-xs-4 everyModel" v-for="site in sites">
+            <img class="card_img" v-bind:src="site.img" alt="">
+            <p class="tittle_name">银行名称：</p><p class="detial_name bank_name" v-bind:style="site.bank_color">{{ site.bank_name }}</p><br />
+            <p class="tittle_name">卡名称：</p><p class="detial_name card_name" v-bind:style="site.card_color">{{ site.card_name }}</p><br />
+            <p class="tittle_name">额度：</p><p class="detial_name loan">￥{{ site.loan }}</p><br />
+            <p class="tittle_name">账单日：</p><p class="detial_name bill_date">{{ site.bill_date }}日</p><br />
+            <p class="tittle_name">卡组织：</p><p class="detial_name card_union">{{ site.card_union }}</p><br />
+            <p class="tittle_name">卡级别：</p><p class="detial_name card_level">{{ site.card_level }}</p><br />
+            <p class="tittle_name">年费：</p><p class="detial_name card_tax">￥{{ site.card_tax }}</p><br />
+            <p class="tittle_name">年费政策：</p><p class="detial_name tax_free">{{ site.tax_free }}</p><br />
+            <p class="tittle_name">年费状态：</p><p class="detial_name tax_status">{{ site.tax_status }}</p><br />
+            <p class="tittle_name">备注：</p><p class="detial_name ext">{{ site.ext }}</p><br />
+        </div>
+    </div>
+
+    <script src="./script/pages/card.js"></script>
+
+</body>
