@@ -45,6 +45,24 @@ body {
     /* transform: scale(1.01); */
 }
 
+/* TODO:竖屏 */
+@media (orientation: portrait) {
+    .everyModel {
+        /* background-color: rgb(151, 151, 151); */
+        border-color: ebeff5;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        margin: 0.7%;
+        width: 30%;
+        /* height: 324px; */
+        padding: 0px;
+        padding-bottom: 2px;
+        background-color: #ebeff5;
+        box-shadow: 1px 1px 8px #bfc3c7;
+    }
+}
+
 
 #app {
     margin-top: 20px;
@@ -89,18 +107,24 @@ body {
     font-weight: bold;
 }
 
-.loan, .card_tax, .card_name {
+.loan,
+.card_tax,
+.card_name {
     font-family: MapleMono;
 }
+
 .card_name {
     font-weight: bold;
 }
 
-.card_union, .card_level {
+.card_union,
+.card_level {
     font-family: MapleMonoItalic;
 }
 
-.tax_free, .tax_status, .ext {
+.tax_free,
+.tax_status,
+.ext {
     font-family: DaddyTimeMonoNerdFontMono;
 }
 
