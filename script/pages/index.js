@@ -75,9 +75,9 @@ var vm = new Vue({
       {
         index: "2 5",
         url: "https://next.itellyou.cn/",
-        icon_class: "icon_logo nf nf-custom-msdos",
-        icon_color: "color: #32CD32",
-        name_txt: " MSDN ",
+        icon_class: "icon_logo nf nf-cod-credit_card",
+        icon_color: "color:rgb(216, 199, 46)",
+        name_txt: " card ",
       },
       {
         index: "2 6",
