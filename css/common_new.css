@@ -1,0 +1,379 @@
+@font-face {
+    font-family: "MapleMono";
+    src: url("../fonts/MapleMono-CN-Regular.woff") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MapleMonoItalic";
+    src: url("../fonts/MapleMono-CN-Italic.woff") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DaddyTimeMonoNerdFontMono";
+    src: url("../fonts/DaddyTimeMonoNFM.woff2") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #e9e9e9;
+    /*background-image: url("../img/alist.svg");*/
+    /* font-family: MapleMonoItalic, DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial,
+        PMingLiu, MingLiu; */
+    font-family: MapleMono, DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial,
+        PMingLiu, MingLiu;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.containerMain {
+    /*padding-left: 7%;
+    padding-top: 4%;*/
+    margin: 0px;
+    /*width: 95%;*/
+    margin: auto;
+    position: absolute;
+    top: 14%;
+    left: 6%;
+    right: 8%;
+    /*margin-left: 5%;*/
+}
+
+.firstFlow {
+    padding: 0px;
+    padding-left: 6%;
+}
+
+.firstFlowoo {
+    padding: 0px;
+    padding-left: 0px;
+}
+
+.firstFlowcc {
+    padding: 0px;
+    padding-left: 0px;
+    margin-left: 2%;
+}
+
+.firstFlowcc:hover {
+    text-shadow: 1px 1px 1px #c5c5c5;
+    /* transform: scale(1.1); */
+    font-family: MapleMonoItalic;
+}
+
+div .firstFlowFirstColm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    border-radius: 2px;
+    /*background-color: #C1CDCD;*/
+    /*cursor: pointer;*/
+    /*color: white;*/
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+div .all_link .firstFlow:hover {
+    text-shadow: 1px 1px 1px #c5c5c5;
+    /* transform: scale(1.1); */
+    font-family: MapleMonoItalic;
+}
+
+div .firstFlowFirstColmo {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background-color: #8388889d;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    /*color: rgba(0, 0, 0, 0.5);*/
+    border-radius: 0px 8px 8px 0px;
+}
+
+.mouseOn {
+    cursor: pointer;
+}
+
+.containerMain input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #b3b3b3;
+}
+
+.searchengine {
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+/**
+ * @decision: 搜索引擎选中发光效果
+ */
+.engon {
+    text-decoration-style: wavy;
+    transform: scale(1.2);
+    text-shadow: 4px 1px 2px #b3b3b3;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.divhei {
+    height: 90px;
+}
+
+.btntitle {
+    margin: 0px 0px 0px 5%;
+}
+
+#weathertoday {
+    top: 8px;
+}
+
+#weathertomorrow {
+    top: 28px;
+}
+
+.menu {
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+    color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.menuColor {
+    background-color: rgba(134, 146, 146, 0.295);
+}
+
+.menu img {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.collect_list p {
+    margin: 0px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    font-size: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+#addUrl {
+    width: 80%;
+    height: 30px;
+}
+
+.addCon {
+    position: absolute;
+    z-index: 3;
+    height: 70%;
+    width: 70%;
+    margin-top: 7%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0px;
+    background-color: rgba(134, 146, 146, 0.6);
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.closeAddCon {
+    height: 35px;
+    width: 35px;
+    padding: 0px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+    z-index: 4;
+}
+
+.addURLTitle {
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addURLName {
+    font-size: 20px;
+    font-weight: bolder;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.addURLInput {
+    color: #b3b3b3;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search i {
+    width: 100%;
+    text-align: center;
+    padding-right: 5%;
+}
+
+#Oinput:hover {
+    box-shadow: 0 0 5px #c7c7c7;
+    font-family: MapleMonoItalic;
+}
+
+/* TODO:横屏 */
+@media (orientation: landscape) {
+    .weatherClass {
+        margin: 0px;
+        height: 20px;
+        position: absolute;
+        padding-left: 10px;
+        right: 20px;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+    }
+
+    .holidayClass {
+        margin: 0px;
+        height: 20px;
+        position: absolute;
+        padding-right: 10px;
+        left: 20px;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+    }
+}
+
+/* TODO:竖屏 */
+@media (orientation: portrait) {
+    p {
+        font-size: 18px;
+    }
+
+    #Oinput {
+        height: 80px;
+        margin-bottom: 80px;
+    }
+
+    #search {
+        height: 80px;
+        margin-bottom: 80px;
+    }
+
+    .all_link {
+        transform: scale(1.3);
+        margin-left: 10%;
+        margin-top: 10%;
+        font-size: 35px;
+    }
+
+    .searchModel {
+        transform: scale(1.2);
+        margin-left: 1%;
+        margin-bottom: 1%;
+    }
+
+    .weatherClass {
+        margin: 0px;
+        height: 10px;
+        position: absolute;
+        padding-left: 10px;
+        right: 5px;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        transform: scale(1.1);
+    }
+
+    .holidayClass {
+        margin: 0px;
+        height: 20px;
+        position: absolute;
+        padding-right: 10px;
+        left: 20px;
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        transform: scale(1.3);
+    }
+
+    #search i {
+        transform: scale(1.5);
+    }
+
+    .search_logo {
+        transform: scale(1.4);
+        margin-bottom: 1%;
+    }
+
+    .icon_logo {
+        transform: scale(1.5);
+        /* margin-top: 4%; */
+    }
+
+    .search_logo {
+        transform: scale(1.3);
+        margin-bottom: 1%;
+    }
+
+
+    .firstFlowcc {
+        padding: 0px;
+        padding-left: 0px;
+        margin-left: 2%;
+        width: 15%;
+    }
+
+    .baiduclass {
+        height: 30px;
+        margin-left: 8px
+    }
+
+    .bingclass {
+        height: 30px;
+        margin-top: 2px;
+        margin-left: 14%;
+    }
+
+    .googleclass {
+        height: 30px;
+        margin-top: 4px;
+    }
+
+    #weathertoday {
+        top: 8px;
+        font-size: 23px;
+        top: 8px;
+    }
+
+    #weathertomorrow {
+        top: 28px;
+        font-size: 23px;
+        top: 35px;
+    }
+
+}

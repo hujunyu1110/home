@@ -242,12 +242,6 @@ div .firstFlowFirstColmo {
     padding-right: 5%;
 }
 
-#search i:hover {
-    /* transform: scale(1.07); */
-    box-shadow: 0 0 5px #c7c7c7;
-    font-family: MapleMonoItalic;
-}
-
 #Oinput:hover {
     box-shadow: 0 0 5px #c7c7c7;
     font-family: MapleMonoItalic;

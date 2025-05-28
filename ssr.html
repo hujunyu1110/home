@@ -4,21 +4,20 @@
 <head>
     <meta charset="utf-8" />
     <title>SSR</title>
-    <link rel="icon" href="./img/ssr/ssr.png" />
+    <link rel="icon" href="./img/favicon.ico" />
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/webfont.css" rel="stylesheet" />
-    <link href="./css/common.css" rel="stylesheet" />
-    <script src="./script/jquery.min.js"></script>
+    <link href="./css/common_new.css" rel="stylesheet" />
     <script src="./script/bootstrap.min.js"></script>
-    <script src="./script/mian.js"></script>
-    <script src="./script/pages/ssr.js"></script>
+    <script src="https://cdn.staticfile.net/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
 </head>
 
 <body height:100% width:95%>
 
-    <p id="weathertoday" class="weatherClass mouseOn">weathertoday</p>
+    <p id="weathertoday" class="weatherClass mouseOn">{{weathertoday}}</p>
     <div id="holiday" class="holidayClass mouseOn">
-        <div onclick="openPage('./holiday/tree.html')">
+        <div @click="openPage(site.url)">
             <p></p>
             <i class="nf nf-fa-tree"></i>
         </div>
@@ -26,56 +25,49 @@
 
     <div class="containerMain">
 
-        
-        <div class="row searchModel">
-            <div class="col-xs-6 col-sm-4 firstFlowoo searchImgEx4"></div>
-            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
+        <div class="row searchModel" id="search_icons">
+            <div v-bind:class="searchImgEx4_class"></div>
+            <div v-bind:class="searchImg_class" v-for="site in search_sites">
                 <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
-                    <div id="baidueng" class="firstFlowFirstColm searchengine mouseOn">
-                        <i class="nf nf-md-card_search search_logo" style="color: #1E90FF;"></i> 
-                        <p class="btntitle"> Baidu </p>
+                    <div id="baidueng" v-bind:class="site.search_calss" @click="selectSearch(site.index)">
+                        <i v-bind:class="site.icon_class" v-bind:style="site.icon_color"></i>
+                        <p class="btntitle">{{site.name_txt}}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
-                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
-                    <div  id="bingeng" class="firstFlowFirstColm searchengine mouseOn engon">
-                        <i class="nf nf-md-microsoft_bing search_logo" style="color: #20B2AA;"></i> 
-                        <p class="btntitle"> Bing </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-1 firstFlowcc searchImg">
-                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
-                    <div id="googleeng" class="firstFlowFirstColm searchengine mouseOn">
-                        <i class="nf nf-fa-google search_logo" style="color: #EEAD0E;"></i> 
-                        <p class="btntitle"> Google </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-sm-5 firstFlowoo searchImgEx5"></div>
+            <div v-bind:class="searchImgEx5_class"></div>
         </div>
+
         <div class="row searchModel">
-            <div class="col-xs-5 col-sm-3 firstFlow searchExCh"></div>
-            <div class="col-xs-5 col-sm-5 firstFlow searchCh">
-                <input type="text" name="" value="" id="Oinput">
+            <div v-bind:class="searchExCh_class"></div>
+            <div v-bind:class="searchCh_class">
+                <input type="text" name="" value="" id="Oinput" v-model="search_str" @keyup.enter="witchSearch">
             </div>
             <div class="col-xs-5 col-sm-1 firstFlowoo">
                 <div class="divhei" style="padding: 0px;">
                     <div id="search" class="firstFlowFirstColmo
-                            mouseOn"><i class="nf nf-fa-search"></i>
+                            mouseOn" @click="witchSearch"><i class="nf nf-fa-search"></i>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-5 col-sm-3 firstFlow searchExCh"></div>
+            <div v-bind:class="searchExCh_class"></div>
         </div>
 
         <!--链接-->
         <div class="row all_link" id="linklist">
-
+            <div class="col-sm-4 col-md-3 firstFlow" v-for="site in link_sites">
+                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
+                    <div class="firstFlowFirstColm mouseOn" @click="openPage(site.url)">
+                        <i v-bind:class="site.icon_class" v-bind:style='site.icon_color'></i>
+                        <p class="btntitle">{{site.name_txt}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
+
+    <script src="./script/pages/ssr.js"></script>
 
 </body>
 
