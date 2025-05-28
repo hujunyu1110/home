@@ -1,277 +1,286 @@
-$(document).ready(function () {
-    data = [
-        {
-            index: "1 1",
-            url: "https://vpn.kymy.vip:8443/",
-            icon_class: "nf nf-md-vpn",
-            icon_color: "#008B8B",
-            name_txt: " KYMY VPN ",
+var vm = new Vue({
+    el: '.containerMain',
+    data: {
+        link_sites: [
+            {
+                index: "1 1",
+                url: "https://vpn.kymy.vip:8443/",
+                icon_class: "icon_logo nf nf-md-vpn",
+                icon_color: "color: #008B8B",
+                name_txt: " KYMY VPN ",
+            },
+            {
+                index: "1 2",
+                url: "http://192.168.121.115",
+                icon_class: "icon_logo nf nf-oct-fiscal_host",
+                icon_color: "color: #008B00",
+                name_txt: " KYMY Bastion host ",
+            },
+            {
+                index: "1 3",
+                url: "http://hr.kymy.vip:7070/ess",
+                icon_class: "icon_logo nf nf-md-contacts",
+                icon_color: "	#B22222",
+                name_txt: " KYMY EHR ",
+            },
+            {
+                index: "1 4",
+                url: "https://docs.qq.com/sheet/DRW13d01rTlZyZFpp?tab=imq9vh",
+                icon_class: "icon_logo nf nf-md-microsoft_excel",
+                icon_color: "color: #9ACD32",
+                name_txt: " Work Collection ",
+            },
+            {
+                index: "1 5",
+                url: "https://kymy.vip",
+                icon_class: "icon_logo nf nf-fa-building_o",
+                icon_color: "color: #00BFFF",
+                name_txt: " KYMY ",
+            },
+            {
+                index: "1 6",
+                url: "https://k-eip.sphkeyuan.com/",
+                icon_class: "icon_logo nf nf-fa-building",
+                icon_color: "color: #1E90FF",
+                name_txt: " Keyuan ",
+            },
+            {
+                index: "2 1",
+                url: "https://dl.sphchina.com/idp/authcenter/ActionAuthChain?entityId=OA",
+                icon_class: "icon_logo nf nf-dev-google_cloud_platform",
+                icon_color: "color: #008B45",
+                name_txt: " OA ",
+            },
+            {
+                index: "2 2",
+                url: "https://pan.kymy.vip:9999/",
+                icon_class: "icon_logo nf nf-fa-hdd_o",
+                icon_color: "color: #4169E1	",
+                name_txt: " Lenovo Disk ",
+            },
+            {
+                index: "2 3",
+                url: "http://192.168.118.55:8081",
+                icon_class: "icon_logo nf nf-cod-symbol_enum",
+                icon_color: "color: #0000CD",
+                name_txt: " SAP->BI ",
+            },
+            {
+                index: "2 4",
+                url: "http://192.168.118.135:8050/",
+                icon_class: "icon_logo nf nf-md-hospital_box_outline",
+                icon_color: "color: #A52A2A",
+                name_txt: " Social ",
+            },
+            {
+                index: "2 5",
+                url: "http://lgapi.kymy.vip:8093/prd/services?wsdl",
+                icon_class: "icon_logo nf nf-md-alpha_g_circle",
+                icon_color: "color: #B22222",
+                name_txt: " LG ",
+            },
+            {
+                index: "2 6",
+                url: "https://mailh.qiye.163.com/",
+                icon_class: "icon_logo nf nf-cod-mail",
+                icon_color: "color: #8B3A3A",
+                name_txt: " Mail ",
+            },
+            {
+                index: "3 1",
+                url: "https://10.100.107.38",
+                icon_class: "icon_logo nf nf-oct-fiscal_host",
+                icon_color: "color: #008B45",
+                name_txt: " Keyuan Bastion host ",
+            },
+            {
+                index: "3 2",
+                url: "https://192.168.120.10",
+                icon_class: "icon_logo nf nf-oct-server",
+                icon_color: "color: #EE7621",
+                name_txt: " VCenter F ",
+            },
+            {
+                index: "3 3",
+                url: "https://192.168.121.25",
+                icon_class: "icon_logo nf nf-oct-server",
+                icon_color: "color: #1E90FF",
+                name_txt: " VCenter S ",
+            },
+            {
+                index: "3 4",
+                url: "https://192.168.111.252:5001",
+                icon_class: "icon_logo nf nf-md-nas",
+                icon_color: "color: #EE7621",
+                name_txt: " Nas F ",
+            },
+            {
+                index: "3 5",
+                url: "https://192.168.122.8:5001",
+                icon_class: "icon_logo nf nf-md-nas",
+                icon_color: "color: #1E90FF",
+                name_txt: " Nas S ",
+            },
+            {
+                index: "3 6",
+                url: "https://vdi.sphkeyuan.cn/admin/",
+                icon_class: "icon_logo nf nf-cod-vm_active",
+                icon_color: "color: #EE7621",
+                name_txt: " Horizen Admin ",
+            },
+            {
+                index: "4 1",
+                url: "https://vdi.sphkeyuan.cn/",
+                icon_class: "icon_logo nf nf-cod-vm",
+                icon_color: "color: #1E90FF",
+                name_txt: " Horizen ",
+            },
+            {
+                index: "4 2",
+                url: "http://192.168.118.121",
+                icon_class: "icon_logo nf nf-md-api",
+                icon_color: "color: #EE7621",
+                name_txt: " ESB QA WSDL ",
+            },
+            {
+                index: "4 3",
+                url: "http://192.168.118.63",
+                icon_class: "icon_logo nf nf-md-api",
+                icon_color: "color: #1E90FF",
+                name_txt: " ESB PRO ",
+            },
+            {
+                index: "4 4",
+                url: "http://192.168.118.47:8090",
+                icon_class: "icon_logo nf nf-md-alpha_g_circle_outline",
+                icon_color: "color: #B22222",
+                name_txt: " LG-WMS QA ",
+            },
+            {
+                index: "4 5",
+                url: "http://192.168.118.54:8090",
+                icon_class: "icon_logo nf nf-md-alpha_g_circle_outline",
+                icon_color: "color: #B22222",
+                name_txt: " LG-WMS PRD ",
+            },
+            {
+                index: "4 6",
+                url: "http://192.168.118.42:8090",
+                icon_class: "icon_logo nf nf-md-truck_delivery",
+                icon_color: "color: #CDCD00",
+                name_txt: " SFWL ",
+            },
+            {
+                index: "5 1",
+                url: "http://lgapi.kymy.vip:8092/qa/services?wsdl",
+                icon_class: "icon_logo nf nf-md-alpha_g_circle_outline",
+                icon_color: "color: #B22222",
+                name_txt: " LG-3PL QA ",
+            },
+            {
+                index: "5 2",
+                url: "http://lgapi.kymy.vip:8093/prd/services?wsdl",
+                icon_class: "icon_logo nf nf-md-alpha_g_circle_outline",
+                icon_color: "color: #B22222",
+                name_txt: " LG-3PL PRD ",
+            },
+            {
+                index: "5 3",
+                url: "http://192.168.118.2:8888/baota",
+                icon_class: "icon_logo nf nf-dev-nginx",
+                icon_color: "color: #228B22",
+                name_txt: " nginx ",
+            },
+            {
+                index: "5 4",
+                url: "https://192.168.118.2:7878/",
+                icon_class: "icon_logo nf nf-dev-nginx",
+                icon_color: "color: #228B22",
+                name_txt: " nginx-test ",
+            },
+            {
+                index: "5 6",
+                url: "http://192.168.118.2:5001/services?wsdl",
+                icon_class: "icon_logo nf nf-dev-nginx",
+                icon_color: "color: #228B22",
+                name_txt: " nginx-DDI ",
+            },
+            {
+                index: "6 1",
+                url: "https://nginx-bi.kymy.vip/webroot/decision/login",
+                icon_class: "icon_logo nf nf-dev-nginx",
+                icon_color: "color: #228B22",
+                name_txt: " Nginx-BI ",
+            },
+            {
+                index: "6 2",
+                url: "http://apis-ddi.kymy.vip:5001/services?wsdl",
+                icon_class: "icon_logo nf nf-dev-nginx",
+                icon_color: "color: #228B22",
+                name_txt: " Nginx-DDI ",
+            },
+            {
+                index: "6 3",
+                url: "http://kyttms.sphkeyuan.com:18080/logincenter/wmslogin#home",
+                icon_class: "icon_logo nf nf-md-oci",
+                icon_color: "color: #d12b20",
+                name_txt: " Flux-WMS ",
+            },
+            {
+                index: "6 4",
+                url: "http://kyttms.sphkeyuan.com:28080/logincenter/tmslogin#home",
+                icon_class: "icon_logo nf nf-md-oci",
+                icon_color: "color: #d12b20",
+                name_txt: " Flux-TMS ",
+            },
+            {
+                index: "6 5",
+                url: "http://192.168.111.197",
+                icon_class: "icon_logo nf nf-md-printer",
+                icon_color: "color: #CD853F",
+                name_txt: " Printer-Colorful ",
+            },
+            {
+                index: "6 6",
+                url: "http://192.168.111.198",
+                icon_class: "icon_logo nf nf-md-printer",
+                icon_color: "color: #CD853F",
+                name_txt: " Printer-Colorless ",
+            },
+        ],
+    },
+    methods: {
+        openPage: (url) => {
+            window.open(url, "_blank");
+            //window.open(url, "_self");
         },
-        {
-            index: "1 2",
-            url: "http://192.168.121.115",
-            icon_class: "nf nf-oct-fiscal_host",
-            icon_color: "#008B00",
-            name_txt: " KYMY Bastion host ",
-        },
-        {
-            index: "1 3",
-            url: "http://hr.kymy.vip:7070/ess",
-            icon_class: "nf nf-md-contacts",
-            icon_color: "	#B22222",
-            name_txt: " KYMY EHR ",
-        },
-        {
-            index: "1 4",
-            url: "https://docs.qq.com/sheet/DRW13d01rTlZyZFpp?tab=imq9vh",
-            icon_class: "nf nf-md-microsoft_excel",
-            icon_color: "#9ACD32",
-            name_txt: " Work Collection ",
-        },
-        {
-            index: "1 5",
-            url: "https://kymy.vip",
-            icon_class: "nf nf-fa-building_o",
-            icon_color: "#00BFFF",
-            name_txt: " KYMY ",
-        },
-        {
-            index: "1 6",
-            url: "https://k-eip.sphkeyuan.com/",
-            icon_class: "nf nf-fa-building",
-            icon_color: "#1E90FF",
-            name_txt: " Keyuan ",
-        },
-        {
-            index: "2 1",
-            url: "https://dl.sphchina.com/idp/authcenter/ActionAuthChain?entityId=OA",
-            icon_class: "nf nf-dev-google_cloud_platform",
-            icon_color: "#008B45",
-            name_txt: " OA ",
-        },
-        {
-            index: "2 2",
-            url: "https://pan.kymy.vip:9999/",
-            icon_class: "nf nf-fa-hdd_o",
-            icon_color: "#4169E1	",
-            name_txt: " Lenovo Disk ",
-        },
-        {
-            index: "2 3",
-            url: "http://192.168.118.55:8081",
-            icon_class: "nf nf-cod-symbol_enum",
-            icon_color: "#0000CD",
-            name_txt: " SAP->BI ",
-        },
-        {
-            index: "2 4",
-            url: "http://192.168.118.135:8050/",
-            icon_class: "nf nf-md-hospital_box_outline",
-            icon_color: "#A52A2A",
-            name_txt: " Social ",
-        },
-        {
-            index: "2 5",
-            url: "http://lgapi.kymy.vip:8093/prd/services?wsdl",
-            icon_class: "nf nf-md-alpha_g_circle",
-            icon_color: "#B22222",
-            name_txt: " LG ",
-        },
-        {
-            index: "2 6",
-            url: "https://mailh.qiye.163.com/",
-            icon_class: "nf nf-cod-mail",
-            icon_color: "#8B3A3A",
-            name_txt: " Mail ",
-        },
-        {
-            index: "3 1",
-            url: "https://10.100.107.38",
-            icon_class: "nf nf-oct-fiscal_host",
-            icon_color: "#008B45",
-            name_txt: " Keyuan Bastion host ",
-        },
-        {
-            index: "3 2",
-            url: "https://192.168.120.10",
-            icon_class: "nf nf-oct-server",
-            icon_color: "#EE7621",
-            name_txt: " VCenter F ",
-        },
-        {
-            index: "3 3",
-            url: "https://192.168.121.25",
-            icon_class: "nf nf-oct-server",
-            icon_color: "#1E90FF",
-            name_txt: " VCenter S ",
-        },
-        {
-            index: "3 4",
-            url: "https://192.168.111.252:5001",
-            icon_class: "nf nf-md-nas",
-            icon_color: "#EE7621",
-            name_txt: " Nas F ",
-        },
-        {
-            index: "3 5",
-            url: "https://192.168.122.8:5001",
-            icon_class: "nf nf-md-nas",
-            icon_color: "#1E90FF",
-            name_txt: " Nas S ",
-        },
-        {
-            index: "3 6",
-            url: "https://vdi.sphkeyuan.cn/admin/",
-            icon_class: "nf nf-cod-vm_active",
-            icon_color: "#EE7621",
-            name_txt: " Horizen Admin ",
-        },
-        {
-            index: "4 1",
-            url: "https://vdi.sphkeyuan.cn/",
-            icon_class: "nf nf-cod-vm",
-            icon_color: "#1E90FF",
-            name_txt: " Horizen ",
-        },
-        {
-            index: "4 2",
-            url: "http://192.168.118.121",
-            icon_class: "nf nf-md-api",
-            icon_color: "#EE7621",
-            name_txt: " ESB QA WSDL ",
-        },
-        {
-            index: "4 3",
-            url: "http://192.168.118.63",
-            icon_class: "nf nf-md-api",
-            icon_color: "#1E90FF",
-            name_txt: " ESB PRO ",
-        },
-        {
-            index: "4 4",
-            url: "http://192.168.118.47:8090",
-            icon_class: "nf nf-md-alpha_g_circle_outline",
-            icon_color: "#B22222",
-            name_txt: " LG-WMS QA ",
-        },
-        {
-            index: "4 5",
-            url: "http://192.168.118.54:8090",
-            icon_class: "nf nf-md-alpha_g_circle_outline",
-            icon_color: "#B22222",
-            name_txt: " LG-WMS PRD ",
-        },
-        {
-            index: "4 6",
-            url: "http://192.168.118.42:8090",
-            icon_class: "nf nf-md-truck_delivery",
-            icon_color: "#CDCD00",
-            name_txt: " SFWL ",
-        },
-        {
-            index: "5 1",
-            url: "http://lgapi.kymy.vip:8092/qa/services?wsdl",
-            icon_class: "nf nf-md-alpha_g_circle_outline",
-            icon_color: "#B22222",
-            name_txt: " LG-3PL QA ",
-        },
-        {
-            index: "5 2",
-            url: "http://lgapi.kymy.vip:8093/prd/services?wsdl",
-            icon_class: "nf nf-md-alpha_g_circle_outline",
-            icon_color: "#B22222",
-            name_txt: " LG-3PL PRD ",
-        },
-        {
-            index: "5 3",
-            url: "http://192.168.118.2:8888/baota",
-            icon_class: "nf nf-dev-nginx",
-            icon_color: "#228B22",
-            name_txt: " nginx ",
-        },
-        {
-            index: "5 4",
-            url: "https://192.168.118.2:7878/",
-            icon_class: "nf nf-dev-nginx",
-            icon_color: "#228B22",
-            name_txt: " nginx-test ",
-        },
-        {
-            index: "5 6",
-            url: "http://192.168.118.2:5001/services?wsdl",
-            icon_class: "nf nf-dev-nginx",
-            icon_color: "#228B22",
-            name_txt: " nginx-DDI ",
-        },
-        {
-            index: "6 1",
-            url: "https://nginx-bi.kymy.vip/webroot/decision/login",
-            icon_class: "nf nf-dev-nginx",
-            icon_color: "#228B22",
-            name_txt: " Nginx-BI ",
-        },
-        {
-            index: "6 2",
-            url: "http://apis-ddi.kymy.vip:5001/services?wsdl",
-            icon_class: "nf nf-dev-nginx",
-            icon_color: "#228B22",
-            name_txt: " Nginx-DDI ",
-        },
-        {
-            index: "6 3",
-            url: "http://kyttms.sphkeyuan.com:18080/logincenter/wmslogin#home",
-            icon_class: "nf nf-md-oci",
-            icon_color: "#d12b20",
-            name_txt: " Flux-WMS ",
-        },
-        {
-            index: "6 4",
-            url: "http://kyttms.sphkeyuan.com:28080/logincenter/tmslogin#home",
-            icon_class: "nf nf-md-oci",
-            icon_color: "#d12b20",
-            name_txt: " Flux-TMS ",
-        },
-        {
-            index: "6 5",
-            url: "http://192.168.111.197",
-            icon_class: "nf nf-md-printer",
-            icon_color: "#CD853F",
-            name_txt: " Printer-Colorful ",
-        },
-        {
-            index: "6 6",
-            url: "http://192.168.111.198",
-            icon_class: "nf nf-md-printer",
-            icon_color: "#CD853F",
-            name_txt: " Printer-Colorless ",
-        },
-    ];
+    },
+})
 
-    for (var i = 0; i < data.length; i++) {
-        var new_el = '            <div class="col-sm-2 col-md-2 firstFlow">\n';
-        new_el =
-            new_el +
-            '                <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">\n';
-        new_el =
-            new_el +
-            '                    <div class="firstFlowFirstColm mouseOn" onclick="openPage(\'' +
-            data[i].url +
-            "')\">\n";
-        new_el =
-            new_el +
-            '                        <i class="' +
-            data[i].icon_class +
-            '" style="color: ' +
-            data[i].icon_color +
-            ';"></i>\n';
-        new_el =
-            new_el +
-            '                        <p class="btntitle">' +
-            data[i].name_txt +
-            "</p>\n";
-        new_el = new_el + "                    </div>\n";
-        new_el = new_el + "                </div>\n";
-        new_el = new_el + "            </div>\n";
-        $("#linklist").append(new_el);
-    }
-});
+var weathertoday_v = new Vue({
+    el: '#weathertoday',
+    data: {
+        weathertoday: '',
+    },
+    created: function () {
+        this.getWeather()
+    },
+    methods: {
+        getWeather: function () {
+            this.$http.get('https://restapi.amap.com/v3/weather/weatherInfo?key=c4c1852df655e3f701e2989729041c23&city=110000&extensions=all').then(function (res) {
+                this.info = res.body
+                var obj = res.body
+                var forecasts = obj['forecasts']
+                var forecasts0 = forecasts[0]
+                var casts = forecasts0['casts']
+                var casts0 = casts[0]
+                var tem1 = casts0['nighttemp_float']
+                var tem2 = casts0['daytemp_float']
+                var wea = casts0['dayweather']
+                var datenow = casts0['date'] + " " + casts0['week']
+                this.weathertoday = datenow + " | " + tem1 + "℃ ~ " + tem2 + "℃ | " + wea
+            }, function () {
+            })
+        }
+    },
+})
