@@ -74,10 +74,10 @@ var vm = new Vue({
       },
       {
         index: "2 5",
-        url: "https://next.itellyou.cn/",
+        url: "./card.html",
         icon_class: "icon_logo nf nf-cod-credit_card",
         icon_color: "color:rgb(216, 199, 46)",
-        name_txt: " card ",
+        name_txt: " Card ",
       },
       {
         index: "2 6",
