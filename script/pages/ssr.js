@@ -90,7 +90,9 @@ var vm = new Vue({
     searchCh_class: "col-xs-5 col-sm-5 firstFlow searchCh",
   },
   created: function () {
+    console.log('执行初始化函数')
     this.methodToTrigger()
+    this.createJson()
   },
   methods: {
     openPage: (url) => {
@@ -117,6 +119,7 @@ var vm = new Vue({
       this.search_str = ''
     },
     methodToTrigger: function () {
+      console.log('执行初始化hook')
       var he = document.body.clientHeight;
       var wi = document.body.clientWidth;
       if (he < wi) { }
@@ -127,6 +130,11 @@ var vm = new Vue({
         this.searchExCh_class = "col-xs-5 col-sm-1 firstFlow searchExCh"
         this.searchCh_class = "col-xs-5 col-sm-9 firstFlow searchCh"
       }
+    },
+    createJson: function () {
+      console.log('执行创建函数')
+      var json_obj = {data: this.link_sites}
+      console.log(JSON.stringify(json_obj))
     },
   },
 })
