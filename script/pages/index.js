@@ -1,134 +1,135 @@
 var vm = new Vue({
   el: '.containerMain',
   data: {
-    link_sites: [
-      {
-        index: "1 1",
-        url: "./congya.html",
-        icon_class: "icon_logo nf nf-md-duck",
-        icon_color: "color: #EEB422",
-        name_txt: " Congya ",
-      },
-      {
-        index: "1 2",
-        url: "https://QuickConnect.cn/springduck",
-        icon_class: "icon_logo nf nf-md-nas",
-        icon_color: "color: #7A8B8B",
-        name_txt: " Synology ",
-      },
-      {
-        index: "1 3",
-        url: "https://www.icloud.com.cn/",
-        icon_class: "icon_logo nf nf-dev-apple",
-        icon_color: "color: #708090",
-        name_txt: " iCloud ",
-      },
-      {
-        index: "1 4",
-        url: "https://www.office.com/",
-        icon_class: "icon_logo nf nf-md-microsoft_office",
-        icon_color: "color: #EE4000",
-        name_txt: " Office ",
-      },
-      {
-        index: "1 5",
-        url: "https://tb.alicdn.com/snapshot/index.html",
-        icon_class: "icon_logo nf nf-fa-shopping_cart",
-        icon_color: "color: #FF8C00",
-        name_txt: " Taobao ",
-      },
-      {
-        index: "1 6",
-        url: "https://www.xiaohongshu.com/explore",
-        icon_class: "icon_logo nf nf-md-book",
-        icon_color: "color: #ff0000",
-        name_txt: " Red ",
-      },
-      {
-        index: "2 1",
-        url: "https://www.bilibili.com/",
-        icon_class: "icon_logo nf nf-md-television_classic",
-        icon_color: "color: #FF69B4",
-        name_txt: " BiliBili ",
-      },
-      {
-        index: "2 2",
-        url: "https://mail.qq.com/",
-        icon_class: "icon_logo nf nf-oct-mail",
-        icon_color: "color: #EEAD0E",
-        name_txt: " QQMail ",
-      },
-      {
-        index: "2 3",
-        url: "https://mp.weixin.qq.com",
-        icon_class: "icon_logo nf nf-md-wechat",
-        icon_color: "color: #32CD32",
-        name_txt: " WeChat ",
-      },
-      {
-        index: "2 4",
-        url: "https://gitee.com",
-        icon_class: "icon_logo nf nf-dev-git",
-        icon_color: "color: #FF0000",
-        name_txt: " Gitee ",
-      },
-      {
-        index: "2 5",
-        url: "./card.html",
-        icon_class: "icon_logo nf nf-cod-credit_card",
-        icon_color: "color:rgb(216, 199, 46)",
-        name_txt: " Card ",
-      },
-      {
-        index: "2 6",
-        url: "https://boardmix.cn/app/my-space",
-        icon_class: "icon_logo nf nf-md-developer_board",
-        icon_color: "color: #BA55D3",
-        name_txt: " BoardMix ",
-      },
-      {
-        index: "3 1",
-        url: "https://www.zhihu.com/",
-        icon_class: "icon_logo nf nf-fa-book",
-        icon_color: "color: #2b8ef1",
-        name_txt: " zhihu ",
-      },
-      {
-        index: "3 2",
-        url: "https://app.apifox.com/main/teams/445141?tab=project",
-        icon_class: "icon_logo nf nf-md-microsoft_edge",
-        icon_color: "color: #e403f893",
-        name_txt: " AirFox ",
-      },
-      {
-        index: "3 3",
-        url: "https://martian-zodiac-871916.postman.co/home",
-        icon_class: "icon_logo nf nf-md-pac_man",
-        icon_color: "color: #ff8800",
-        name_txt: " Postman ",
-      },
-      {
-        index: "3 4",
-        url: "https://console.cloud.tencent.com",
-        icon_class: "icon_logo nf nf-fae-cloud",
-        icon_color: "color: #1E90FF",
-        name_txt: " Tencent ",
-      },
-      {
-        index: "3 5",
-        url: "./ssr.html",
-        icon_class: "icon_logo nf nf-fa-paper_plane",
-        icon_color: "color: #48D1CC",
-        name_txt: " SSR ",
-      },
-      {
-        index: "3 6",
-        url: "./work.html",
-        icon_class: "icon_logo nf nf-fae-medicine",
-        icon_color: "color: #00BFFF",
-        name_txt: " Work ",
-      },
-    ],
+    // link_sites: [
+    //   {
+    //     index: "1 1",
+    //     url: "./congya.html",
+    //     icon_class: "icon_logo nf nf-md-duck",
+    //     icon_color: "color: #EEB422",
+    //     name_txt: " Congya ",
+    //   },
+    //   {
+    //     index: "1 2",
+    //     url: "https://QuickConnect.cn/springduck",
+    //     icon_class: "icon_logo nf nf-md-nas",
+    //     icon_color: "color: #7A8B8B",
+    //     name_txt: " Synology ",
+    //   },
+    //   {
+    //     index: "1 3",
+    //     url: "https://www.icloud.com.cn/",
+    //     icon_class: "icon_logo nf nf-dev-apple",
+    //     icon_color: "color: #708090",
+    //     name_txt: " iCloud ",
+    //   },
+    //   {
+    //     index: "1 4",
+    //     url: "https://www.office.com/",
+    //     icon_class: "icon_logo nf nf-md-microsoft_office",
+    //     icon_color: "color: #EE4000",
+    //     name_txt: " Office ",
+    //   },
+    //   {
+    //     index: "1 5",
+    //     url: "https://tb.alicdn.com/snapshot/index.html",
+    //     icon_class: "icon_logo nf nf-fa-shopping_cart",
+    //     icon_color: "color: #FF8C00",
+    //     name_txt: " Taobao ",
+    //   },
+    //   {
+    //     index: "1 6",
+    //     url: "https://www.xiaohongshu.com/explore",
+    //     icon_class: "icon_logo nf nf-md-book",
+    //     icon_color: "color: #ff0000",
+    //     name_txt: " Red ",
+    //   },
+    //   {
+    //     index: "2 1",
+    //     url: "https://www.bilibili.com/",
+    //     icon_class: "icon_logo nf nf-md-television_classic",
+    //     icon_color: "color: #FF69B4",
+    //     name_txt: " BiliBili ",
+    //   },
+    //   {
+    //     index: "2 2",
+    //     url: "https://mail.qq.com/",
+    //     icon_class: "icon_logo nf nf-oct-mail",
+    //     icon_color: "color: #EEAD0E",
+    //     name_txt: " QQMail ",
+    //   },
+    //   {
+    //     index: "2 3",
+    //     url: "https://mp.weixin.qq.com",
+    //     icon_class: "icon_logo nf nf-md-wechat",
+    //     icon_color: "color: #32CD32",
+    //     name_txt: " WeChat ",
+    //   },
+    //   {
+    //     index: "2 4",
+    //     url: "https://gitee.com",
+    //     icon_class: "icon_logo nf nf-dev-git",
+    //     icon_color: "color: #FF0000",
+    //     name_txt: " Gitee ",
+    //   },
+    //   {
+    //     index: "2 5",
+    //     url: "./card.html",
+    //     icon_class: "icon_logo nf nf-cod-credit_card",
+    //     icon_color: "color:rgb(216, 199, 46)",
+    //     name_txt: " Card ",
+    //   },
+    //   {
+    //     index: "2 6",
+    //     url: "https://boardmix.cn/app/my-space",
+    //     icon_class: "icon_logo nf nf-md-developer_board",
+    //     icon_color: "color: #BA55D3",
+    //     name_txt: " BoardMix ",
+    //   },
+    //   {
+    //     index: "3 1",
+    //     url: "https://www.zhihu.com/",
+    //     icon_class: "icon_logo nf nf-fa-book",
+    //     icon_color: "color: #2b8ef1",
+    //     name_txt: " zhihu ",
+    //   },
+    //   {
+    //     index: "3 2",
+    //     url: "https://app.apifox.com/main/teams/445141?tab=project",
+    //     icon_class: "icon_logo nf nf-md-microsoft_edge",
+    //     icon_color: "color: #e403f893",
+    //     name_txt: " AirFox ",
+    //   },
+    //   {
+    //     index: "3 3",
+    //     url: "https://martian-zodiac-871916.postman.co/home",
+    //     icon_class: "icon_logo nf nf-md-pac_man",
+    //     icon_color: "color: #ff8800",
+    //     name_txt: " Postman ",
+    //   },
+    //   {
+    //     index: "3 4",
+    //     url: "https://console.cloud.tencent.com",
+    //     icon_class: "icon_logo nf nf-fae-cloud",
+    //     icon_color: "color: #1E90FF",
+    //     name_txt: " Tencent ",
+    //   },
+    //   {
+    //     index: "3 5",
+    //     url: "./ssr.html",
+    //     icon_class: "icon_logo nf nf-fa-paper_plane",
+    //     icon_color: "color: #48D1CC",
+    //     name_txt: " SSR ",
+    //   },
+    //   {
+    //     index: "3 6",
+    //     url: "./work.html",
+    //     icon_class: "icon_logo nf nf-fae-medicine",
+    //     icon_color: "color: #00BFFF",
+    //     name_txt: " Work ",
+    //   },
+    // ],
+    link_sites: [],
     search_sites: [
       {
         index: 0,
@@ -161,6 +162,8 @@ var vm = new Vue({
   },
   created: function () {
     this.methodToTrigger()
+    // this.createJson()
+    this.createData('/files/index.json')
   },
   methods: {
     openPage: (url) => {
@@ -197,6 +200,17 @@ var vm = new Vue({
         this.searchExCh_class = "col-xs-5 col-sm-1 firstFlow searchExCh"
         this.searchCh_class = "col-xs-5 col-sm-9 firstFlow searchCh"
       }
+    },
+    createJson: function () {
+      var json_obj = { data: this.link_sites }
+      console.log(JSON.stringify(json_obj))
+    },
+    createData: function (url) {
+      this.$http.get(url).then(function (res) {
+        // console.log(res.body.data)
+        this.link_sites = res.body.data
+      }, function () {
+      })
     },
   },
 })

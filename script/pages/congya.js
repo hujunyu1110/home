@@ -1,57 +1,58 @@
 var vm = new Vue({
   el: '.containerMain',
   data: {
-    link_sites: [
-      {
-        index: '1 1',
-        url: 'http://192.168.1.1',
-        icon_class: 'icon_logo nf nf-md-router_wireless_settings',
-        icon_color: 'color: #FF0000',
-        name_txt: ' Wo-Model ',
-      },
-      {
-        index: '1 2',
-        url: 'http://192.168.31.1',
-        icon_class: 'icon_logo nf nf-md-router_wireless',
-        icon_color: 'color: #EE9A00',
-        name_txt: ' Mi-Rounter ',
-      },
-      {
-        index: '1 3',
-        url: 'https://hujunyu1110.github.io/loveIting/',
-        icon_class: 'icon_logo nf nf-md-duck',
-        icon_color: 'color: #FFA07A',
-        name_txt: ' loveiting ',
-      },
-      {
-        index: '1 4',
-        url: 'https://hujunyu1110.github.io/ToDoList/',
-        icon_class: 'icon_logo nf nf-md-duck',
-        icon_color: 'color: #6B8E23',
-        name_txt: ' Calender ',
-      },
-      {
-        index: '2 1',
-        url: 'https://hujunyu1110.github.io/AnalysisMS/',
-        icon_class: 'icon_logo nf nf-md-duck',
-        icon_color: 'color: #EE3B3B',
-        name_txt: ' AnalysisMS ',
-      },
-      {
-        index: '2 2',
-        url: 'https://QuickConnect.cn/springduck',
-        icon_class: 'icon_logo nf nf-md-nas',
-        icon_color: 'color: #00BFFF',
-        name_txt: ' Synology Quick ',
-      },
-      {
-        index: '2 3',
-        url: 'http://192.168.31.52:5000',
-        icon_class: 'icon_logo nf nf-md-nas',
-        icon_color: 'color: #EE9A00',
-        name_txt: ' Synology Local ',
-      },
-    ],
+    // link_sites: [
+    //   {
+    //     index: '1 1',
+    //     url: 'http://192.168.1.1',
+    //     icon_class: 'icon_logo nf nf-md-router_wireless_settings',
+    //     icon_color: 'color: #FF0000',
+    //     name_txt: ' Wo-Model ',
+    //   },
+    //   {
+    //     index: '1 2',
+    //     url: 'http://192.168.31.1',
+    //     icon_class: 'icon_logo nf nf-md-router_wireless',
+    //     icon_color: 'color: #EE9A00',
+    //     name_txt: ' Mi-Rounter ',
+    //   },
+    //   {
+    //     index: '1 3',
+    //     url: 'https://hujunyu1110.github.io/loveIting/',
+    //     icon_class: 'icon_logo nf nf-md-duck',
+    //     icon_color: 'color: #FFA07A',
+    //     name_txt: ' loveiting ',
+    //   },
+    //   {
+    //     index: '1 4',
+    //     url: 'https://hujunyu1110.github.io/ToDoList/',
+    //     icon_class: 'icon_logo nf nf-md-duck',
+    //     icon_color: 'color: #6B8E23',
+    //     name_txt: ' Calender ',
+    //   },
+    //   {
+    //     index: '2 1',
+    //     url: 'https://hujunyu1110.github.io/AnalysisMS/',
+    //     icon_class: 'icon_logo nf nf-md-duck',
+    //     icon_color: 'color: #EE3B3B',
+    //     name_txt: ' AnalysisMS ',
+    //   },
+    //   {
+    //     index: '2 2',
+    //     url: 'https://QuickConnect.cn/springduck',
+    //     icon_class: 'icon_logo nf nf-md-nas',
+    //     icon_color: 'color: #00BFFF',
+    //     name_txt: ' Synology Quick ',
+    //   },
+    //   {
+    //     index: '2 3',
+    //     url: 'http://192.168.31.52:5000',
+    //     icon_class: 'icon_logo nf nf-md-nas',
+    //     icon_color: 'color: #EE9A00',
+    //     name_txt: ' Synology Local ',
+    //   },
+    // ],
+    link_sites: [],
     search_sites: [
       {
         index: 0,
@@ -84,6 +85,8 @@ var vm = new Vue({
   },
   created: function () {
     this.methodToTrigger()
+    // this.createJson()
+    this.createData('/files/congya.json')
   },
   methods: {
     openPage: (url) => {
@@ -120,6 +123,17 @@ var vm = new Vue({
         this.searchExCh_class = "col-xs-5 col-sm-1 firstFlow searchExCh"
         this.searchCh_class = "col-xs-5 col-sm-9 firstFlow searchCh"
       }
+    },
+    createJson: function () {
+      var json_obj = { data: this.link_sites }
+      console.log(JSON.stringify(json_obj))
+    },
+    createData: function (url) {
+      this.$http.get(url).then(function (res) {
+        // console.log(res.body.data)
+        this.link_sites = res.body.data
+      }, function () {
+      })
     },
   },
 })

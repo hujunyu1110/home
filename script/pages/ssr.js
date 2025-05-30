@@ -1,64 +1,65 @@
 var vm = new Vue({
   el: '.containerMain',
   data: {
-    link_sites: [
-      {
-        index: '1 1',
-        url: 'https://twitter.com/home',
-        icon_class: 'icon_logo nf nf-cod-twitter',
-        icon_color: 'color: #1E90FF;',
-        name_txt: ' Twitter '
-      },
-      {
-        index: '1 2',
-        url: 'https://www.pixiv.net/',
-        icon_class: 'icon_logo nf nf-md-alpha_p_box',
-        icon_color: 'color: #1E90FF;',
-        name_txt: ' Pixiv '
-      },
-      {
-        index: '1 3',
-        url: 'https://www.instagram.com/',
-        icon_class: 'icon_logo nf nf-md-instagram',
-        icon_color: 'background: linear-gradient(to bottom,rgb(204, 50, 191), #FF4040,rgb(255, 196, 0));-webkit-background-clip: text;-webkit-text-fill-color: transparent;',
-        name_txt: ' Instagram '
-      },
-      {
-        index: '1 4',
-        url: 'https://www.pinterest.com/',
-        icon_class: 'icon_logo nf nf-fa-pinterest_p',
-        icon_color: 'color: #FF0000;',
-        name_txt: ' Pinterest '
-      },
-      {
-        index: '2 1',
-        url: 'https://www.google.com.hk/',
-        icon_class: 'icon_logo nf nf-md-google',
-        icon_color: 'background: linear-gradient(to bottom right, rgba(0, 119, 255, 0.85), #FF4040, #FFA500, #00FF00);background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;',
-        name_txt: ' Google '
-      },
-      {
-        index: '2 2',
-        url: 'https://mail.google.com/mail/',
-        icon_class: 'icon_logo nf nf-md-gmail',
-        icon_color: 'background: linear-gradient(to bottom right,rgba(0, 119, 255, 0.85), #FF0000, #FFA500, #00FF00);background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;',
-        name_txt: ' GMail '
-      },
-      {
-        index: '2 3',
-        url: 'https://www.youtube.com',
-        icon_class: 'icon_logo nf nf-fa-youtube',
-        icon_color: 'color: #FF4500;',
-        name_txt: ' Youtube '
-      },
-      {
-        index: '2 4',
-        url: 'https://www.twitch.tv/?lang=zh-CN',
-        icon_class: 'icon_logo nf nf-md-twitch',
-        icon_color: 'color: #96028e;',
-        name_txt: ' Twitch '
-      },
-    ],
+    // link_sites: [
+    //   {
+    //     index: '1 1',
+    //     url: 'https://twitter.com/home',
+    //     icon_class: 'icon_logo nf nf-cod-twitter',
+    //     icon_color: 'color: #1E90FF;',
+    //     name_txt: ' Twitter '
+    //   },
+    //   {
+    //     index: '1 2',
+    //     url: 'https://www.pixiv.net/',
+    //     icon_class: 'icon_logo nf nf-md-alpha_p_box',
+    //     icon_color: 'color: #1E90FF;',
+    //     name_txt: ' Pixiv '
+    //   },
+    //   {
+    //     index: '1 3',
+    //     url: 'https://www.instagram.com/',
+    //     icon_class: 'icon_logo nf nf-md-instagram',
+    //     icon_color: 'background: linear-gradient(to bottom,rgb(204, 50, 191), #FF4040,rgb(255, 196, 0));-webkit-background-clip: text;-webkit-text-fill-color: transparent;',
+    //     name_txt: ' Instagram '
+    //   },
+    //   {
+    //     index: '1 4',
+    //     url: 'https://www.pinterest.com/',
+    //     icon_class: 'icon_logo nf nf-fa-pinterest_p',
+    //     icon_color: 'color: #FF0000;',
+    //     name_txt: ' Pinterest '
+    //   },
+    //   {
+    //     index: '2 1',
+    //     url: 'https://www.google.com.hk/',
+    //     icon_class: 'icon_logo nf nf-md-google',
+    //     icon_color: 'background: linear-gradient(to bottom right, rgba(0, 119, 255, 0.85), #FF4040, #FFA500, #00FF00);background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;',
+    //     name_txt: ' Google '
+    //   },
+    //   {
+    //     index: '2 2',
+    //     url: 'https://mail.google.com/mail/',
+    //     icon_class: 'icon_logo nf nf-md-gmail',
+    //     icon_color: 'background: linear-gradient(to bottom right,rgba(0, 119, 255, 0.85), #FF0000, #FFA500, #00FF00);background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;',
+    //     name_txt: ' GMail '
+    //   },
+    //   {
+    //     index: '2 3',
+    //     url: 'https://www.youtube.com',
+    //     icon_class: 'icon_logo nf nf-fa-youtube',
+    //     icon_color: 'color: #FF4500;',
+    //     name_txt: ' Youtube '
+    //   },
+    //   {
+    //     index: '2 4',
+    //     url: 'https://www.twitch.tv/?lang=zh-CN',
+    //     icon_class: 'icon_logo nf nf-md-twitch',
+    //     icon_color: 'color: #96028e;',
+    //     name_txt: ' Twitch '
+    //   },
+    // ],
+    link_sites: [],
     search_sites: [
       {
         index: 0,
@@ -90,9 +91,9 @@ var vm = new Vue({
     searchCh_class: "col-xs-5 col-sm-5 firstFlow searchCh",
   },
   created: function () {
-    console.log('执行初始化函数')
     this.methodToTrigger()
-    this.createJson()
+    // this.createJson()
+    this.createData('/files/ssr.json')
   },
   methods: {
     openPage: (url) => {
@@ -119,7 +120,6 @@ var vm = new Vue({
       this.search_str = ''
     },
     methodToTrigger: function () {
-      console.log('执行初始化hook')
       var he = document.body.clientHeight;
       var wi = document.body.clientWidth;
       if (he < wi) { }
@@ -132,9 +132,15 @@ var vm = new Vue({
       }
     },
     createJson: function () {
-      console.log('执行创建函数')
-      var json_obj = {data: this.link_sites}
+      var json_obj = { data: this.link_sites }
       console.log(JSON.stringify(json_obj))
+    },
+    createData: function (url) {
+      this.$http.get(url).then(function (res) {
+        // console.log(res.body.data)
+        this.link_sites = res.body.data
+      }, function () {
+      })
     },
   },
 })
