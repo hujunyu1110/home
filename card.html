@@ -15,7 +15,7 @@
 <body>
 
     <div id="app">
-        <div class="col-sm-4 co-md-2 col-xs-4 everyModel" v-for="site in sites">
+        <div v-bind:class="site.model_class" v-for="site in sites" @click="to_top(site.index)">
             <img class="card_img" v-bind:src="site.img" alt="">
             <p class="tittle_name">银行名称：</p><p class="detial_name bank_name" v-bind:style="site.bank_color">{{ site.bank_name }}</p><br />
             <p class="tittle_name">卡名称：</p><p class="detial_name card_name" v-bind:style="site.card_color">{{ site.card_name }}</p><br />
