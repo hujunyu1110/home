@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Card</title>
+    <title>card</title>
     <link rel="icon" href="./img/favicon.ico" />
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/card.css" rel="stylesheet" />
@@ -13,8 +13,8 @@
 
 <body>
 
-    <div id="app">
-        <div v-bind:class="site.model_class" v-for="site in sites" @click="to_top(site.index)">
+    <div id="app" class="containerMain">
+        <div v-bind:class="site.model_class" v-for="site in link_sites" @click="to_top(site.index)">
             <img class="card_img" v-bind:src="site.img" alt="">
             <p class="tittle_name">银行名称：</p><p class="detial_name bank_name" v-bind:style="site.bank_color">{{ site.bank_name }}</p><br />
             <p class="tittle_name">卡名称：</p><p class="detial_name card_name" v-bind:style="site.card_color">{{ site.card_name }}</p><br />
@@ -29,6 +29,6 @@
         </div>
     </div>
 
-    <script src="./script/pages/card.js"></script>
+    <script src="./script/main.js"></script>
 
 </body>
