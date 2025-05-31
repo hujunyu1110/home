@@ -1,13 +1,13 @@
 @font-face {
     font-family: "MapleMono";
-    src: url("../fonts/MapleMono-CN-Regular.woff") format("truetype");
+    src: url("../fonts/MapleMono-CN-Regular.woff2") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MapleMonoItalic";
-    src: url("../fonts/MapleMono-CN-Italic.woff") format("truetype");
+    src: url("../fonts/MapleMono-CN-Italic.woff2") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
