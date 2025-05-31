@@ -55,15 +55,12 @@ var vm = new Vue({
         },
         witchSearch: function () {
             flag = 0
-            console.log('搜索')
-            for (var i; i < this.search_sites.length; i++) {
-                console.log(this.search_sites[i].search_calss)
-                if (this.search_sites[i].search_calss.indexOf("engon") != -1) flag = index
+            for (var i = 0; i < this.search_sites.length; i++) {
+                if (this.search_sites[i].search_calss.indexOf("engon") != -1) flag = i
             }
-            console.log(flag)
-            if (flag = 0) { window.open("https://www.baidu.com/s?ie=UTF-8&wd=" + this.search_str, "_blank"); }
-            if (flag = 1) { window.open("https://www.bing.com/search?q=" + this.search_str, "_blank"); }
-            if (flag = 2) { window.open("https://www.google.com.hk/search?q=" + this.search_str, "_blank"); }
+            if (flag == 0) { window.open("https://www.baidu.com/s?ie=UTF-8&wd=" + this.search_str, "_blank"); }
+            if (flag == 1) { window.open("https://www.bing.com/search?q=" + this.search_str, "_blank"); }
+            if (flag == 2) { window.open("https://www.google.com.hk/search?q=" + this.search_str, "_blank"); }
             this.search_str = ''
         },
         methodToTrigger: function () {
