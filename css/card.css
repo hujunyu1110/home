@@ -28,7 +28,7 @@ body {
 .everyModel {
     /* background-color: rgb(151, 151, 151); */
     border-color: ebeff5;
-    border-radius: 5px;
+    border-radius: 10px;
     border-style: solid;
     border-width: 2px;
     margin: 0.7%;
@@ -37,14 +37,53 @@ body {
     padding: 0px;
     padding-bottom: 2px;
     background-color: #ebeff5;
-    box-shadow: 1px 1px 8px #bfc3c7;
+    /*box-shadow: 1px 1px 8px #bfc3c7;*/
     transition: transform 0.5s ease;
 }
 
 .everyModel:hover {
-    box-shadow: 3px 3px 8px #afb2b6;
+    /*box-shadow: 3px 3px 8px #afb2b6;*/
     transition: transform 0.3s ease;
 }
+
+.everyModel_BOB {box-shadow: 1px 1px 8px #cb030d3d;}
+.everyModel_BOC {box-shadow: 1px 1px 8px #A71E323d;}
+.everyModel_CCB {box-shadow: 1px 1px 8px #0066B33d;}
+.everyModel_CEB {box-shadow: 1px 1px 8px #6A16853d;}
+.everyModel_CGB {box-shadow: 1px 1px 8px #E600213d;}
+.everyModel_CIB {box-shadow: 1px 1px 8px #003F973d;}
+.everyModel_CMB {box-shadow: 1px 1px 8px #A300303d;}
+.everyModel_ICBC {box-shadow: 1px 1px 8px #C7000A3d;}
+.everyModel_SPDB {box-shadow: 1px 1px 8px #0000733d;}
+.everyModel_BOB:hover {box-shadow: 3px 3px 8px #cb030d73;}
+.everyModel_BOC:hover {box-shadow: 3px 3px 8px #A71E3273;}
+.everyModel_CCB:hover {box-shadow: 3px 3px 8px #0066B373;}
+.everyModel_CEB:hover {box-shadow: 3px 3px 8px #6A168573;}
+.everyModel_CGB:hover {box-shadow: 3px 3px 8px #E6002173;}
+.everyModel_CIB:hover {box-shadow: 3px 3px 8px #003F9773;}
+.everyModel_CMB:hover {box-shadow: 3px 3px 8px #A3003073;}
+.everyModel_ICBC:hover {box-shadow: 3px 3px 8px #C7000A73;}
+.everyModel_SPDB:hover {box-shadow: 3px 3px 8px #00007373;}
+
+/* 
+工商银行      #C7000A    https://sc.tanzhix.com/yhtb/gs.png
+交通银行      #00377A    https://sc.tanzhix.com/yhtb/jt.png
+招商银行      #A30030    https://sc.tanzhix.com/yhtb/zs.png
+民生银行      #0072BC    https://sc.tanzhix.com/yhtb/ms.png
+中信银行      #D70010    https://sc.tanzhix.com/yhtb/zx.png
+浦发银行      #000073    https://sc.tanzhix.com/yhtb/pf.png
+兴业银行      #003F97    https://sc.tanzhix.com/yhtb/xy.png
+光大银行      #6A1685    https://sc.tanzhix.com/yhtb/gd.png
+广发银行      #E60021    https://sc.tanzhix.com/yhtb/gf.png
+平安银行      #F15A25    https://sc.tanzhix.com/yhtb/pa.png
+北京银行      #CB030D    https://sc.tanzhix.com/yhtb/bj.png
+华夏银行      #DB0D17    https://sc.tanzhix.com/yhtb/hx.png
+农业银行      #319C8B    https://sc.tanzhix.com/yhtb/ny.png
+建设银行      #0066B3    https://sc.tanzhix.com/yhtb/js.png
+邮政银行      #02724A    https://sc.tanzhix.com/yhtb/yz.png
+中国银行      #A71E32    https://sc.tanzhix.com/yhtb/zg.png
+宁波银行      #EF8F38    https://sc.tanzhix.com/yhtb/nb.png 
+*/
 
 
 #app {
@@ -52,17 +91,21 @@ body {
 }
 
 .card_img {
-    margin: 1%;
+    margin-top: 0.9%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
     /* height: 116px; */
     width: 98%;
     object-fit: cover;
     aspect-ratio: 1.59;
-    border-radius: 7px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #8f8f8f7e;
 }
 
 .tittle_name {
     font-family: DaddyTimeMonoNerdFontMono;
-    padding-left: 3px;
+    padding-left: 4px;
     display: inline;
     font-weight: bold;
     font-size: 15px;
@@ -72,7 +115,7 @@ body {
     display: inline;
     text-align: right;
     position: absolute;
-    right: 2px;
+    right: 3px;
     font-size: 12px;
     padding-bottom: 0px;
     padding-right: 2px;
@@ -138,12 +181,12 @@ body {
         padding-bottom: 2px;
         background-color: #ebeff5;
         box-shadow: 1px 1px 8px #bfc3c7;
-        transition: transform 0.5s ease;
+        /*transition: transform 0.5s ease;*/
     }
 
     .tittle_name {
         font-family: DaddyTimeMonoNerdFontMono;
-        padding-left: 3px;
+        padding-left: 4px;
         display: inline;
         font-weight: bold;
         font-size: 24px;
@@ -153,7 +196,7 @@ body {
         display: inline;
         text-align: right;
         position: absolute;
-        right: 2px;
+        right: 3px;
         font-size: 20px;
         padding-bottom: 0px;
         padding-right: 2px;
@@ -170,25 +213,3 @@ body {
     }
 
 }
-
-
-
-/* 
-工商银行      #C7000A    https://sc.tanzhix.com/yhtb/gs.png
-交通银行      #00377A    https://sc.tanzhix.com/yhtb/jt.png
-招商银行      #A30030    https://sc.tanzhix.com/yhtb/zs.png
-民生银行      #0072BC    https://sc.tanzhix.com/yhtb/ms.png
-中信银行      #D70010    https://sc.tanzhix.com/yhtb/zx.png
-浦发银行      #000073    https://sc.tanzhix.com/yhtb/pf.png
-兴业银行      #003F97    https://sc.tanzhix.com/yhtb/xy.png
-光大银行      #6A1685    https://sc.tanzhix.com/yhtb/gd.png
-广发银行      #E60021    https://sc.tanzhix.com/yhtb/gf.png
-平安银行      #F15A25    https://sc.tanzhix.com/yhtb/pa.png
-北京银行      #CB030D    https://sc.tanzhix.com/yhtb/bj.png
-华夏银行      #DB0D17    https://sc.tanzhix.com/yhtb/hx.png
-农业银行      #319C8B    https://sc.tanzhix.com/yhtb/ny.png
-建设银行      #0066B3    https://sc.tanzhix.com/yhtb/js.png
-邮政银行      #02724A    https://sc.tanzhix.com/yhtb/yz.png
-中国银行      #A71E32    https://sc.tanzhix.com/yhtb/zg.png
-宁波银行      #EF8F38    https://sc.tanzhix.com/yhtb/nb.png 
-*/

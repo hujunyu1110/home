@@ -3,7 +3,7 @@
         {
             "index": 0,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CCB",
             "img": "img/card/CCB_BJUT.jpg",
             "bank_name": "建设银行",
             "card_name": "工大蓝卡",
@@ -21,7 +21,7 @@
         {
             "index": 1,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CCB",
             "img": "img/card/CCB_BJUT_GOLD.jpg",
             "bank_name": "建设银行",
             "card_name": "工大金卡",
@@ -39,7 +39,7 @@
         {
             "index": 2,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CCB",
             "img": "img/card/CCB_CY.jpg",
             "bank_name": "建设银行",
             "card_name": "冲鸭卡",
@@ -57,7 +57,7 @@
         {
             "index": 3,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CCB",
             "img": "img/card/CCB_MUSE.jpg",
             "bank_name": "建设银行",
             "card_name": "Muse卡",
@@ -75,7 +75,7 @@
         {
             "index": 4,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_BOC",
             "img": "img/card/BOC_CQ.jpg",
             "bank_name": "中国银行",
             "card_name": "长情卡",
@@ -93,7 +93,7 @@
         {
             "index": 5,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_BOC",
             "img": "img/card/BOC_MC.jpg",
             "bank_name": "中国银行",
             "card_name": "招财猫白金卡",
@@ -111,7 +111,7 @@
         {
             "index": 6,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CCB",
             "img": "img/card/CGB_JL.jpg",
             "bank_name": "广发银行",
             "card_name": "锦鲤卡",
@@ -129,7 +129,7 @@
         {
             "index": 7,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CCB",
             "img": "img/card/CGB_ZSB.jpg",
             "bank_name": "广发银行",
             "card_name": "臻尚白金卡",
@@ -147,7 +147,7 @@
         {
             "index": 8,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_BOB",
             "img": "img/card/BOB_CXK.jpg",
             "bank_name": "北京银行",
             "card_name": "储蓄卡",
@@ -165,7 +165,7 @@
         {
             "index": 9,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_BOB",
             "img": "img/card/BOB_GH.jpg",
             "bank_name": "北京银行",
             "card_name": "工会卡",
@@ -183,7 +183,7 @@
         {
             "index": 10,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_BOB",
             "img": "img/card/BOB_GJJ.png",
             "bank_name": "北京银行",
             "card_name": "公积金卡",
@@ -201,7 +201,7 @@
         {
             "index": 11,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CIB",
             "img": "img/card/CIB_HYRS.jpg",
             "bank_name": "兴业银行",
             "card_name": "寰宇人生卡",
@@ -219,7 +219,7 @@
         {
             "index": 12,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CIB",
             "img": "img/card/CIB_YK.jpg",
             "bank_name": "兴业银行",
             "card_name": "行卡",
@@ -237,7 +237,7 @@
         {
             "index": 13,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_SPDB",
             "img": "img/card/SPDB_RVS.jpg",
             "bank_name": "浦发银行",
             "card_name": "红沙渲卡",
@@ -255,7 +255,7 @@
         {
             "index": 14,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_SPDB",
             "img": "img/card/SPDB_NV.jpg",
             "bank_name": "浦发银行",
             "card_name": "新贵卡",
@@ -273,7 +273,7 @@
         {
             "index": 15,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CMB",
             "img": "img/card/CMB_AIO.jpg",
             "bank_name": "招商银行",
             "card_name": "一卡通",
@@ -291,7 +291,7 @@
         {
             "index": 16,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CMB",
             "img": "img/card/CMB_HJK.jpg",
             "bank_name": "招商银行",
             "card_name": "花嫁卡",
@@ -309,7 +309,7 @@
         {
             "index": 17,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CMB",
             "img": "img/card/CMB_MP.jpg",
             "bank_name": "招商银行",
             "card_name": "万事达白金卡",
@@ -327,7 +327,7 @@
         {
             "index": 18,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CMB",
             "img": "img/card/CMB_COLLECTION.jpg",
             "bank_name": "招商银行",
             "card_name": "星座卡",
@@ -345,7 +345,7 @@
         {
             "index": 19,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CMB",
             "img": "img/card/CMB_AD.jpg",
             "bank_name": "招商银行",
             "card_name": "全币种",
@@ -363,7 +363,7 @@
         {
             "index": 20,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_ICBC",
             "img": "img/card/ICBC_DEER.jpg",
             "bank_name": "工商银行",
             "card_name": "鹿卡",
@@ -381,7 +381,7 @@
         {
             "index": 21,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_ICBC",
             "img": "img/card/ICBC_HBC.jpg",
             "bank_name": "工商银行",
             "card_name": "黑白菜",
@@ -399,7 +399,7 @@
         {
             "index": 22,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CEB",
             "img": "img/card/CEB_CXK.jpg",
             "bank_name": "光大银行",
             "card_name": "储蓄卡",

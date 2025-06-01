@@ -80,15 +80,16 @@ var vm = new Vue({
                 for (var i = 0; i < this.link_sites.length; i++) {
                     if (i == index) {
                         this.link_sites[i].is_top = 1
-                        this.link_sites[i].model_class = 'everyModel to_center'
+                        this.link_sites[i].model_class = this.link_sites[i].model_class.replace('col-sm-4 co-md-2 col-xs-4 ', '') + ' to_center'
                     } else {
                         this.link_sites[i].is_top = 0
-                        this.link_sites[i].model_class = 'col-sm-4 co-md-2 col-xs-4 everyModel'
+                        this.link_sites[i].model_class = this.link_sites[i].model_class.replace(' to_center', '')
                     }
                 }
             }
             else {
-                this.link_sites[index].model_class = 'col-sm-4 co-md-2 col-xs-4 everyModel'
+                this.link_sites[index].model_class = 'col-sm-4 co-md-2 col-xs-4 ' + this.link_sites[index].model_class.replace(' to_center', '')
+                //this.link_sites[index].model_class = 'col-sm-4 co-md-2 col-xs-4 everyModel'
                 this.link_sites[index].is_top = 0
             }
         },
