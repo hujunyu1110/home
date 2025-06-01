@@ -22,6 +22,24 @@
             "index": 1,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
+            "img": "img/card/CCB_BJUT_GOLD.jpg",
+            "bank_name": "建设银行",
+            "card_name": "工大金卡",
+            "loan": "0",
+            "bill_date": " - ",
+            "card_union": "Mastercard",
+            "card_level": "Gold",
+            "card_tax": " - ",
+            "tax_free": "",
+            "tax_status": "",
+            "ext": "已注销，纪念",
+            "bank_color": "color: #0066B3",
+            "card_color": "color: #885e22"
+        },
+        {
+            "index": 2,
+            "is_top": 0,
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CCB_CY.jpg",
             "bank_name": "建设银行",
             "card_name": "冲鸭卡",
@@ -37,7 +55,7 @@
             "card_color": "color: #b3aeaa"
         },
         {
-            "index": 2,
+            "index": 3,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CCB_MUSE.jpg",
@@ -55,7 +73,7 @@
             "card_color": "color: #5e5a4f"
         },
         {
-            "index": 3,
+            "index": 4,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/BOC_CQ.jpg",
@@ -73,7 +91,7 @@
             "card_color": "color: #7f221b"
         },
         {
-            "index": 4,
+            "index": 5,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/BOC_MC.jpg",
@@ -91,7 +109,7 @@
             "card_color": "color: #885e22"
         },
         {
-            "index": 5,
+            "index": 6,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CGB_JL.jpg",
@@ -109,7 +127,7 @@
             "card_color": "color: #912a17"
         },
         {
-            "index": 6,
+            "index": 7,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CGB_ZSB.jpg",
@@ -127,7 +145,7 @@
             "card_color": "color: #7a7974"
         },
         {
-            "index": 7,
+            "index": 8,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/BOB_CXK.jpg",
@@ -145,7 +163,7 @@
             "card_color": "color: #b8483d"
         },
         {
-            "index": 8,
+            "index": 9,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/BOB_GH.jpg",
@@ -163,7 +181,7 @@
             "card_color": "color: #ac252b"
         },
         {
-            "index": 9,
+            "index": 10,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/BOB_GJJ.png",
@@ -181,7 +199,7 @@
             "card_color": "color: #c95d41"
         },
         {
-            "index": 10,
+            "index": 11,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CIB_HYRS.jpg",
@@ -199,7 +217,7 @@
             "card_color": "color: #878986"
         },
         {
-            "index": 11,
+            "index": 12,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CIB_YK.jpg",
@@ -217,7 +235,7 @@
             "card_color": "color: #52534e"
         },
         {
-            "index": 12,
+            "index": 13,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/SPDB_RVS.jpg",
@@ -235,7 +253,7 @@
             "card_color": "color: #ab7967"
         },
         {
-            "index": 13,
+            "index": 14,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/SPDB_NV.jpg",
@@ -253,7 +271,7 @@
             "card_color": "color: #9f9d9a"
         },
         {
-            "index": 14,
+            "index": 15,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CMB_AIO.jpg",
@@ -271,7 +289,7 @@
             "card_color": "color: #652a5a"
         },
         {
-            "index": 15,
+            "index": 16,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CMB_HJK.jpg",
@@ -289,7 +307,7 @@
             "card_color": "color: #87535a"
         },
         {
-            "index": 16,
+            "index": 17,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CMB_MP.jpg",
@@ -307,7 +325,7 @@
             "card_color": "color: #3b4963"
         },
         {
-            "index": 17,
+            "index": 18,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CMB_COLLECTION.jpg",
@@ -325,7 +343,7 @@
             "card_color": "color: #373646"
         },
         {
-            "index": 18,
+            "index": 19,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CMB_AD.jpg",
@@ -343,7 +361,7 @@
             "card_color": "color: #262523"
         },
         {
-            "index": 19,
+            "index": 20,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/ICBC_DEER.jpg",
@@ -361,7 +379,7 @@
             "card_color": "color: #214428"
         },
         {
-            "index": 20,
+            "index": 21,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/ICBC_HBC.jpg",
@@ -379,7 +397,7 @@
             "card_color": "color:#282826"
         },
         {
-            "index": 21,
+            "index": 22,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel",
             "img": "img/card/CEB_CXK.jpg",
