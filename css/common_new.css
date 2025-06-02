@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "MapleMono";
     src: url("../fonts/MapleMono-CN-Regular.woff2") format("truetype");
     font-weight: normal;
@@ -10,11 +10,18 @@
     src: url("../fonts/MapleMono-CN-Italic.woff2") format("truetype");
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: "DaddyTimeMonoNerdFontMono";
     src: url("../fonts/DaddyTimeMonoNFM.woff2") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GreatVibes";
+    src: url("../fonts/GreatVibes-Regular-2.otf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -24,7 +31,7 @@ body {
     /*background-image: url("../img/alist.svg");*/
     /* font-family: MapleMonoItalic, DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial,
         PMingLiu, MingLiu; */
-    font-family: MapleMono, DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial,
+    font-family: DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial,
         PMingLiu, MingLiu;
     padding: 0px;
     margin: 0px;
@@ -64,7 +71,7 @@ body {
 .firstFlowcc:hover {
     text-shadow: 1px 1px 1px #c5c5c5;
     /* transform: scale(1.1); */
-    font-family: MapleMonoItalic;
+    font-family: GreatVibes;
 }
 
 div .firstFlowFirstColm {
@@ -85,7 +92,7 @@ div .firstFlowFirstColm {
 div .all_link .firstFlow:hover {
     text-shadow: 1px 1px 1px #c5c5c5;
     /* transform: scale(1.1); */
-    font-family: MapleMonoItalic;
+    font-family: GreatVibes;
 }
 
 div .firstFlowFirstColmo {
@@ -245,7 +252,7 @@ div .firstFlowFirstColmo {
 
 #Oinput:hover {
     box-shadow: 0 0 5px #c7c7c7;
-    font-family: MapleMonoItalic;
+    font-family: GreatVibes;
 }
 
 /* TODO:横屏 */

@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "MapleMono";
     src: url("../fonts/MapleMono-CN-Regular.woff2") format("truetype");
     font-weight: normal;
@@ -10,11 +10,18 @@
     src: url("../fonts/MapleMono-CN-Italic.woff2") format("truetype");
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: "DaddyTimeMonoNerdFontMono";
     src: url("../fonts/DaddyTimeMonoNFM.woff2") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GreatVibes";
+    src: url("../fonts/GreatVibes-Regular-2.otf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -46,24 +53,77 @@ body {
     transition: transform 0.3s ease;
 }
 
-.everyModel_BOB {box-shadow: 1px 1px 8px #cb030d3d;}
-.everyModel_BOC {box-shadow: 1px 1px 8px #A71E323d;}
-.everyModel_CCB {box-shadow: 1px 1px 8px #0066B33d;}
-.everyModel_CEB {box-shadow: 1px 1px 8px #6A16853d;}
-.everyModel_CGB {box-shadow: 1px 1px 8px #E600213d;}
-.everyModel_CIB {box-shadow: 1px 1px 8px #003F973d;}
-.everyModel_CMB {box-shadow: 1px 1px 8px #A300303d;}
-.everyModel_ICBC {box-shadow: 1px 1px 8px #C7000A3d;}
-.everyModel_SPDB {box-shadow: 1px 1px 8px #0000733d;}
-.everyModel_BOB:hover {box-shadow: 3px 3px 8px #cb030d73;}
-.everyModel_BOC:hover {box-shadow: 3px 3px 8px #A71E3273;}
-.everyModel_CCB:hover {box-shadow: 3px 3px 8px #0066B373;}
-.everyModel_CEB:hover {box-shadow: 3px 3px 8px #6A168573;}
-.everyModel_CGB:hover {box-shadow: 3px 3px 8px #E6002173;}
-.everyModel_CIB:hover {box-shadow: 3px 3px 8px #003F9773;}
-.everyModel_CMB:hover {box-shadow: 3px 3px 8px #A3003073;}
-.everyModel_ICBC:hover {box-shadow: 3px 3px 8px #C7000A73;}
-.everyModel_SPDB:hover {box-shadow: 3px 3px 8px #00007373;}
+.everyModel_BOB {
+    box-shadow: 1px 1px 8px #cb030d3d;
+}
+
+.everyModel_BOC {
+    box-shadow: 1px 1px 8px #A71E323d;
+}
+
+.everyModel_CCB {
+    box-shadow: 1px 1px 8px #0066B33d;
+}
+
+.everyModel_CEB {
+    box-shadow: 1px 1px 8px #6A16853d;
+}
+
+.everyModel_CGB {
+    box-shadow: 1px 1px 8px #E600213d;
+}
+
+.everyModel_CIB {
+    box-shadow: 1px 1px 8px #003F973d;
+}
+
+.everyModel_CMB {
+    box-shadow: 1px 1px 8px #A300303d;
+}
+
+.everyModel_ICBC {
+    box-shadow: 1px 1px 8px #C7000A3d;
+}
+
+.everyModel_SPDB {
+    box-shadow: 1px 1px 8px #0000733d;
+}
+
+.everyModel_BOB:hover {
+    box-shadow: 3px 3px 8px #cb030d73;
+}
+
+.everyModel_BOC:hover {
+    box-shadow: 3px 3px 8px #A71E3273;
+}
+
+.everyModel_CCB:hover {
+    box-shadow: 3px 3px 8px #0066B373;
+}
+
+.everyModel_CEB:hover {
+    box-shadow: 3px 3px 8px #6A168573;
+}
+
+.everyModel_CGB:hover {
+    box-shadow: 3px 3px 8px #E6002173;
+}
+
+.everyModel_CIB:hover {
+    box-shadow: 3px 3px 8px #003F9773;
+}
+
+.everyModel_CMB:hover {
+    box-shadow: 3px 3px 8px #A3003073;
+}
+
+.everyModel_ICBC:hover {
+    box-shadow: 3px 3px 8px #C7000A73;
+}
+
+.everyModel_SPDB:hover {
+    box-shadow: 3px 3px 8px #00007373;
+}
 
 /* 
 工商银行      #C7000A    https://sc.tanzhix.com/yhtb/gs.png
@@ -134,16 +194,19 @@ body {
 .loan,
 .card_tax,
 .card_name {
-    font-family: MapleMono;
+    font-family: DaddyTimeMonoNerdFontMono;
 }
 
 .card_name {
     font-weight: bold;
 }
 
-.card_union,
+.card_union {
+    font-family: DaddyTimeMonoNerdFontMono;
+}
+
 .card_level {
-    font-family: MapleMonoItalic;
+    font-family: GreatVibes;
 }
 
 .tax_free,
@@ -182,6 +245,78 @@ body {
         background-color: #ebeff5;
         box-shadow: 1px 1px 8px #bfc3c7;
         /*transition: transform 0.5s ease;*/
+    }
+
+    .everyModel_BOB {
+        box-shadow: 1px 1px 8px #cb030d3d;
+    }
+
+    .everyModel_BOC {
+        box-shadow: 1px 1px 8px #A71E323d;
+    }
+
+    .everyModel_CCB {
+        box-shadow: 1px 1px 8px #0066B33d;
+    }
+
+    .everyModel_CEB {
+        box-shadow: 1px 1px 8px #6A16853d;
+    }
+
+    .everyModel_CGB {
+        box-shadow: 1px 1px 8px #E600213d;
+    }
+
+    .everyModel_CIB {
+        box-shadow: 1px 1px 8px #003F973d;
+    }
+
+    .everyModel_CMB {
+        box-shadow: 1px 1px 8px #A300303d;
+    }
+
+    .everyModel_ICBC {
+        box-shadow: 1px 1px 8px #C7000A3d;
+    }
+
+    .everyModel_SPDB {
+        box-shadow: 1px 1px 8px #0000733d;
+    }
+
+    .everyModel_BOB:hover {
+        box-shadow: 3px 3px 8px #cb030d73;
+    }
+
+    .everyModel_BOC:hover {
+        box-shadow: 3px 3px 8px #A71E3273;
+    }
+
+    .everyModel_CCB:hover {
+        box-shadow: 3px 3px 8px #0066B373;
+    }
+
+    .everyModel_CEB:hover {
+        box-shadow: 3px 3px 8px #6A168573;
+    }
+
+    .everyModel_CGB:hover {
+        box-shadow: 3px 3px 8px #E6002173;
+    }
+
+    .everyModel_CIB:hover {
+        box-shadow: 3px 3px 8px #003F9773;
+    }
+
+    .everyModel_CMB:hover {
+        box-shadow: 3px 3px 8px #A3003073;
+    }
+
+    .everyModel_ICBC:hover {
+        box-shadow: 3px 3px 8px #C7000A73;
+    }
+
+    .everyModel_SPDB:hover {
+        box-shadow: 3px 3px 8px #00007373;
     }
 
     .tittle_name {
