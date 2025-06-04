@@ -26,10 +26,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "HFIntimate";
+    src: url("../fonts/HFIntimate-2.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     width: 98%;
     padding-left: 3%;
-    background-color: #eef1f7;
+    background-color: #cccccc; /* TODO:背景色 */
 }
 
 .everyModel {
@@ -206,7 +213,7 @@ body {
 }
 
 .card_level {
-    font-family: GreatVibes;
+    font-family: HFIntimate;
 }
 
 .tax_free,

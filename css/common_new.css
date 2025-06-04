@@ -26,6 +26,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "HFIntimate";
+    src: url("../fonts/HFIntimate-2.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "A-Nice-Day-2";
+    src: url("../fonts/A-Nice-Day-2.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: #e9e9e9;
     /*background-image: url("../img/alist.svg");*/
@@ -71,7 +85,7 @@ body {
 .firstFlowcc:hover {
     text-shadow: 1px 1px 1px #c5c5c5;
     /* transform: scale(1.1); */
-    font-family: GreatVibes;
+    /*font-family: A-Nice-Day-2;  TODO:主页字体变化 */
 }
 
 div .firstFlowFirstColm {
@@ -92,7 +106,7 @@ div .firstFlowFirstColm {
 div .all_link .firstFlow:hover {
     text-shadow: 1px 1px 1px #c5c5c5;
     /* transform: scale(1.1); */
-    font-family: GreatVibes;
+    /*font-family: A-Nice-Day-2;  TODO:主页字体变化 */
 }
 
 div .firstFlowFirstColmo {
@@ -252,7 +266,7 @@ div .firstFlowFirstColmo {
 
 #Oinput:hover {
     box-shadow: 0 0 5px #c7c7c7;
-    font-family: GreatVibes;
+    /*font-family: A-Nice-Day-2;  TODO:主页字体变化 */
 }
 
 /* TODO:横屏 */

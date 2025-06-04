@@ -34,16 +34,16 @@ var vm = new Vue({
     },
     created: function () {
         var tittle_str = document.title
-        // console.log(tittle_str)
         this.methodToTrigger()
-        // this.createJson()
         this.createData('/files/' + tittle_str + '.json')
     },
     methods: {
+        // 打开页面
         openPage: (url) => {
             window.open(url, "_blank");
             //window.open(url, "_self");
         },
+        // 搜索判断
         selectSearch: function (index) {
             for (var i = 0; i < this.search_sites.length; i++) {
                 if (i == index) {
@@ -63,6 +63,25 @@ var vm = new Vue({
             if (flag == 2) { window.open("https://www.google.com.hk/search?q=" + this.search_str, "_blank"); }
             this.search_str = ''
         },
+        // Card页面判断
+        to_top: function (index) {
+            if (this.link_sites[index].is_top == 0) {
+                var count = 0;
+                for (var i = 0; i < this.link_sites.length; i++) {
+                    count = count + this.link_sites[i].is_top
+                }
+                if (count > 0) { return }
+                else {
+                    this.link_sites[index].is_top = 1
+                    this.link_sites[index].model_class = this.link_sites[index].model_class.replace('col-sm-4 co-md-2 col-xs-4 ', '') + ' to_center'
+                }
+            }
+            else {
+                this.link_sites[index].model_class = 'col-sm-4 co-md-2 col-xs-4 ' + this.link_sites[index].model_class.replace(' to_center', '')
+                this.link_sites[index].is_top = 0
+            }
+        },
+        /* 初始化函数 */
         methodToTrigger: function () {
             var he = document.body.clientHeight;
             var wi = document.body.clientWidth;
@@ -75,38 +94,29 @@ var vm = new Vue({
                 this.searchCh_class = "col-xs-5 col-sm-9 firstFlow searchCh"
             }
         },
-        to_top: function (index) {
-            if (this.link_sites[index].is_top == 0) {
-                for (var i = 0; i < this.link_sites.length; i++) {
-                    if (i == index) {
-                        this.link_sites[i].is_top = 1
-                        this.link_sites[i].model_class = this.link_sites[i].model_class.replace('col-sm-4 co-md-2 col-xs-4 ', '') + ' to_center'
-                    } else {
-                        this.link_sites[i].is_top = 0
-                        this.link_sites[i].model_class = this.link_sites[i].model_class.replace(' to_center', '')
-                    }
-                }
-            }
-            else {
-                this.link_sites[index].model_class = 'col-sm-4 co-md-2 col-xs-4 ' + this.link_sites[index].model_class.replace(' to_center', '')
-                //this.link_sites[index].model_class = 'col-sm-4 co-md-2 col-xs-4 everyModel'
-                this.link_sites[index].is_top = 0
-            }
-        },
         createJson: function () {
             var json_obj = { data: this.link_sites }
             console.log(JSON.stringify(json_obj))
         },
+        // 初始化数组及序号
         createData: function (url) {
             this.$http.get(url).then(function (res) {
-                // console.log(res.body.data)
+                var data = res.body.data
+                var data = this.createIndex(data)
                 this.link_sites = res.body.data
             }, function () {
             })
         },
+        createIndex: function (list_data) {
+            for (var i = 0; i < list_data.length; i++) {
+                list_data[i].index = i
+            }
+            return list_data
+        }
     },
 })
 
+/* 天气模块 */
 var weathertoday_v = new Vue({
     el: '#weathertoday',
     data: {

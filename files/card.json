@@ -19,7 +19,7 @@
             "card_color": "color: #73828a"
         },
         {
-            "index": 1,
+            "index": 0,
             "is_top": 0,
             "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CCB",
             "img": "img/card/CCB_BJUT_GOLD.jpg",
