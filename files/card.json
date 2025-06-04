@@ -129,7 +129,7 @@
         {
             "index": 6,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CCB",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CGB",
             "img": "img/card/CGB_JL.jpg",
             "bank_name": "广发银行",
             "card_name": "锦鲤卡",
@@ -147,7 +147,7 @@
         {
             "index": 7,
             "is_top": 0,
-            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CCB",
+            "model_class": "col-sm-4 co-md-2 col-xs-4 everyModel everyModel_CGB",
             "img": "img/card/CGB_ZSB.jpg",
             "bank_name": "广发银行",
             "card_name": "臻尚白金卡",
