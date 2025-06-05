@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html height:100% width:100%>
+
+<head>
+    <meta charset="utf-8" />
+    <title>card</title>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/carda.css" rel="stylesheet" />
+    <script src="https://cdn.staticfile.net/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+</head>
+
+<body>
+
+    <div id="app" class="containerMain">
+
+        <div v-bind:class="site.model_class" v-for="site in link_sites" @click="click_center(site.index)">
+            <img class="card_img" v-bind:src="site.img" alt="">
+        </div>
+        
+    </div>
+
+    <script src="./script/carda.js"></script>
+
+</body>
