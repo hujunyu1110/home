@@ -37,7 +37,6 @@ body {
     width: 98%;
     padding-left: 3%;
     background-color: #cccccc;
-    /* TODO:背景色 */
 }
 
 /* TODO：每个模块 */
@@ -159,7 +158,7 @@ body {
 
 
 #app {
-    margin-top: 20px;
+    margin-top: 3%;
 }
 
 .card_img {
@@ -239,11 +238,33 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(2);
-    z-index: 9999;
+    z-index: 10;
+}
+
+#top_container {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 2.3%;
+    box-shadow: 3px 3px 8px #00007373;
+    transform: translate(-3%, 0);
+    z-index: 12;
+    background-color: rgba(206, 206, 206, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding-left: 3%;
+    text-justify: auto;
+}
+
+#everyBank {
+    margin-left: 2%;
+    font-weight: bold;
+    font-family: DaddyTimeMonoNerdFontMono;
 }
 
 /* TODO:竖屏 */
 @media (orientation: portrait) {
+
     /* TODO:每个模块 */
     .everyModel {
         background-color: rgba(255, 255, 255, 0.5);
@@ -364,4 +385,41 @@ body {
         font-size: 22px;
     }
 
+}
+
+
+.BOB {
+    color: #cb030d;
+}
+
+.BOC {
+    color: #A71E32;
+}
+
+.CCB {
+    color: #0066B3;
+}
+
+.CEB {
+    color: #6A1685;
+}
+
+.CGB {
+    color: #E60021;
+}
+
+.CIB {
+    color: #003F97;
+}
+
+.CMB {
+    color: #A30030;
+}
+
+.ICBC {
+    color: #C7000A;
+}
+
+.SPDB {
+    color: #000073;
 }

@@ -14,21 +14,37 @@
 <body>
 
     <div id="app" class="containerMain">
+        <div id="top_container">
+            <span v-for="site in link_banks" id="everyBank" v-bind:class="site.model_class">
+                <span>{{site.bank_name}} </span>
+                <span> {{ site.bill_date }}日</span>
+            </span>
+        </div>
         <div v-bind:class="site.model_class" v-for="site in link_sites" @click="to_top(site.index)">
             <img class="card_img" v-bind:src="site.img" alt="">
-            <p class="tittle_name">银行名称：</p><p class="detial_name bank_name" v-bind:style="site.bank_color">{{ site.bank_name }}</p><br />
-            <p class="tittle_name">卡名称：</p><p class="detial_name card_name" v-bind:style="site.card_color">{{ site.card_name }}</p><br />
-            <p class="tittle_name">额度：</p><p class="detial_name loan">￥{{ site.loan }}</p><br />
-            <p class="tittle_name">账单日：</p><p class="detial_name bill_date">{{ site.bill_date }}日</p><br />
-            <p class="tittle_name">卡组织：</p><p class="detial_name card_union">{{ site.card_union }}</p><br />
-            <p class="tittle_name">卡级别：</p><p class="detial_name card_level">{{ site.card_level }}</p><br />
-            <p class="tittle_name">年费：</p><p class="detial_name card_tax">￥{{ site.card_tax }}</p><br />
-            <p class="tittle_name">年费政策：</p><p class="detial_name tax_free">{{ site.tax_free }}</p><br />
-            <p class="tittle_name">年费状态：</p><p class="detial_name tax_status">{{ site.tax_status }}</p><br />
-            <p class="tittle_name">备注：</p><p class="detial_name ext">{{ site.ext }}</p><br />
+            <p class="tittle_name">银行名称：</p>
+            <p class="detial_name bank_name" v-bind:style="site.bank_color">{{ site.bank_name }}</p><br />
+            <p class="tittle_name">卡名称：</p>
+            <p class="detial_name card_name" v-bind:style="site.card_color">{{ site.card_name }}</p><br />
+            <p class="tittle_name">额度：</p>
+            <p class="detial_name loan">￥{{ site.loan }}</p><br />
+            <p class="tittle_name">账单日：</p>
+            <p class="detial_name bill_date">{{ site.bill_date }}日</p><br />
+            <p class="tittle_name">卡组织：</p>
+            <p class="detial_name card_union">{{ site.card_union }}</p><br />
+            <p class="tittle_name">卡级别：</p>
+            <p class="detial_name card_level">{{ site.card_level }}</p><br />
+            <p class="tittle_name">年费：</p>
+            <p class="detial_name card_tax">￥{{ site.card_tax }}</p><br />
+            <p class="tittle_name">年费政策：</p>
+            <p class="detial_name tax_free">{{ site.tax_free }}</p><br />
+            <p class="tittle_name">年费状态：</p>
+            <p class="detial_name tax_status">{{ site.tax_status }}</p><br />
+            <p class="tittle_name">备注：</p>
+            <p class="detial_name ext">{{ site.ext }}</p><br />
         </div>
     </div>
 
-    <script src="./script/main.js"></script>
+    <script src="./script/card.js"></script>
 
 </body>

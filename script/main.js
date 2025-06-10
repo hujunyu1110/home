@@ -63,24 +63,6 @@ var vm = new Vue({
             if (flag == 2) { window.open("https://www.google.com.hk/search?q=" + this.search_str, "_blank"); }
             this.search_str = ''
         },
-        // Card页面判断
-        to_top: function (index) {
-            if (this.link_sites[index].is_top == 0) {
-                var count = 0;
-                for (var i = 0; i < this.link_sites.length; i++) {
-                    count = count + this.link_sites[i].is_top
-                }
-                if (count > 0) { return }
-                else {
-                    this.link_sites[index].is_top = 1
-                    this.link_sites[index].model_class = this.link_sites[index].model_class.replace('col-sm-4 co-md-2 col-xs-4 ', '') + ' to_center'
-                }
-            }
-            else {
-                this.link_sites[index].model_class = 'col-sm-4 co-md-2 col-xs-4 ' + this.link_sites[index].model_class.replace(' to_center', '')
-                this.link_sites[index].is_top = 0
-            }
-        },
         /* 初始化函数 */
         methodToTrigger: function () {
             var he = document.body.clientHeight;
