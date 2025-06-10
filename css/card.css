@@ -265,6 +265,32 @@ body {
 /* TODO:竖屏 */
 @media (orientation: portrait) {
 
+    #app {
+        margin-top: 6%;
+    }
+
+    #top_container {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 1.2%;
+        box-shadow: 3px 3px 8px #00007373;
+        transform: translate(-3%, 0);
+        z-index: 12;
+        background-color: rgba(206, 206, 206, 0.5);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding-left: 1%;
+        text-justify: auto;
+    }
+
+    #everyBank {
+        margin-left: 1%;
+        font-weight: bold;
+        font-family: DaddyTimeMonoNerdFontMono;
+        font-size: 115%;
+    }
+
     /* TODO:每个模块 */
     .everyModel {
         background-color: rgba(255, 255, 255, 0.5);
