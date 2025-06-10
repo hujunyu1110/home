@@ -36,6 +36,7 @@ var vm = new Vue({
             this.$http.get(url).then(function (res) {
                 var data = res.body.data
                 var data = this.createIndex(data)
+                data = this.disJudge(data)
                 var head = this.createBankHead(data)
                 this.link_sites = data
                 this.link_banks = head
@@ -64,6 +65,14 @@ var vm = new Vue({
             list_h = this.bubbleSort(list_h)
             console.log(list_h)
             return list_h
+        },
+        disJudge: function (list_data) {
+            for (var i = 0; i < list_data.length; i++){
+                if(list_data[i].ext == '已注销，纪念'){
+                    list_data[i].model_class = list_data[i].model_class + ' delClass'
+                }
+            }
+            return list_data
         },
         unique: function (arr) {
             var banks = []

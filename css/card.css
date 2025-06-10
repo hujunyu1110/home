@@ -449,3 +449,8 @@ body {
 .SPDB {
     color: #000073;
 }
+
+.delClass {
+    font-style:italic;
+    color: #afafaf;
+}
