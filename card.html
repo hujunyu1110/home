@@ -15,12 +15,19 @@
 
     <div id="app" class="containerMain">
         <div id="top_container">
+            <span @click="clickSheet('table')">Sheet</span>
+            <span @click="clickSheet('card')">Card</span>
+            <span></span>
+        </div>
+
+        <div v-if="showWho === 'table'">
             <span v-for="site in link_banks" id="everyBank" v-bind:class="site.model_class">
                 <span>{{site.bank_name}} </span>
                 <span> {{ site.bill_date }}日</span>
             </span>
         </div>
-        <div v-bind:class="site.model_class" v-for="site in link_sites" @click="to_top(site.index)">
+
+        <div v-bind:class="site.model_class" v-for="site in link_sites" @click="to_top(site.index)" v-if="showWho === 'card'">
             <img class="card_img" v-bind:src="site.img" alt="">
             <p class="tittle_name">银行名称：</p>
             <p class="detial_name bank_name" v-bind:style="site.bank_color">{{ site.bank_name }}</p><br />

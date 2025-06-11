@@ -3,6 +3,7 @@ var vm = new Vue({
     data: {
         link_sites: [],
         link_banks: [],
+        showWho: 'card',
     },
     created: function () {
         var tittle_str = document.title
@@ -30,6 +31,9 @@ var vm = new Vue({
         createJson: function () {
             var json_obj = { data: this.link_sites }
             console.log(JSON.stringify(json_obj))
+        },
+        clickSheet: function (type) {
+            this.showWho = type
         },
         // 初始化数组及序号
         createData: function (url) {
