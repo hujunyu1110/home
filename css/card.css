@@ -462,3 +462,45 @@ body {
     font-style:italic;
     color: #afafaf;
 }
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+table caption{
+    font-weight: bold;
+    margin: 1em 0;
+    font-size: 20px;
+}
+
+th,td{
+    border: 1px solid #999;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+table thead tr{
+    background-color: #008c8c;
+    color: #fff;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #eee;
+}
+
+table tbody tr:hover{
+    background-color: #ccc;
+}
+
+table tbody tr td:first-child{
+    color: #f40;
+}
+
+table tfoot tr td{
+    text-align: right;
+    padding-right: 20px;
+}

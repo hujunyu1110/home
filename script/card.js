@@ -3,7 +3,7 @@ var vm = new Vue({
     data: {
         link_sites: [],
         link_banks: [],
-        showWho: 'card',
+        showWho: 'table',
     },
     created: function () {
         var tittle_str = document.title

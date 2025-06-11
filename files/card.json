@@ -16,7 +16,8 @@
             "tax_status": " - ",
             "ext": "储蓄卡",
             "bank_color": "color: #0066B3",
-            "card_color": "color: #73828a"
+            "card_color": "color: #73828a",
+            "ex_ext": ""
         },
         {
             "index": 0,
@@ -34,7 +35,8 @@
             "tax_status": "",
             "ext": "已注销，纪念",
             "bank_color": "color: #0066B3",
-            "card_color": "color: #885e22"
+            "card_color": "color: #885e22",
+            "ex_ext": ""
         },
         {
             "index": 2,
@@ -52,7 +54,8 @@
             "tax_status": "已免",
             "ext": "",
             "bank_color": "color: #0066B3",
-            "card_color": "color: #b3aeaa"
+            "card_color": "color: #b3aeaa",
+            "ex_ext": ""
         },
         {
             "index": 3,
@@ -70,7 +73,8 @@
             "tax_status": "已免",
             "ext": "建行自营币种直接转换",
             "bank_color": "color: #0066B3",
-            "card_color": "color: #5e5a4f"
+            "card_color": "color: #5e5a4f",
+            "ex_ext": ""
         },
         {
             "index": 0,
@@ -88,7 +92,8 @@
             "tax_status": "",
             "ext": "已注销，纪念",
             "bank_color": "color: #0066B3",
-            "card_color": "color: #885e22"
+            "card_color": "color: #885e22",
+            "ex_ext": ""
         },
         {
             "index": 4,
@@ -106,7 +111,8 @@
             "tax_status": " - ",
             "ext": "储蓄卡",
             "bank_color": "color: #A71E32",
-            "card_color": "color: #7f221b"
+            "card_color": "color: #7f221b",
+            "ex_ext": ""
         },
         {
             "index": 5,
@@ -124,7 +130,8 @@
             "tax_status": "已免",
             "ext": "",
             "bank_color": "color: #A71E32",
-            "card_color": "color: #885e22"
+            "card_color": "color: #885e22",
+            "ex_ext": ""
         },
         {
             "index": 6,
@@ -142,7 +149,8 @@
             "tax_status": " - ",
             "ext": "储蓄卡",
             "bank_color": "color: #E60021",
-            "card_color": "color: #912a17"
+            "card_color": "color: #912a17",
+            "ex_ext": ""
         },
         {
             "index": 7,
@@ -160,7 +168,8 @@
             "tax_status": "已免",
             "ext": "4次高铁贵宾厅=2龙腾点",
             "bank_color": "color: #E60021",
-            "card_color": "color: #7a7974"
+            "card_color": "color: #7a7974",
+            "ex_ext": ""
         },
         {
             "index": 8,
@@ -178,7 +187,8 @@
             "tax_status": " - ",
             "ext": "储蓄卡",
             "bank_color": "color: #CB030D",
-            "card_color": "color: #b8483d"
+            "card_color": "color: #b8483d",
+            "ex_ext": ""
         },
         {
             "index": 9,
@@ -196,7 +206,8 @@
             "tax_status": " - ",
             "ext": "储蓄卡",
             "bank_color": "color: #CB030D",
-            "card_color": "color: #ac252b"
+            "card_color": "color: #ac252b",
+            "ex_ext": ""
         },
         {
             "index": 10,
@@ -214,7 +225,8 @@
             "tax_status": "已免",
             "ext": "近效期，不续卡",
             "bank_color": "color: #CB030D",
-            "card_color": "color: #c95d41"
+            "card_color": "color: #c95d41",
+            "ex_ext": ""
         },
         {
             "index": 11,
@@ -232,7 +244,8 @@
             "tax_status": " - ",
             "ext": "储蓄卡",
             "bank_color": "color: #003F97",
-            "card_color": "color: #878986"
+            "card_color": "color: #878986",
+            "ex_ext": ""
         },
         {
             "index": 12,
@@ -250,7 +263,8 @@
             "tax_status": "已付",
             "ext": "12贵宾厅 4接送机",
             "bank_color": "color: #003F97",
-            "card_color": "color: #52534e"
+            "card_color": "color: #52534e",
+            "ex_ext": ""
         },
         {
             "index": 13,
@@ -268,7 +282,8 @@
             "tax_status": "ing",
             "ext": "",
             "bank_color": "color: #000073",
-            "card_color": "color: #ab7967"
+            "card_color": "color: #ab7967",
+            "ex_ext": ""
         },
         {
             "index": 14,
@@ -286,7 +301,8 @@
             "tax_status": "ing",
             "ext": "",
             "bank_color": "color: #000073",
-            "card_color": "color: #9f9d9a"
+            "card_color": "color: #9f9d9a",
+            "ex_ext": ""
         },
         {
             "index": 15,
@@ -304,7 +320,8 @@
             "tax_status": " - ",
             "ext": "储蓄卡",
             "bank_color": "color: #A30030",
-            "card_color": "color: #652a5a"
+            "card_color": "color: #652a5a",
+            "ex_ext": ""
         },
         {
             "index": 16,
@@ -322,7 +339,8 @@
             "tax_status": " - ",
             "ext": "储蓄卡",
             "bank_color": "color: #A30030",
-            "card_color": "color: #87535a"
+            "card_color": "color: #87535a",
+            "ex_ext": ""
         },
         {
             "index": 17,
@@ -340,7 +358,8 @@
             "tax_status": "ing",
             "ext": "",
             "bank_color": "color: #A30030",
-            "card_color": "color: #3b4963"
+            "card_color": "color: #3b4963",
+            "ex_ext": ""
         },
         {
             "index": 18,
@@ -358,7 +377,8 @@
             "tax_status": "ing",
             "ext": "",
             "bank_color": "color: #A30030",
-            "card_color": "color: #373646"
+            "card_color": "color: #373646",
+            "ex_ext": ""
         },
         {
             "index": 19,
@@ -376,7 +396,8 @@
             "tax_status": "已免",
             "ext": "近效期，不续卡",
             "bank_color": "color: #A30030",
-            "card_color": "color: #262523"
+            "card_color": "color: #262523",
+            "ex_ext": ""
         },
         {
             "index": 20,
@@ -394,7 +415,8 @@
             "tax_status": " - ",
             "ext": "储蓄卡",
             "bank_color": "color: #C7000A",
-            "card_color": "color: #214428"
+            "card_color": "color: #214428",
+            "ex_ext": ""
         },
         {
             "index": 21,
@@ -412,7 +434,8 @@
             "tax_status": "ing",
             "ext": "",
             "bank_color": "color: #C7000A",
-            "card_color": "color:#282826"
+            "card_color": "color:#282826",
+            "ex_ext": ""
         },
         {
             "index": 21,
@@ -430,7 +453,8 @@
             "tax_status": "",
             "ext": "已注销，纪念",
             "bank_color": "color: #C7000A",
-            "card_color": "color:#282826"
+            "card_color": "color:#282826",
+            "ex_ext": ""
         },
         {
             "index": 22,
@@ -448,7 +472,8 @@
             "tax_status": " - ",
             "ext": "储蓄卡",
             "bank_color": "color: #6A1685",
-            "card_color": "color: #7b7873"
+            "card_color": "color: #7b7873",
+            "ex_ext": ""
         }
     ]
 }

@@ -21,13 +21,54 @@
         </div>
 
         <div v-if="showWho === 'table'">
+            <p></p>
             <span v-for="site in link_banks" id="everyBank" v-bind:class="site.model_class">
                 <span>{{site.bank_name}} </span>
                 <span> {{ site.bill_date }}日</span>
             </span>
+            <table>
+                <caption>Card Common</caption>
+                <thead>
+                    <tr>
+                        <th>银行性质</th>
+                        <th>银行</th>
+                        <th>额度</th>
+                        <th>账单日</th>
+                        <th>分期</th>
+                        <th>卡片</th>
+                        <th>卡组织</th>
+                        <th>卡级别</th>
+                        <th>年费</th>
+                        <th>年费政策</th>
+                        <th>2025年费状态</th>
+                        <th>有效期</th>
+                        <th>CVV</th>
+                        <th>权益|备注</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="site in link_sites">
+                        <td></td>
+                        <td>{{ site.bank_name }}</td>
+                        <td>￥{{ site.loan }}</td>
+                        <td>{{ site.bill_date }}日</td>
+                        <td></td>
+                        <td>{{ site.card_name }}</td>
+                        <td>{{ site.card_union }}</td>
+                        <td>{{ site.card_level }}</td>
+                        <td>￥{{ site.card_tax }}</td>
+                        <td>{{ site.tax_free }}</td>
+                        <td>{{ site.tax_status }}</td>
+                        <td></td>
+                        <td></td>
+                        <td>{{ site.ex_ext }}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div v-bind:class="site.model_class" v-for="site in link_sites" @click="to_top(site.index)" v-if="showWho === 'card'">
+        <div v-bind:class="site.model_class" v-for="site in link_sites" @click="to_top(site.index)"
+            v-if="showWho === 'card'">
             <img class="card_img" v-bind:src="site.img" alt="">
             <p class="tittle_name">银行名称：</p>
             <p class="detial_name bank_name" v-bind:style="site.bank_color">{{ site.bank_name }}</p><br />
