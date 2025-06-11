@@ -1,13 +1,6 @@
 {
     "data": [
         {
-            "index": "1 1",
-            "url": "./congya.html",
-            "icon_class": "icon_logo nf nf-md-duck",
-            "icon_color": "color: #EEB422",
-            "name_txt": " Congya "
-        },
-        {
             "index": "1 2",
             "url": "https://QuickConnect.cn/springduck",
             "icon_class": "icon_logo nf nf-md-nas",
@@ -71,6 +64,13 @@
             "name_txt": " Gitee "
         },
         {
+            "index": "2 4",
+            "url": "https://github.com/",
+            "icon_class": "icon_logo nf nf-cod-github",
+            "icon_color": "color: #1f2328",
+            "name_txt": " GitHub "
+        },
+        {
             "index": "2 5",
             "url": "./card.html",
             "icon_class": "icon_logo nf nf-cod-credit_card",
@@ -89,7 +89,7 @@
             "url": "https://www.zhihu.com/",
             "icon_class": "icon_logo nf nf-fa-book",
             "icon_color": "color: #2b8ef1",
-            "name_txt": " zhihu "
+            "name_txt": " Zhihu "
         },
         {
             "index": "3 2",
@@ -114,17 +114,17 @@
         },
         {
             "index": "3 5",
-            "url": "./ssr.html",
-            "icon_class": "icon_logo nf nf-fa-paper_plane",
-            "icon_color": "color: #48D1CC",
-            "name_txt": " SSR "
+            "url": "https://worldofwarships.asia/zh-sg/",
+            "icon_class": "icon_logo nf nf-md-anchor",
+            "icon_color": "color: #01aab0",
+            "name_txt": " Wows "
         },
         {
             "index": "3 6",
-            "url": "./work.html",
-            "icon_class": "icon_logo nf nf-fae-medicine",
-            "icon_color": "color: #00BFFF",
-            "name_txt": " Work "
+            "url": "https://www.kimi.com/",
+            "icon_class": "icon_logo nf nf-md-assistant",
+            "icon_color": "color: #666666",
+            "name_txt": " Kimi "
         }
     ]
 }

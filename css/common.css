@@ -51,6 +51,7 @@ body {
     margin: 0px;
     border: 0px;
     width: 98%;
+    transition: transform 0.5s ease;
 }
 
 .containerMain {
@@ -71,6 +72,14 @@ body {
     padding-left: 6%;
 }
 
+.firstFlow_1 {
+    padding: 0px;
+    padding-left: 6%;
+    height: 70px;
+}
+
+
+
 .firstFlowoo {
     padding: 0px;
     padding-left: 0px;
@@ -86,6 +95,10 @@ body {
     text-shadow: 1px 1px 1px #c5c5c5;
     /* transform: scale(1.1); */
     /*font-family: A-Nice-Day-2;  TODO:主页字体变化 */
+}
+
+.bottom i:hover {
+    text-shadow: 1px 1px 1px #c5c5c5;
 }
 
 div .firstFlowFirstColm {
@@ -290,6 +303,24 @@ div .firstFlowFirstColmo {
         color: rgba(0, 0, 0, 0.4);
         font-weight: bold;
     }
+
+    .bottom {
+        margin: 0px;
+        height: 20px;
+        position: fixed;
+        padding-right: 10px;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .bottom i {
+        margin: 20px;
+        cursor: pointer;
+    }
 }
 
 /* TODO:竖屏 */
@@ -396,6 +427,25 @@ div .firstFlowFirstColmo {
         top: 28px;
         font-size: 23px;
         top: 35px;
+    }
+
+    .bottom {
+        margin: 0px;
+        height: 20px;
+        position: fixed;
+        padding-right: 10px;
+        bottom: 40px;
+        left: 50%;
+        transform: translate(-50%, 0) scale(1.8);
+        color: rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        text-align: center;
+        font-size: large;
+    }
+
+    .bottom i {
+        margin: 10px;
+        cursor: pointer;
     }
 
 }

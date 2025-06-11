@@ -7,7 +7,7 @@
     <link rel="icon" href="./img/favicon.ico" />
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/webfont.min.css" rel="stylesheet" />
-    <link href="./css/common_new.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
     <script src="https://cdn.staticfile.net/vue/2.2.2/vue.min.js"></script>
     <script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
 </head>
@@ -16,9 +16,9 @@
 
     <p id="weathertoday" class="weatherClass mouseOn">{{weathertoday}}</p>
     <div id="holiday" class="holidayClass mouseOn">
-        <div @click="openPage(site.url)">
+        <div>
             <p></p>
-            <i class="nf nf-fa-tree"></i>
+            <i class="nf nf-fa-tree" @click="openPage('./holiday/tree.html')"></i>
         </div>
     </div>
 
@@ -54,7 +54,7 @@
 
         <!--链接-->
         <div class="row all_link" id="linklist">
-            <div class="col-sm-4 col-md-2 firstFlow" v-for="site in link_sites">
+            <div v-bind:class="getPagesStyle()" v-for="site in link_sites">
                 <div class="divhei" style="padding-left: 2px;padding-right: 4px;padding-top: 2px;padding-bottom: 2px;">
                     <div class="firstFlowFirstColm mouseOn" @click="openPage(site.url)">
                         <i v-bind:class="site.icon_class" v-bind:style='site.icon_color'></i>
@@ -62,6 +62,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="bottom">
+            <i class="nf nf-fa-home" @click="changePages('home')"> Home</i>
+            <i class="nf nf-md-duck" @click="changePages('congya')"> Congya</i>
+            <i class="nf nf-fa-paper_plane" @click="changePages('ssr')"> SSR</i>
+            <i class="nf nf-fae-medicine" @click="changePages('work')"> Work</i>
         </div>
 
     </div>

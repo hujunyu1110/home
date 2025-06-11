@@ -31,6 +31,7 @@ var vm = new Vue({
         searchImg_class: "col-xs-6 col-sm-1 firstFlowcc searchImg",
         searchExCh_class: "col-xs-5 col-sm-3 firstFlow searchExCh",
         searchCh_class: "col-xs-5 col-sm-5 firstFlow searchCh",
+        all_link_class: 'col-sm-4 col-md-2 firstFlow',
     },
     created: function () {
         var tittle_str = document.title
@@ -42,6 +43,20 @@ var vm = new Vue({
         openPage: (url) => {
             window.open(url, "_blank");
             //window.open(url, "_self");
+        },
+        changePages: function (pageName) {
+            this.createData('/files/' + pageName + '.json')
+            if (pageName === 'home')
+                this.all_link_class = 'col-sm-4 col-md-2 firstFlow'
+            if (pageName === 'congya')
+                this.all_link_class = 'col-sm-4 col-md-3 firstFlow'
+            if (pageName === 'ssr')
+                this.all_link_class = 'col-sm-4 col-md-3 firstFlow'
+            if (pageName === 'work')
+                this.all_link_class = 'col-sm-4 col-md-2 firstFlow_1'
+        },
+        getPagesStyle: function () {
+            return this.all_link_class
         },
         // 搜索判断
         selectSearch: function (index) {
