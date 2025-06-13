@@ -1,267 +1,276 @@
 <!DOCTYPE>
 <html height:100% width:100%>
 
-<head>
-    <meta charset="utf-8" />
-    <title>card</title>
-    <link rel="icon" href="./img/favicon.ico" />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./css/card.css" rel="stylesheet" />
-    <script src="https://cdn.staticfile.net/vue/2.2.2/vue.min.js"></script>
-    <script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <title>card</title>
+        <link rel="icon" href="./img/favicon.ico" />
+        <link href="./css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./css/card.css" rel="stylesheet" />
+        <script src="https://cdn.staticfile.net/vue/2.2.2/vue.min.js"></script>
+        <script
+            src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+    </head>
 
-<body>
+    <body>
 
-    <div id="app" class="containerMain">
+        <div id="app" class="containerMain">
 
-        <div id="sheet_top" class="anchor-element"></div>
+            <div id="sheet_top" class="anchor-element"></div>
 
-        <div id="top_container">
-            <a href="#sheet_top">󰘣</a>
-            <span @click="clickSheet('table')">Sheet</span>
-            <a href="#sheet_common">Overview</a>
-            <a href="#sheet_credit">Credit</a>
-            <a href="#sheet_debit">Debit</a>
-            <a href="#sheet_all">All data</a>
-            <span @click="clickSheet('card')">Card</span>
-            <a href="#sheet_bottom">󰘡</a>
-        </div>
-
-        <div v-if="showWho === 'table'">
-            <p></p>
-            <div class="top_part_div">
-                <!--账单日概览-->
-                <div id="sheet_common" class="anchor-element"></div>
-                <table class="table0">
-                    <thead>
-                        <tr>
-                            <th colspan="4">账单日&额度统计</th>
-                        </tr>
-                        <tr>
-                            <th>银行性质</th>
-                            <th>银行</th>
-                            <th>账单日</th>
-                            <th>额度</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="site in link_banks" v-bind:class="site.back_color">
-                            <td>{{ site.bank_type }}</td>
-                            <td>{{ site.bank_name }}</td>
-                            <td style="font-size: 14px;">{{ site.bill_date
-                                }}日</td>
-                            <td>￥{{ site.loan }}</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="table0">
-                    <thead>
-                        <tr>
-                            <th colspan="4">合计</th>
-                        </tr>
-                        <tr>
-                            <th>银行数量</th>
-                            <th>额度合计</th>
-                            <th>分期合计</th>
-                            <th>卡片数量</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="background-color: #72727297;">
-                            <td>{{ count_bank }}</td>
-                            <td>￥{{ numberWithCommas(loan_sum) }} </td>
-                            <td></td>
-                            <td>{{ count_card }}</td>
-                        </tr>
-                    </tbody>
-                    <thead>
-                        <tr>
-                            <th colspan="4">卡组织统计</th>
-                        </tr>
-
-                        <tr>
-                            <th colspan="2">卡组织</th>
-                            <th colspan="2">数量</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="site in card_union" style="background-color: #72727297;">
-                            <td colspan="2">{{ site.union }}</td>
-                            <td colspan="2">{{ site.sum }}</td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
+            <div id="top_container">
+                <a href="#sheet_top">󰘣</a>
+                <span @click="clickSheet('table')">Sheet</span>
+                <a href="#sheet_common">Overview</a>
+                <a href="#sheet_credit">Credit</a>
+                <a href="#sheet_debit">Debit</a>
+                <a href="#sheet_all">All data</a>
+                <span @click="clickSheet('card')">Card</span>
+                <a href="#sheet_bottom">󰘡</a>
             </div>
-            <div>
-                <!--信用卡-->
-                <div id="sheet_credit" class="anchor-element"></div>
-                <table class="table1">
-                    <thead>
-                        <tr>
-                            <th colspan="14">信用卡</th>
-                        </tr>
-                        <tr>
-                            <th>银行性质</th>
-                            <th>银行</th>
-                            <th>额度</th>
-                            <th>账单日</th>
-                            <th>分期</th>
-                            <th>卡片</th>
-                            <th>卡组织</th>
-                            <th>卡级别</th>
-                            <th>年费</th>
-                            <th>年费政策</th>
-                            <th>2025年费状态</th>
-                            <th>有效期</th>
-                            <th>CVV</th>
-                            <th>权益|备注</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="site in link_noCX" v-bind:class="site.back_color">
-                            <td>{{ site.bank_type }}</td>
-                            <td>{{ site.bank_name }}</td>
-                            <td>￥{{ site.loan }}</td>
-                            <td>{{ site.bill_date }}日</td>
-                            <td></td>
-                            <td>{{ site.card_name }}</td>
-                            <td>{{ site.card_union }}</td>
-                            <td>{{ site.card_level }}</td>
-                            <td>￥{{ site.card_tax }}</td>
-                            <td>{{ site.tax_free }}</td>
-                            <td>{{ site.tax_status }}</td>
-                            <td></td>
-                            <td></td>
-                            <td>{{ site.ex_ext }}</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!--借记卡-->
-                <div id="sheet_debit" class="anchor-element"></div>
-                <table class="table1">
-                    <thead>
-                        <tr>
-                            <th colspan="14">借记卡</th>
-                        </tr>
-                        <tr>
-                            <th>银行性质</th>
-                            <th>银行</th>
-                            <th>额度</th>
-                            <th>账单日</th>
-                            <th>分期</th>
-                            <th>卡片</th>
-                            <th>卡组织</th>
-                            <th>卡级别</th>
-                            <th>年费</th>
-                            <th>年费政策</th>
-                            <th>2025年费状态</th>
-                            <th>有效期</th>
-                            <th>CVV</th>
-                            <th>权益|备注</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="site in link_CX" v-bind:class="site.back_color">
-                            <td>{{ site.bank_type }}</td>
-                            <td>{{ site.bank_name }}</td>
-                            <td>￥{{ site.loan }}</td>
-                            <td>{{ site.bill_date }}日</td>
-                            <td></td>
-                            <td>{{ site.card_name }}</td>
-                            <td>{{ site.card_union }}</td>
-                            <td>{{ site.card_level }}</td>
-                            <td>￥{{ site.card_tax }}</td>
-                            <td>{{ site.tax_free }}</td>
-                            <td>{{ site.tax_status }}</td>
-                            <td></td>
-                            <td></td>
-                            <td>{{ site.ex_ext }}</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!--全部数据-->
-                <div id="sheet_all" class="anchor-element"></div>
-                <table class="table1">
-                    <thead>
-                        <tr>
-                            <th colspan="14">所有卡</th>
-                        </tr>
-                        <tr>
-                            <th>银行性质</th>
-                            <th>银行</th>
-                            <th>额度</th>
-                            <th>账单日</th>
-                            <th>分期</th>
-                            <th>卡片</th>
-                            <th>卡组织</th>
-                            <th>卡级别</th>
-                            <th>年费</th>
-                            <th>年费政策</th>
-                            <th>2025年费状态</th>
-                            <th>有效期</th>
-                            <th>CVV</th>
-                            <th>权益|备注</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="site in link_sites" v-bind:class="site.back_color">
-                            <td>{{ site.bank_type }}</td>
-                            <td>{{ site.bank_name }}</td>
-                            <td>￥{{ site.loan }}</td>
-                            <td>{{ site.bill_date }}日</td>
-                            <td></td>
-                            <td>{{ site.card_name }}</td>
-                            <td>{{ site.card_union }}</td>
-                            <td>{{ site.card_level }}</td>
-                            <td>￥{{ site.card_tax }}</td>
-                            <td>{{ site.tax_free }}</td>
-                            <td>{{ site.tax_status }}</td>
-                            <td></td>
-                            <td></td>
-                            <td>{{ site.ex_ext }}</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+            <div v-if="showWho === 'table'">
+                <p></p>
+                <div class="top_part_div">
+                    <!--账单日概览-->
+                    <div id="sheet_common" class="anchor-element"></div>
+                    <table class="table0">
+                        <thead>
+                            <tr>
+                                <th colspan="4">账单日&额度统计</th>
+                            </tr>
+                            <tr>
+                                <th>银行性质</th>
+                                <th>银行</th>
+                                <th>账单日</th>
+                                <th>额度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="site in link_banks"
+                                v-bind:class="site.back_color">
+                                <td>{{ site.bank_type }}</td>
+                                <td>{{ site.bank_name }}</td>
+                                <td style="font-size: 14px;">{{ site.bill_date
+                                    }}日</td>
+                                <td>￥{{ site.loan }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table0">
+                        <thead>
+                            <tr>
+                                <th colspan="4">合计</th>
+                            </tr>
+                            <tr>
+                                <th>银行数量</th>
+                                <th>额度合计</th>
+                                <th>分期合计</th>
+                                <th>卡片数量</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: #72727297;">
+                                <td>{{ count_bank }}</td>
+                                <td>￥{{ numberWithCommas(loan_sum) }} </td>
+                                <td></td>
+                                <td>{{ count_card }}</td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th colspan="4">卡组织统计</th>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2">卡组织</th>
+                                <th colspan="2">数量</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="site in card_union"
+                                style="background-color: #72727297;">
+                                <td colspan="2">{{ site.union }}</td>
+                                <td colspan="2">{{ site.sum }}</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <!--信用卡-->
+                    <div id="sheet_credit" class="anchor-element"></div>
+                    <table class="table1">
+                        <thead>
+                            <tr>
+                                <th colspan="14">信用卡</th>
+                            </tr>
+                            <tr>
+                                <th>银行性质</th>
+                                <th>银行</th>
+                                <th>额度</th>
+                                <th>账单日</th>
+                                <th>分期</th>
+                                <th>卡片</th>
+                                <th>卡组织</th>
+                                <th>卡级别</th>
+                                <th>年费</th>
+                                <th>年费政策</th>
+                                <th>2025年费状态</th>
+                                <th>有效期</th>
+                                <th>CVV</th>
+                                <th>权益|备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="site in link_noCX"
+                                v-bind:class="site.back_color">
+                                <td>{{ site.bank_type }}</td>
+                                <td>{{ site.bank_name }}</td>
+                                <td>￥{{ site.loan }}</td>
+                                <td>{{ site.bill_date }}日</td>
+                                <td></td>
+                                <td>{{ site.card_name }}</td>
+                                <td>{{ site.card_union }}</td>
+                                <td>{{ site.card_level }}</td>
+                                <td>￥{{ site.card_tax }}</td>
+                                <td>{{ site.tax_free }}</td>
+                                <td>{{ site.tax_status }}</td>
+                                <td></td>
+                                <td></td>
+                                <td>{{ site.ex_ext }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--借记卡-->
+                    <div id="sheet_debit" class="anchor-element"></div>
+                    <table class="table1">
+                        <thead>
+                            <tr>
+                                <th colspan="14">借记卡</th>
+                            </tr>
+                            <tr>
+                                <th>银行性质</th>
+                                <th>银行</th>
+                                <th>额度</th>
+                                <th>账单日</th>
+                                <th>分期</th>
+                                <th>卡片</th>
+                                <th>卡组织</th>
+                                <th>卡级别</th>
+                                <th>年费</th>
+                                <th>年费政策</th>
+                                <th>2025年费状态</th>
+                                <th>有效期</th>
+                                <th>CVV</th>
+                                <th>权益|备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="site in link_CX"
+                                v-bind:class="site.back_color">
+                                <td>{{ site.bank_type }}</td>
+                                <td>{{ site.bank_name }}</td>
+                                <td>￥{{ site.loan }}</td>
+                                <td>{{ site.bill_date }}日</td>
+                                <td></td>
+                                <td>{{ site.card_name }}</td>
+                                <td>{{ site.card_union }}</td>
+                                <td>{{ site.card_level }}</td>
+                                <td>￥{{ site.card_tax }}</td>
+                                <td>{{ site.tax_free }}</td>
+                                <td>{{ site.tax_status }}</td>
+                                <td></td>
+                                <td></td>
+                                <td>{{ site.ex_ext }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--全部数据-->
+                    <div id="sheet_all" class="anchor-element"></div>
+                    <table class="table1">
+                        <thead>
+                            <tr>
+                                <th colspan="14">所有卡</th>
+                            </tr>
+                            <tr>
+                                <th>银行性质</th>
+                                <th>银行</th>
+                                <th>额度</th>
+                                <th>账单日</th>
+                                <th>分期</th>
+                                <th>卡片</th>
+                                <th>卡组织</th>
+                                <th>卡级别</th>
+                                <th>年费</th>
+                                <th>年费政策</th>
+                                <th>2025年费状态</th>
+                                <th>有效期</th>
+                                <th>CVV</th>
+                                <th>权益|备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="site in link_sites"
+                                v-bind:class="site.back_color">
+                                <td>{{ site.bank_type }}</td>
+                                <td>{{ site.bank_name }}</td>
+                                <td>￥{{ site.loan }}</td>
+                                <td>{{ site.bill_date }}日</td>
+                                <td></td>
+                                <td>{{ site.card_name }}</td>
+                                <td>{{ site.card_union }}</td>
+                                <td>{{ site.card_level }}</td>
+                                <td>￥{{ site.card_tax }}</td>
+                                <td>{{ site.tax_free }}</td>
+                                <td>{{ site.tax_status }}</td>
+                                <td></td>
+                                <td></td>
+                                <td>{{ site.ex_ext }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+
+            <div v-bind:class="site.model_class" v-for="site in link_sites"
+                @click="to_top(site.index)"
+                v-if="showWho === 'card'">
+                <img class="card_img" v-bind:src="site.img" alt>
+                <p class="tittle_name">银行名称：</p>
+                <p class="detial_name bank_name"
+                    v-bind:style="site.bank_color">{{ site.bank_name
+                    }}</p><br />
+                <p class="tittle_name">卡名称：</p>
+                <p class="detial_name card_name"
+                    v-bind:style="site.card_color">{{ site.card_name
+                    }}</p><br />
+                <p class="tittle_name">额度：</p>
+                <p class="detial_name loan">￥{{ site.loan }}</p><br />
+                <p class="tittle_name">账单日：</p>
+                <p class="detial_name bill_date">{{ site.bill_date }}日</p><br />
+                <p class="tittle_name">卡组织：</p>
+                <p class="detial_name card_union">{{ site.card_union
+                    }}</p><br />
+                <p class="tittle_name">卡级别：</p>
+                <p class="detial_name card_level">{{ site.card_level
+                    }}</p><br />
+                <p class="tittle_name">年费：</p>
+                <p class="detial_name card_tax">￥{{ site.card_tax }}</p><br />
+                <p class="tittle_name">年费政策：</p>
+                <p class="detial_name tax_free">{{ site.tax_free }}</p><br />
+                <p class="tittle_name">年费状态：</p>
+                <p class="detial_name tax_status">{{ site.tax_status
+                    }}</p><br />
+                <p class="tittle_name">备注：</p>
+                <p class="detial_name ext">{{ site.ext }}</p><br />
+            </div>
+
+            <div id="sheet_bottom"></div>
+
         </div>
 
-        <div v-bind:class="site.model_class" v-for="site in link_sites" @click="to_top(site.index)"
-            v-if="showWho === 'card'">
-            <img class="card_img" v-bind:src="site.img" alt>
-            <p class="tittle_name">银行名称：</p>
-            <p class="detial_name bank_name" v-bind:style="site.bank_color">{{ site.bank_name
-                }}</p><br />
-            <p class="tittle_name">卡名称：</p>
-            <p class="detial_name card_name" v-bind:style="site.card_color">{{ site.card_name
-                }}</p><br />
-            <p class="tittle_name">额度：</p>
-            <p class="detial_name loan">￥{{ site.loan }}</p><br />
-            <p class="tittle_name">账单日：</p>
-            <p class="detial_name bill_date">{{ site.bill_date }}日</p><br />
-            <p class="tittle_name">卡组织：</p>
-            <p class="detial_name card_union">{{ site.card_union
-                }}</p><br />
-            <p class="tittle_name">卡级别：</p>
-            <p class="detial_name card_level">{{ site.card_level
-                }}</p><br />
-            <p class="tittle_name">年费：</p>
-            <p class="detial_name card_tax">￥{{ site.card_tax }}</p><br />
-            <p class="tittle_name">年费政策：</p>
-            <p class="detial_name tax_free">{{ site.tax_free }}</p><br />
-            <p class="tittle_name">年费状态：</p>
-            <p class="detial_name tax_status">{{ site.tax_status
-                }}</p><br />
-            <p class="tittle_name">备注：</p>
-            <p class="detial_name ext">{{ site.ext }}</p><br />
-        </div>
+        <script src="./script/card.js"></script>
 
-        <div id="sheet_bottom"></div>
-
-    </div>
-
-    <script src="./script/card.js"></script>
-
-</body>
+    </body>
