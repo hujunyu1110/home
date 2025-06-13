@@ -40,6 +40,8 @@ var vm = new Vue({
         },
         clickSheet: function (type) {
             this.showWho = type
+            var anchor = document.getElementById('sheet_top');
+            anchor.scrollIntoView();
         },
         numberWithCommas: function (x) {
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
@@ -51,6 +53,8 @@ var vm = new Vue({
                 var data = this.createIndex(data)
                 data = this.disJudge(data)
                 this.link_sites = data
+
+                this.link_CX = this.createBnakCx(data)
 
                 var data_noCX = this.createBnakNoCx(data)
                 this.link_noCX = data_noCX
@@ -75,33 +79,21 @@ var vm = new Vue({
             }
             return list_data
         },
+        createBnakCx: function (list_data) {
+            list_h = []
+            for (var i = 0; i < list_data.length; i++) {
+                if (list_data[i].ext.indexOf("储蓄卡") === -1 || list_data[i].bill_date.indexOf("-") === -1)
+                    continue
+                list_h.push(list_data[i])
+            }
+            return list_h
+        },
         createBnakNoCx: function (list_data) {
             list_h = []
             for (var i = 0; i < list_data.length; i++) {
-                if (list_data[i].ext == "储蓄卡" || list_data[i].bill_date == ' - ')
+                if (list_data[i].ext.indexOf("储蓄卡") !== -1 || list_data[i].bill_date.indexOf("-") !== -1)
                     continue
-                var tmp = {
-                    bank_name: list_data[i].bank_name,
-                    bill_date: list_data[i].bill_date,
-                    model_class: list_data[i].model_class.replace("col-sm-4 co-md-2 col-xs-4 everyModel everyModel_", ""),
-                    index: list_data[i].is_top.index,
-                    is_top: list_data[i].is_top,
-                    img: list_data[i].img,
-                    bank_type: list_data[i].bank_type,
-                    card_name: list_data[i].card_name,
-                    loan: list_data[i].loan,
-                    card_union: list_data[i].card_union,
-                    card_level: list_data[i].card_level,
-                    card_tax: list_data[i].card_tax,
-                    tax_free: list_data[i].tax_free,
-                    tax_status: list_data[i].tax_status,
-                    ext: list_data[i].ext,
-                    bank_color: list_data[i].bank_color,
-                    card_color: list_data[i].card_color,
-                    ex_ext: list_data[i].ex_ext,
-                    back_color: list_data[i].back_color
-                }
-                list_h.push(tmp)
+                list_h.push(list_data[i])
             }
             return list_h
         },
@@ -112,7 +104,7 @@ var vm = new Vue({
         },
         disJudge: function (list_data) {
             for (var i = 0; i < list_data.length; i++) {
-                if (list_data[i].ext == '已注销，纪念') {
+                if (list_data[i].ext.indexOf("已注销") !== -1) {
                     list_data[i].model_class = list_data[i].model_class + ' delClass'
                 }
             }

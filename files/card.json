@@ -291,7 +291,7 @@
             "ext": "12贵宾厅 4接送机",
             "bank_color": "color: #003F97",
             "card_color": "color: #52534e",
-            "ex_ext": "",
+            "ex_ext": "贵宾厅：12境内 无限境外； 接送机：4境内 2次境外",
             "back_color":"back_CIB"
         },
         {
@@ -413,7 +413,7 @@
             "card_level": "Gold",
             "card_tax": "300",
             "tax_free": "6次刷免",
-            "tax_status": "ing",
+            "tax_status": "已免",
             "ext": "",
             "bank_color": "color: #A30030",
             "card_color": "color: #373646",

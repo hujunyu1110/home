@@ -1,17 +1,3 @@
-/* @font-face {
-    font-family: "MapleMono";
-    src: url("../fonts/MapleMono-CN-Regular.woff2") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "MapleMonoItalic";
-    src: url("../fonts/MapleMono-CN-Italic.woff2") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-} */
-
 @font-face {
     font-family: "DaddyTimeMonoNerdFontMono";
     src: url("../fonts/DaddyTimeMonoNFM.woff2") format("truetype");
@@ -36,7 +22,10 @@
 body {
     width: 98%;
     padding-left: 3%;
-    background-color: #e0e0e0;
+    background: url(../img/mcc.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 
 /* TODO：每个模块 */
@@ -45,11 +34,7 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
-    /* background-color: #ebeff5; */
-    /*box-shadow: 1px 1px 8px #bfc3c7;*/
-
     border-radius: 10px;
-    /* border-style: solid; */
     border-width: 2px;
     margin: 0.7%;
     width: 15%;
@@ -60,7 +45,6 @@ body {
 }
 
 .everyModel:hover {
-    /*box-shadow: 3px 3px 8px #afb2b6;*/
     transition: transform 0.3s ease;
 }
 
@@ -244,24 +228,49 @@ body {
 #top_container {
     position: fixed;
     top: 0px;
+    padding-top: 3px;
     width: 100%;
-    height: 28px;
+    height: 30px;
     box-shadow: 3px 3px 8px #00007373;
     transform: translate(-3%, 0);
     z-index: 12;
-    background-color: rgba(206, 206, 206, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding-left: 3%;
     text-justify: auto;
     font-family: DaddyTimeMonoNerdFontMono;
     font-weight: bold;
-    font-size: 20px;
+    text-align: center;
 }
 
 #top_container span {
-    padding-left: 26px;
+    padding-right: 26px;
     cursor: pointer;
+    color: rgb(70, 70, 70);
+    text-shadow: 2px 1px 1px #ffffff88, -2px 0px 1px #ffffff88;
+    font-size: 18px;
+}
+
+#top_container a {
+    padding-right: 26px;
+    cursor: pointer;
+    color: rgb(70, 70, 70);
+    text-shadow: 2px 1px 2px #ffffff88, -2px 0px 2px #ffffff88;
+    font-size: 16px;
+}
+
+#top_container a:hover {
+    text-shadow: 3px 1px 2px #fdfdfdb2, -2px 0px 2px #fdfdfdd5;
+    text-decoration: none;
+}
+
+#top_container a:active {
+    text-decoration: none;
+}
+
+#top_container a:visited {
+    text-decoration: none;
 }
 
 #everyBank {
@@ -463,59 +472,45 @@ body {
     color: #afafaf;
 }
 
+table {
+    border-collapse: collapse;
+    font-family: DaddyTimeMonoNerdFontMono;
+    font-size: 12px;
+    font-weight: normal;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
 
 .table0 {
     width: 50%;
-    border-collapse: collapse;
-    font-size: 11px;
 }
 
 .table1 {
     width: 100%;
-    border-collapse: collapse;
-    font-size: 11px;
 }
 
-tr {
-    height: 0px;
-}
-
-table caption {
-    font-weight: bold;
-    margin: 1em 0;
-    font-size: 11px;
-}
 
 th,
 td {
-    border: 1px solid #999;
+    border: 1px solid #dddddd97;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
-    height: 18px;
-
 }
 
 table thead tr {
-    background-color: #008c8c;
+    background-color: #008c8c9a;
     color: #fff;
-    height: 18px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-/* table tbody tr:nth-child(odd){
-    background-color: #eee;
-} */
 table tbody tr {
     background-color: #eee;
-    height: 18px;
 }
 
 table tbody tr:hover {
-    background-color: #ccc;
-}
-
-table tbody tr td:first-child {
-    color: rgb(250, 67, 0);
-    font-weight: bold;
+    background-color: #74747497;
 }
 
 table tfoot tr td {
@@ -526,39 +521,39 @@ table tfoot tr td {
 
 
 .back_BOB {
-    background-color: #cb030d18;
+    background-color: #cb030d97;
 }
 
 .back_BOC {
-    background-color: #A71E3218;
+    background-color: #A71E3297;
 }
 
 .back_CCB {
-    background-color: #0066B318;
+    background-color: #0066B397;
 }
 
 .back_CEB {
-    background-color: #6A168518;
+    background-color: #6A168597;
 }
 
 .back_CGB {
-    background-color: #E6002118;
+    background-color: #E6002197;
 }
 
 .back_CIB {
-    background-color: #003F9718;
+    background-color: #003F9797;
 }
 
 .back_CMB {
-    background-color: #A3003018;
+    background-color: #A3003097;
 }
 
 .back_ICBC {
-    background-color: #C7000A18;
+    background-color: #C7000A97;
 }
 
 .back_SPDB {
-    background-color: #00007318;
+    background-color: #00007397;
 }
 
 
@@ -567,4 +562,10 @@ table tfoot tr td {
     justify-content: center;
     margin: 0px;
     padding: 0px;
+}
+
+.anchor-element {
+    position: relative;
+    top: -45px;
+    visibility: hidden;
 }
