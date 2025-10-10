@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>汇率换算</title>
+    <link href="./img/favicon.ico" rel="icon"/>
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./css/webfont.min.css" rel="stylesheet"/>
+    <link href="./css/money.css" rel="stylesheet"/>
+    <script src="./script/base/vue.min.js"></script>
+    <script src="./script/base/vue-resource.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <table>
+        <thead>
+        <tr>
+            <th>换算币种</th>
+            <th>汇率</th>
+            <th>人民币</th>
+            <th>外币</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="site in moneyList">
+            <td>{{ site.nameDesc }}</td>
+            <td>{{ parseFloat(site.price).toFixed(2) }}</td>
+            <td class="in"><label>
+                <input class="CNYinput" type="text" v-model="site.cny_str" @input="CNYInput(site.index)"/>
+            </label></td>
+            <td class="in"><label>
+                <input class="CNYinput" type="text" v-model="site.for_str" @input="FORNInput(site.index)"/>
+            </label></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="./script/money.js"></script>
+</body>
+</html>

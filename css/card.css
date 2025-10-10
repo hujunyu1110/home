@@ -5,32 +5,20 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "GreatVibes";
-    src: url("../fonts/GreatVibes-Regular-2.otf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "HFIntimate";
-    src: url("../fonts/HFIntimate-2.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     width: 98%;
     padding-left: 3%;
-    background: url(../img/mcc.jpg) no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+    /* background: url(../img/mcc.jpg) no-repeat fixed; */
+    /* TODO:背景 */
+    background: url(../img/st.jpg) fixed;
+    /* background-size: 100% 100%; */
+    background-size: cover;
     scroll-behavior: smooth;
 }
 
 /* TODO：每个模块 */
 .everyModel {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(52, 52, 52, 0.6);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
@@ -38,86 +26,9 @@ body {
     border-width: 2px;
     margin: 0.7%;
     width: 15%;
-    padding: 0px;
-    padding-bottom: 2px;
-
+    padding: 0 0 2px;
+    color: rgba(255, 255, 255, 0.75);
     transition: transform 0.5s ease;
-}
-
-.everyModel:hover {
-    transition: transform 0.3s ease;
-}
-
-.everyModel_BOB {
-    box-shadow: 1px 1px 8px #cb030d3d;
-}
-
-.everyModel_BOC {
-    box-shadow: 1px 1px 8px #A71E323d;
-}
-
-.everyModel_CCB {
-    box-shadow: 1px 1px 8px #0066B33d;
-}
-
-.everyModel_CEB {
-    box-shadow: 1px 1px 8px #6A16853d;
-}
-
-.everyModel_CGB {
-    box-shadow: 1px 1px 8px #E600213d;
-}
-
-.everyModel_CIB {
-    box-shadow: 1px 1px 8px #003F973d;
-}
-
-.everyModel_CMB {
-    box-shadow: 1px 1px 8px #A300303d;
-}
-
-.everyModel_ICBC {
-    box-shadow: 1px 1px 8px #C7000A3d;
-}
-
-.everyModel_SPDB {
-    box-shadow: 1px 1px 8px #0000733d;
-}
-
-.everyModel_BOB:hover {
-    box-shadow: 3px 3px 8px #cb030d73;
-}
-
-.everyModel_BOC:hover {
-    box-shadow: 3px 3px 8px #A71E3273;
-}
-
-.everyModel_CCB:hover {
-    box-shadow: 3px 3px 8px #0066B373;
-}
-
-.everyModel_CEB:hover {
-    box-shadow: 3px 3px 8px #6A168573;
-}
-
-.everyModel_CGB:hover {
-    box-shadow: 3px 3px 8px #E6002173;
-}
-
-.everyModel_CIB:hover {
-    box-shadow: 3px 3px 8px #003F9773;
-}
-
-.everyModel_CMB:hover {
-    box-shadow: 3px 3px 8px #A3003073;
-}
-
-.everyModel_ICBC:hover {
-    box-shadow: 3px 3px 8px #C7000A73;
-}
-
-.everyModel_SPDB:hover {
-    box-shadow: 3px 3px 8px #00007373;
 }
 
 /* 
@@ -140,17 +51,12 @@ body {
 宁波银行      #EF8F38    https://sc.tanzhix.com/yhtb/nb.png 
 */
 
-
 #app {
     margin-top: 3%;
 }
 
-.card_img {
-    margin-top: 1%;
-    margin-left: 1.2%;
-    margin-right: 1.2%;
-    margin-bottom: 2.2%;
-    /* height: 116px; */
+.everyModel img {
+    margin: 1% 1.2% 2.2%;
     width: 98%;
     object-fit: cover;
     aspect-ratio: 1.59;
@@ -164,6 +70,7 @@ body {
     display: inline;
     font-weight: bold;
     font-size: 15px;
+    /*color: rgba(255, 255, 255, 0.75);*/
 }
 
 .detial_name {
@@ -172,8 +79,9 @@ body {
     position: absolute;
     right: 4px;
     font-size: 15px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-right: 2px;
+    /*color: rgba(255, 255, 255, 0.75);*/
 }
 
 .bank_name {
@@ -227,41 +135,40 @@ body {
 
 #top_container {
     position: fixed;
-    top: 0px;
+    top: 0;
     padding-top: 3px;
     width: 100%;
     height: 30px;
     box-shadow: 3px 3px 8px #00007373;
     transform: translate(-3%, 0);
     z-index: 12;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(52, 52, 52, 0.6);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding-left: 3%;
-    text-justify: auto;
     font-family: DaddyTimeMonoNerdFontMono;
-    font-weight: bold;
+    /*font-weight: 600;*/
     text-align: center;
 }
 
 #top_container span {
     padding-right: 26px;
     cursor: pointer;
-    color: rgb(70, 70, 70);
-    text-shadow: 2px 1px 1px #ffffff88, -2px 0px 1px #ffffff88;
+    color: #ffffff;
+    /*text-shadow: 2px 1px 1px #ffffff88, -2px 0 1px #ffffff88;*/
     font-size: 18px;
 }
 
 #top_container a {
     padding-right: 26px;
     cursor: pointer;
-    color: rgb(70, 70, 70);
-    text-shadow: 2px 1px 2px #ffffff88, -2px 0px 2px #ffffff88;
+    color: #ffffff;
+    /*text-shadow: 2px 1px 2px #ffffff88, -2px 0 2px #ffffff88;*/
     font-size: 16px;
 }
 
 #top_container a:hover {
-    text-shadow: 3px 1px 2px #fdfdfdb2, -2px 0px 2px #fdfdfdd5;
+    /*text-shadow: 3px 1px 2px #fdfdfdb2, -2px 0 2px #fdfdfdd5;*/
     text-decoration: none;
 }
 
@@ -282,19 +189,21 @@ body {
 /* TODO:竖屏 */
 @media (orientation: portrait) {
 
+
+
     #app {
         margin-top: 6%;
     }
 
     #top_container {
         position: fixed;
-        top: 0px;
+        top: 0;
         width: 100%;
         height: 30px;
         box-shadow: 3px 3px 8px #00007373;
         transform: translate(-3%, 0);
         z-index: 12;
-        background-color: rgba(206, 206, 206, 0.5);
+        background-color: rgba(52, 52, 52, 0.75);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         padding-left: 1%;
@@ -310,94 +219,15 @@ body {
 
     /* TODO:每个模块 */
     .everyModel {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(52, 52, 52, 0.6);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-
-        /* border-color: ebeff5; */
         border-radius: 5px;
-        /* border-style: solid; */
         border-width: 2px;
-        margin: 0.7%;
-        margin-left: 2%;
+        margin: 0.7% 0.7% 0.7% 2%;
         width: 30%;
-        padding: 0px;
-        padding-bottom: 2px;
-        background-color: #ebeff5;
+        padding: 0 0 2px;
         box-shadow: 1px 1px 8px #bfc3c7;
-        /*transition: transform 0.5s ease;*/
-    }
-
-    .everyModel_BOB {
-        box-shadow: 1px 1px 8px #cb030d3d;
-    }
-
-    .everyModel_BOC {
-        box-shadow: 1px 1px 8px #A71E323d;
-    }
-
-    .everyModel_CCB {
-        box-shadow: 1px 1px 8px #0066B33d;
-    }
-
-    .everyModel_CEB {
-        box-shadow: 1px 1px 8px #6A16853d;
-    }
-
-    .everyModel_CGB {
-        box-shadow: 1px 1px 8px #E600213d;
-    }
-
-    .everyModel_CIB {
-        box-shadow: 1px 1px 8px #003F973d;
-    }
-
-    .everyModel_CMB {
-        box-shadow: 1px 1px 8px #A300303d;
-    }
-
-    .everyModel_ICBC {
-        box-shadow: 1px 1px 8px #C7000A3d;
-    }
-
-    .everyModel_SPDB {
-        box-shadow: 1px 1px 8px #0000733d;
-    }
-
-    .everyModel_BOB:hover {
-        box-shadow: 3px 3px 8px #cb030d73;
-    }
-
-    .everyModel_BOC:hover {
-        box-shadow: 3px 3px 8px #A71E3273;
-    }
-
-    .everyModel_CCB:hover {
-        box-shadow: 3px 3px 8px #0066B373;
-    }
-
-    .everyModel_CEB:hover {
-        box-shadow: 3px 3px 8px #6A168573;
-    }
-
-    .everyModel_CGB:hover {
-        box-shadow: 3px 3px 8px #E6002173;
-    }
-
-    .everyModel_CIB:hover {
-        box-shadow: 3px 3px 8px #003F9773;
-    }
-
-    .everyModel_CMB:hover {
-        box-shadow: 3px 3px 8px #A3003073;
-    }
-
-    .everyModel_ICBC:hover {
-        box-shadow: 3px 3px 8px #C7000A73;
-    }
-
-    .everyModel_SPDB:hover {
-        box-shadow: 3px 3px 8px #00007373;
     }
 
     .tittle_name {
@@ -414,7 +244,7 @@ body {
         position: absolute;
         right: 4px;
         font-size: 24px;
-        padding-bottom: 0px;
+        padding-bottom: 0;
         padding-right: 2px;
     }
 
@@ -467,9 +297,20 @@ body {
     color: #000073;
 }
 
+.NS {
+    color: #319C8B;
+}
+
+.CITIC {
+    color: #D70010;
+}
+
+
+
 .delClass {
     font-style: italic;
-    color: #afafaf;
+    color: rgba(52, 52, 52, 0.75);
+    text-decoration: line-through;
 }
 
 table {
@@ -499,7 +340,7 @@ td {
 }
 
 table thead tr {
-    background-color: #008c8c9a;
+    background-color: rgba(52, 52, 52, 0.75);
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -517,7 +358,6 @@ table tfoot tr td {
     text-align: right;
     padding-right: 20px;
 }
-
 
 
 .back_BOB {
@@ -556,16 +396,35 @@ table tfoot tr td {
     background-color: #00007397;
 }
 
+.back_NS {
+    background-color: #319C8B97;
+}
+
+.back_CITIC {
+    background-color: #D7001097;
+}
 
 .top_part_div {
     display: flex;
     justify-content: center;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .anchor-element {
     position: relative;
     top: -45px;
     visibility: hidden;
+}
+
+#timer {
+    font-size: 14px;
+    font-family: DaddyTimeMonoNerdFontMono;
+}
+
+
+.img_del {
+  opacity:0.5;
+  filter:alpha(opacity=50); /* IE8 及其更早版本 */
+  text-decoration: line-through;
 }

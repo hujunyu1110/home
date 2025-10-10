@@ -48,6 +48,43 @@
             "icon_class": "icon_logo nf nf-md-nas",
             "icon_color": "color: #EE9A00",
             "name_txt": " Synology Local "
+        },
+        {
+            "index": "2 3",
+            "url": "http://lounylalala.top:5244",
+            "icon_class": "icon_logo nf nf-md-google_drive",
+            "icon_color": "color: #70c6be",
+            "name_txt": " Alist "
+        },
+        {
+            "index": "2 3",
+            "url": "http://lounylalala.top:1880",
+            "icon_class": "icon_logo nf nf-md-nodejs",
+            "icon_color": "color: #EE9A00",
+            "name_txt": " Node-Red "
+        },
+        {
+            "index": "2 3",
+            "url": "http://lounylalala.top:5500",
+            "icon_class": "icon_logo nf nf-md-microsoft_visual_studio_code",
+            "icon_color": "color: #22a7f2",
+            "name_txt": " Live Server "
+        },
+        {
+            "index": "3 4",
+            "url": "https://console.cloud.tencent.com",
+            "icon_class": "icon_logo nf nf-fae-cloud",
+            "icon_color": "color: #1E90FF",
+            "name_txt": " Tencent ",
+            "icon": "\f08f3"
+        },
+        {
+            "index": "3 4",
+            "url": "https://home.console.aliyun.com/home/dashboard",
+            "icon_class": "icon_logo nf nf-fae-cloud",
+            "icon_color": "color: #ff6a00",
+            "name_txt": " Aliyun ",
+            "icon": "\f08f3"
         }
     ]
 }

@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "DaddyTimeMonoNerdFontMono";
+    src: url("../fonts/DaddyTimeMonoNFM.woff2") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /* background: url(../img/mcc.jpg) no-repeat fixed; */
+    /* TODO: 背景 */
+    background: url(../img/st.jpg) fixed;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+#app {
+    padding: 2% 3% 3% 3%;
+    display: grid;
+    place-items: center;
+}
+
+th,
+td {
+    border: 1px solid #dddddd97;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+table tbody tr {
+    background-color: rgba(93, 93, 93, 0.75);
+}
+
+table tbody tr:hover {
+    background-color: #74747497;
+}
+
+table tfoot tr td {
+    text-align: right;
+    padding-right: 20px;
+}
+
+label,
+input {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    width: 80%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+input[type=text] {
+    width: 80%;
+    height: 200%;
+    padding: 2px 2px;
+    background: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+    outline: none;
+    text-align: center;
+}
+
+@media (orientation: landscape) {
+    table {
+        border-collapse: collapse;
+        font-family: DaddyTimeMonoNerdFontMono;
+        font-size: 12px;
+        font-weight: normal;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        width: 60%;
+    }
+
+    table thead tr {
+        background-color: rgba(52, 52, 52, 0.75);
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    label {
+        width: 100%;
+        height: 200%;
+    }
+
+    .in {
+        padding: 0;
+        width: 12%;
+    }
+}
+
+@media (orientation: portrait) {
+    table {
+        border-collapse: collapse;
+        font-family: DaddyTimeMonoNerdFontMono;
+        font-size: 34px;
+        font-weight: normal;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        width: 100%;
+    }
+
+    table thead tr {
+        background-color: rgba(52, 52, 52, 0.75);
+        color: #fff;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    label {
+        width: 200%;
+        height: 200%;
+    }
+
+    .in {
+        padding: 0;
+        width: 23%;
+    }
+}

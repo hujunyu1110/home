@@ -1,100 +1,49 @@
-/* @font-face {
-    font-family: "MapleMono";
-    src: url("../fonts/MapleMono-CN-Regular.woff2") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "MapleMonoItalic";
-    src: url("../fonts/MapleMono-CN-Italic.woff2") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-} */
-
 @font-face {
     font-family: "DaddyTimeMonoNerdFontMono";
-    src: url("../fonts/DaddyTimeMonoNFM.woff2") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "GreatVibes";
-    src: url("../fonts/GreatVibes-Regular-2.otf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "HFIntimate";
-    src: url("../fonts/HFIntimate-2.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "A-Nice-Day-2";
-    src: url("../fonts/A-Nice-Day-2.ttf") format("truetype");
+    src: url("../fonts/DaddyTimeMonoNFM.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     background-color: #e9e9e9;
-    /*background-image: url("../img/alist.svg");*/
-    /* font-family: MapleMonoItalic, DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial,
-        PMingLiu, MingLiu; */
-    font-family: DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial,
-        PMingLiu, MingLiu;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
+    font-family: DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial, PMingLiu, MingLiu;
+    padding: 0;
+    margin: 0;
+    border: 0;
     width: 98%;
     transition: transform 0.5s ease;
 }
 
 .containerMain {
-    /*padding-left: 7%;
-    padding-top: 4%;*/
-    margin: 0px;
-    /*width: 95%;*/
-    margin: auto;
+    margin: 0;
     position: absolute;
     top: 14%;
     left: 6%;
     right: 8%;
-    /*margin-left: 5%;*/
 }
 
 .firstFlow {
-    padding: 0px;
-    padding-left: 6%;
+    padding: 0 0 0 6%;
 }
 
 .firstFlow_1 {
-    padding: 0px;
-    padding-left: 6%;
+    padding: 0 0 0 6%;
     height: 70px;
 }
 
 
-
 .firstFlowoo {
-    padding: 0px;
-    padding-left: 0px;
+    padding: 0 0 0 0;
 }
 
 .firstFlowcc {
-    padding: 0px;
-    padding-left: 0px;
+    padding: 0;
     margin-left: 2%;
 }
 
 .firstFlowcc:hover {
     text-shadow: 1px 1px 1px #c5c5c5;
-    /* transform: scale(1.1); */
-    /*font-family: A-Nice-Day-2;  TODO:主页字体变化 */
 }
 
 .bottom i:hover {
@@ -105,12 +54,8 @@ div .firstFlowFirstColm {
     width: 100%;
     height: 100%;
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
     border-radius: 2px;
-    /*background-color: #C1CDCD;*/
-    /*cursor: pointer;*/
-    /*color: white;*/
     font-size: 15px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.5);
@@ -118,8 +63,6 @@ div .firstFlowFirstColm {
 
 div .all_link .firstFlow:hover {
     text-shadow: 1px 1px 1px #c5c5c5;
-    /* transform: scale(1.1); */
-    /*font-family: A-Nice-Day-2;  TODO:主页字体变化 */
 }
 
 div .firstFlowFirstColmo {
@@ -128,13 +71,11 @@ div .firstFlowFirstColmo {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
     background-color: #8388889d;
     color: white;
     font-size: 15px;
     font-weight: bold;
-    /*color: rgba(0, 0, 0, 0.5);*/
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0 8px 8px 0;
 }
 
 .mouseOn {
@@ -144,7 +85,7 @@ div .firstFlowFirstColmo {
 .containerMain input {
     width: 100%;
     height: 40px;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px 0 0 8px;
     border: 1px solid #b3b3b3;
 }
 
@@ -169,7 +110,7 @@ div .firstFlowFirstColmo {
 }
 
 .btntitle {
-    margin: 0px 0px 0px 5%;
+    margin: 0 0 0 5%;
 }
 
 #weathertoday {
@@ -199,7 +140,7 @@ div .firstFlowFirstColmo {
 }
 
 .collect_list p {
-    margin: 0px;
+    margin: 0;
     width: 100%;
     padding-left: 10px;
     padding-top: 6px;
@@ -224,7 +165,7 @@ div .firstFlowFirstColmo {
     margin-top: 7%;
     margin-left: 15%;
     margin-right: 15%;
-    padding: 0px;
+    padding: 0;
     background-color: rgba(134, 146, 146, 0.6);
     color: rgba(255, 255, 255, 0.589);
 }
@@ -232,7 +173,7 @@ div .firstFlowFirstColmo {
 .closeAddCon {
     height: 35px;
     width: 35px;
-    padding: 0px;
+    padding: 0;
     position: absolute;
     right: 5px;
     top: 5px;
@@ -279,13 +220,12 @@ div .firstFlowFirstColmo {
 
 #Oinput:hover {
     box-shadow: 0 0 5px #c7c7c7;
-    /*font-family: A-Nice-Day-2;  TODO:主页字体变化 */
 }
 
 /* TODO:横屏 */
 @media (orientation: landscape) {
     .weatherClass {
-        margin: 0px;
+        margin: 0;
         height: 20px;
         position: absolute;
         padding-left: 10px;
@@ -295,7 +235,7 @@ div .firstFlowFirstColmo {
     }
 
     .holidayClass {
-        margin: 0px;
+        margin: 0;
         height: 20px;
         position: absolute;
         padding-right: 10px;
@@ -305,7 +245,7 @@ div .firstFlowFirstColmo {
     }
 
     .bottom {
-        margin: 0px;
+        margin: 0;
         height: 20px;
         position: fixed;
         padding-right: 10px;
@@ -353,7 +293,7 @@ div .firstFlowFirstColmo {
     }
 
     .weatherClass {
-        margin: 0px;
+        margin: 0;
         height: 10px;
         position: absolute;
         padding-left: 10px;
@@ -364,7 +304,7 @@ div .firstFlowFirstColmo {
     }
 
     .holidayClass {
-        margin: 0px;
+        margin: 0;
         height: 20px;
         position: absolute;
         padding-right: 10px;
@@ -385,7 +325,6 @@ div .firstFlowFirstColmo {
 
     .icon_logo {
         transform: scale(1.5);
-        /* margin-top: 4%; */
     }
 
     .search_logo {
@@ -395,8 +334,7 @@ div .firstFlowFirstColmo {
 
 
     .firstFlowcc {
-        padding: 0px;
-        padding-left: 0px;
+        padding: 0;
         margin-left: 2%;
         width: 15%;
     }
@@ -420,17 +358,15 @@ div .firstFlowFirstColmo {
     #weathertoday {
         top: 8px;
         font-size: 23px;
-        top: 8px;
     }
 
     #weathertomorrow {
-        top: 28px;
         font-size: 23px;
         top: 35px;
     }
 
     .bottom {
-        margin: 0px;
+        margin: 0;
         height: 20px;
         position: fixed;
         padding-right: 10px;
