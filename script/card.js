@@ -366,7 +366,7 @@ var vm = new Vue({
                     card_tax: "2,000",
                     card_tax_date: "05-10",
                     tax_free: "20K|10K|15次刷免",
-                    tax_status: "ing",
+                    tax_status: "已免",
                     ext: "",
                     ex_ext: "万事达世界卡,工行大白金,1次贵宾厅",
                     back_color: "back_ICBC",
