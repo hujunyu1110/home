@@ -476,7 +476,7 @@ var vm = new Vue({
                     ex_ext: "近效期，不续卡",
                     back_color: "back_BOB",
                     account_type: "合并账户|人民币",
-                    is_on: "credit"
+                    is_on: "no"
                 },
                 {
                     is_top: 0,
@@ -539,7 +539,7 @@ var vm = new Vue({
                     ex_ext: "AmericanExpress借记卡",
                     back_color: "back_CGB",
                     account_type: "单卡单户|人民币/美元",
-                    is_on: "debit"
+                    is_on: "no"
                 },
                 {
                     is_top: 0,
@@ -1022,7 +1022,7 @@ var vm = new Vue({
                     ex_ext: "运通借记卡",
                     back_color: "back_CITIC",
                     account_type: "单卡单户|人民币/美元",
-                    is_on: "debit"
+                    is_on: "no"
                 },
                 {
                     is_top: 0,
