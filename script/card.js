@@ -854,7 +854,7 @@ var vm = new Vue({
                     ex_ext: "近效期，不续卡",
                     back_color: "back_CMB",
                     account_type: "合并账户|人民币/美元",
-                    is_on: "credit"
+                    is_on: "no"
                 },
                 {
                     is_top: 0,
