@@ -926,7 +926,7 @@ var vm = new Vue({
                     bank_name: "光大银行",
                     card_name: "车主白金卡",
                     loan: "8,2000",
-                    loan_splice: 0.0,
+                    loan_splice: 772.0,
                     bill_date: "10",
                     card_union: "AmericanExpress",
                     card_level: "Max",
