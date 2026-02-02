@@ -191,7 +191,7 @@ var vm = new Vue({
                     bank_name: "建设银行",
                     card_name: "冲鸭卡",
                     loan: "20,000",
-                    loan_splice: 789.47,
+                    loan_splice: 372.48,
                     bill_date: "24",
                     card_union: "Union",
                     card_level: "Platinum",
