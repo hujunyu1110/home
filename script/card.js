@@ -623,7 +623,7 @@ var vm = new Vue({
                     ex_ext: "贵宾厅:12境内 无限境外； 接送机:4境内 2次境外",
                     back_color: "back_CIB",
                     account_type: "单卡单户|人民币/美元",
-                    is_on: "credit"
+                    is_on: "no"
                 },
                 {
                     is_top: 0,
