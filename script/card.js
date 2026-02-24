@@ -1064,7 +1064,7 @@ var vm = new Vue({
                     ex_ext: "计划注销",
                     back_color: "back_NS",
                     account_type: "单卡单户|人民币/美元",
-                    is_on: "debit"
+                    is_on: "no"
                 }
             ];
 
