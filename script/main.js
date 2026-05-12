@@ -639,22 +639,6 @@ var vm = new Vue({
                         icon: "\f08f3"
                     },
                     {
-                        index: "6 5",
-                        url: "http://192.168.111.197",
-                        icon_class: "icon_logo nf nf-md-printer",
-                        icon_color: "color: #CD853F",
-                        name_txt: "彩打",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "6 6",
-                        url: "http://192.168.111.198",
-                        icon_class: "icon_logo nf nf-md-printer",
-                        icon_color: "color: #CD853F",
-                        name_txt: "黑白",
-                        icon: "\f08f3"
-                    },
-                    {
                         index: "5 3",
                         url: "http://192.168.118.2",
                         icon_class: "icon_logo nf nf-dev-nginx",
