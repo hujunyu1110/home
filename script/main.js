@@ -340,7 +340,7 @@ var vm = new Vue({
                 this.link_sites = [
                     {
                         index: "1 1",
-                        url: "https://twitter.com/home",
+                        url: "https://x.com/home",
                         icon_class: "icon_logo nf nf-cod-twitter",
                         icon_color: "color: #1E90FF;",
                         name_txt: " Twitter ",
