@@ -10,7 +10,8 @@ body {
     padding-left: 3%;
     /* background: url(../img/mcc.jpg) no-repeat fixed; */
     /* TODO:背景 */
-    background: url(../img/st.jpg) fixed;
+    /* background: url(../img/st.jpg) fixed; */
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     /* background-size: 100% 100%; */
     background-size: cover;
     scroll-behavior: smooth;
