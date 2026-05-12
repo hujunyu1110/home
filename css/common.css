@@ -15,11 +15,15 @@ body {
     transition: transform 0.5s ease;
 }
 
+.all_link {
+    margin-left: 3%;
+}
+
 .containerMain {
     margin: 0;
     position: absolute;
     top: 14%;
-    left: 6%;
+    left: 3%;
     right: 8%;
 }
 

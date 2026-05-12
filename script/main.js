@@ -29,7 +29,7 @@ var vm = new Vue({
         searchImg_class: "col-xs-6 col-sm-1 firstFlowcc searchImg",
         searchExCh_class: "col-xs-5 col-sm-3 firstFlow searchExCh",
         searchCh_class: "col-xs-5 col-sm-5 firstFlow searchCh",
-        all_link_class: 'col-sm-4 col-md-2 firstFlow',
+        all_link_class: 'col-sm-4 col-md-3 firstFlow',
     }, created: function () {
         let tittle_str = document.title
         this.methodToTrigger()
@@ -43,7 +43,8 @@ var vm = new Vue({
         }, changePages: function (pageName) {
             //this.createData('/files/' + pageName + '.json')
             this.createData(pageName)
-            if (pageName === 'home') this.all_link_class = 'col-sm-4 col-md-2 firstFlow'
+            // if (pageName === 'home') this.all_link_class = 'col-sm-4 col-md-2 firstFlow'
+            if (pageName === 'home') this.all_link_class = 'col-sm-4 col-md-3 firstFlow'
             if (pageName === 'congya') this.all_link_class = 'col-sm-4 col-md-3 firstFlow'
             if (pageName === 'ssr') this.all_link_class = 'col-sm-4 col-md-3 firstFlow'
             if (pageName === 'work') this.all_link_class = 'col-sm-4 col-md-2 firstFlow_1'
@@ -101,14 +102,6 @@ var vm = new Vue({
             if (url === 'home') {
                 this.link_sites = [
                     {
-                        index: "1 2",
-                        url: "https://QuickConnect.cn/springduck",
-                        icon_class: "icon_logo nf nf-md-nas",
-                        icon_color: "color: #7A8B8B",
-                        name_txt: " Synology ",
-                        icon: "\udb82\udcf3"
-                    },
-                    {
                         index: "1 3",
                         url: "https://www.icloud.com.cn/",
                         icon_class: "icon_logo nf nf-dev-apple",
@@ -125,39 +118,7 @@ var vm = new Vue({
                         icon: "\f08f3"
                     },
                     {
-                        index: "1 5",
-                        url: "https://tb.alicdn.com/snapshot/index.html",
-                        icon_class: "icon_logo nf nf-fa-shopping_cart",
-                        icon_color: "color: #FF8C00",
-                        name_txt: " Taobao ",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "1 6",
-                        url: "https://www.xiaohongshu.com/explore",
-                        icon_class: "icon_logo nf nf-md-book",
-                        icon_color: "color: #ff0000",
-                        name_txt: " Red ",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "2 1",
-                        url: "https://www.bilibili.com/",
-                        icon_class: "icon_logo nf nf-md-television_classic",
-                        icon_color: "color: #FF69B4",
-                        name_txt: " BiliBili ",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "2 2",
-                        url: "https://mail.qq.com/",
-                        icon_class: "icon_logo nf nf-oct-mail",
-                        icon_color: "color: #EEAD0E",
-                        name_txt: " QQMail ",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "2 3",
+                        index: "2 4",
                         url: "https://mp.weixin.qq.com",
                         icon_class: "icon_logo nf nf-md-wechat",
                         icon_color: "color: #32CD32",
@@ -165,35 +126,19 @@ var vm = new Vue({
                         icon: "\f08f3"
                     },
                     {
-                        index: "2 4",
-                        url: "https://gitee.com",
-                        icon_class: "icon_logo nf nf-dev-git",
-                        icon_color: "color: #FF0000",
-                        name_txt: " Gitee ",
+                        index: "2 1",
+                        url: "https://www.xiaohongshu.com/explore",
+                        icon_class: "icon_logo nf nf-md-book",
+                        icon_color: "color: #ff0000",
+                        name_txt: " Red ",
                         icon: "\f08f3"
                     },
                     {
-                        index: "2 4",
-                        url: "https://github.com/",
-                        icon_class: "icon_logo nf nf-cod-github",
-                        icon_color: "color: #1f2328",
-                        name_txt: " GitHub ",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "2 5",
-                        url: "./countMoney.html",
-                        icon_class: "icon_logo nf nf-cod-credit_card",
-                        icon_color: "color:rgb(216, 199, 46)",
-                        name_txt: " Card ",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "2 6",
-                        url: "https://boardmix.cn/app/my-space",
-                        icon_class: "icon_logo nf nf-md-developer_board",
-                        icon_color: "color: #BA55D3",
-                        name_txt: " BoardMix ",
+                        index: "2 2",
+                        url: "https://www.bilibili.com/",
+                        icon_class: "icon_logo nf nf-md-television_classic",
+                        icon_color: "color: #FF69B4",
+                        name_txt: " BiliBili ",
                         icon: "\f08f3"
                     },
                     {
@@ -205,30 +150,6 @@ var vm = new Vue({
                         icon: "\f08f3"
                     },
                     {
-                        index: "3 2",
-                        url: "https://app.apifox.com/main/teams/445141?tab=project",
-                        icon_class: "icon_logo nf nf-md-microsoft_edge",
-                        icon_color: "color: #e403f893",
-                        name_txt: " AirFox ",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "3 3",
-                        url: "https://martian-zodiac-871916.postman.co/home",
-                        icon_class: "icon_logo nf nf-md-pac_man",
-                        icon_color: "color: #ff8800",
-                        name_txt: " Postman ",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "3 4",
-                        url: "https://console.cloud.tencent.com",
-                        icon_class: "icon_logo nf nf-fae-cloud",
-                        icon_color: "color: #1E90FF",
-                        name_txt: " Tencent ",
-                        icon: "\f08f3"
-                    },
-                    {
                         index: "3 5",
                         url: "https://worldofwarships.asia/zh-sg/",
                         icon_class: "icon_logo nf nf-md-anchor",
@@ -237,11 +158,43 @@ var vm = new Vue({
                         icon: "\f08f3"
                     },
                     {
-                        index: "3 6",
-                        url: "https://www.kimi.com/",
-                        icon_class: "icon_logo nf nf-md-assistant",
-                        icon_color: "color: #666666",
-                        name_txt: " Kimi ",
+                        index: "2 3",
+                        url: "https://mail.qq.com/",
+                        icon_class: "icon_logo nf nf-oct-mail",
+                        icon_color: "color: #EEAD0E",
+                        name_txt: " QQMail ",
+                        icon: "\f08f3"
+                    },
+                    {
+                        index: "2 5",
+                        url: "https://gitee.com",
+                        icon_class: "icon_logo nf nf-dev-git",
+                        icon_color: "color: #FF0000",
+                        name_txt: " Gitee ",
+                        icon: "\f08f3"
+                    },
+                    {
+                        index: "3 1",
+                        url: "https://github.com/",
+                        icon_class: "icon_logo nf nf-cod-github",
+                        icon_color: "color: #1f2328",
+                        name_txt: " GitHub ",
+                        icon: "\f08f3"
+                    },
+                    {
+                        index: "3 2",
+                        url: "https://boardmix.cn/app/my-space",
+                        icon_class: "icon_logo nf nf-md-developer_board",
+                        icon_color: "color: #BA55D3",
+                        name_txt: " BoardMix ",
+                        icon: "\f08f3"
+                    },
+                    {
+                        index: "3 2",
+                        url: "https://app.apifox.com/main/teams/445141?tab=project",
+                        icon_class: "icon_logo nf nf-md-microsoft_edge",
+                        icon_color: "color: #e403f893",
+                        name_txt: " AirFox ",
                         icon: "\f08f3"
                     }
                 ]
@@ -463,14 +416,6 @@ var vm = new Vue({
                         icon: "\f08f3"
                     },
                     {
-                        index: "1 6",
-                        url: "https://k-eip.sphkeyuan.com/",
-                        icon_class: "icon_logo nf nf-fa-building",
-                        icon_color: "color: #1E90FF",
-                        name_txt: "上药门户",
-                        icon: "\f08f3"
-                    },
-                    {
                         index: "2 1",
                         url: "https://dl.sphchina.com/idp/authcenter/ActionAuthChain?entityId=OA",
                         icon_class: "icon_logo nf nf-dev-google_cloud_platform",
@@ -487,14 +432,6 @@ var vm = new Vue({
                         icon: "\f08f3"
                     },
                     {
-                        index: "2 3",
-                        url: "http://192.168.118.55:8081",
-                        icon_class: "icon_logo nf nf-cod-symbol_enum",
-                        icon_color: "color: #0000CD",
-                        name_txt: "SAP->BI",
-                        icon: "\f08f3"
-                    },
-                    {
                         index: "2 4",
                         url: "http://192.168.118.135:8050/",
                         icon_class: "icon_logo nf nf-md-hospital_box_outline",
@@ -508,14 +445,6 @@ var vm = new Vue({
                         icon_class: "icon_logo nf nf-md-alpha_g_circle",
                         icon_color: "color: #B22222",
                         name_txt: "LG三方生产",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "2 6",
-                        url: "https://mailh.qiye.163.com/",
-                        icon_class: "icon_logo nf nf-cod-mail",
-                        icon_color: "color: #8B3A3A",
-                        name_txt: "企业邮箱",
                         icon: "\f08f3"
                     },
                     {
@@ -575,14 +504,6 @@ var vm = new Vue({
                         icon: "\f08f3"
                     },
                     {
-                        index: "4 2",
-                        url: "http://192.168.118.121",
-                        icon_class: "icon_logo nf nf-md-api",
-                        icon_color: "color: #EE7621",
-                        name_txt: "ESB测试WSDL",
-                        icon: "\f08f3"
-                    },
-                    {
                         index: "4 3",
                         url: "http://192.168.118.63",
                         icon_class: "icon_logo nf nf-md-api",
@@ -596,30 +517,6 @@ var vm = new Vue({
                         icon_class: "icon_logo nf nf-md-truck_delivery",
                         icon_color: "color: #CDCD00",
                         name_txt: "三方物流",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "4 6",
-                        url: "http://bi.kymy.vip:6655/webroot/decision/login",
-                        icon_class: "icon_logo nf nf-oct-table",
-                        icon_color: "color: #1E90FF",
-                        name_txt: "Fine",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "5 1",
-                        url: "http://lgapi.kymy.vip:8092/qa/services?wsdl",
-                        icon_class: "icon_logo nf nf-md-alpha_g_circle_outline",
-                        icon_color: "color: #B22222",
-                        name_txt: "LG三方测试",
-                        icon: "\f08f3"
-                    },
-                    {
-                        index: "5 2",
-                        url: "http://lgapi.kymy.vip:8093/prd/services?wsdl",
-                        icon_class: "icon_logo nf nf-md-alpha_g_circle_outline",
-                        icon_color: "color: #B22222",
-                        name_txt: "LG三方生产",
                         icon: "\f08f3"
                     },
                     {
@@ -656,7 +553,7 @@ var vm = new Vue({
                     },
                     {
                         index: "5 3",
-                        url: "biportal.kymy.vip:8855/webroot/decision/login",
+                        url: "http://biportal.kymy.vip:8855/webroot/decision/login",
                         icon_class: "icon_logo nf nf-oct-table",
                         icon_color: "color: #0085e0",
                         name_txt: "数据报表",
