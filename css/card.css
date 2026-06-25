@@ -1,11 +1,13 @@
 @font-face {
     font-family: "DaddyTimeMonoNerdFontMono";
-    src: url("../fonts/DaddyTimeMonoNFM.woff2") format("truetype");
+    src: url("../fonts/DaddyTimeMonoNFM.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 body {
+    font-family: DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial, PMingLiu, MingLiu;
+    /* font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif; */
     width: 98%;
     padding-left: 3%;
     /* background: url(../img/mcc.jpg) no-repeat fixed; */
@@ -16,6 +18,11 @@ body {
     background-size: cover;
     scroll-behavior: smooth;
 }
+
+/* .code,
+.num-table {
+    font-family: "SF Mono", Menlo, Consolas, "Courier New", monospace;
+} */
 
 /* TODO：每个模块 */
 .everyModel {
@@ -66,7 +73,6 @@ body {
 }
 
 .tittle_name {
-    font-family: DaddyTimeMonoNerdFontMono;
     padding-left: 5px;
     display: inline;
     font-weight: bold;
@@ -86,7 +92,6 @@ body {
 }
 
 .bank_name {
-    font-family: DaddyTimeMonoNerdFontMono;
     font-weight: bold;
     font-size: 13px;
 }
@@ -95,28 +100,12 @@ body {
     font-weight: bold;
 }
 
-.loan,
-.card_tax,
-.card_name {
-    font-family: DaddyTimeMonoNerdFontMono;
-}
-
 .card_name {
     font-weight: bold;
 }
 
-.card_union {
-    font-family: DaddyTimeMonoNerdFontMono;
-}
-
 .card_level {
     font-family: HFIntimate;
-}
-
-.tax_free,
-.tax_status,
-.ext {
-    font-family: DaddyTimeMonoNerdFontMono;
 }
 
 .ext {
@@ -147,7 +136,6 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding-left: 3%;
-    font-family: DaddyTimeMonoNerdFontMono;
     /*font-weight: 600;*/
     text-align: center;
 }
@@ -184,7 +172,6 @@ body {
 #everyBank {
     margin-left: 2%;
     font-weight: bold;
-    font-family: DaddyTimeMonoNerdFontMono;
 }
 
 /* TODO:竖屏 */
@@ -214,7 +201,6 @@ body {
     #everyBank {
         margin-left: 1%;
         font-weight: bold;
-        font-family: DaddyTimeMonoNerdFontMono;
         font-size: 115%;
     }
 
@@ -232,7 +218,6 @@ body {
     }
 
     .tittle_name {
-        font-family: DaddyTimeMonoNerdFontMono;
         padding-left: 5px;
         display: inline;
         font-weight: bold;
@@ -254,7 +239,6 @@ body {
     }
 
     .bank_name {
-        font-family: DaddyTimeMonoNerdFontMono;
         font-weight: bold;
         font-size: 22px;
     }
@@ -316,7 +300,6 @@ body {
 
 table {
     border-collapse: collapse;
-    font-family: DaddyTimeMonoNerdFontMono;
     font-size: 12px;
     font-weight: normal;
     backdrop-filter: blur(15px);
@@ -420,12 +403,12 @@ table tfoot tr td {
 
 #timer {
     font-size: 14px;
-    font-family: DaddyTimeMonoNerdFontMono;
 }
 
 
 .img_del {
-  opacity:0.5;
-  filter:alpha(opacity=50); /* IE8 及其更早版本 */
-  text-decoration: line-through;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* IE8 及其更早版本 */
+    text-decoration: line-through;
 }

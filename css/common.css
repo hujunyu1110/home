@@ -8,12 +8,18 @@
 body {
     background-color: #e9e9e9;
     font-family: DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial, PMingLiu, MingLiu;
+    /* font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif; */
     padding: 0;
     margin: 0;
     border: 0;
     width: 98%;
     transition: transform 0.5s ease;
 }
+
+/* .code,
+.num-table {
+    font-family: "SF Mono", Menlo, Consolas, "Courier New", monospace;
+} */
 
 .all_link {
     margin-left: 3%;
