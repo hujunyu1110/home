@@ -15,8 +15,8 @@ var vm = new Vue({
     },
     created: function () {
         let tittle_str = document.title;
-        // this.createData("/files/" + tittle_str + ".json");
-        this.createData(tittle_str);
+        this.createData("/data/" + tittle_str + ".csv");
+        // this.createData(tittle_str);
     },
     mounted() {
         // 每秒更新一次时间
@@ -88,38 +88,41 @@ var vm = new Vue({
         },
         // 初始化数组及序号
         createData: function (url) {
-            /*
+            console.log(url);
             this.$http.get(url).then(
                 function (res) {
-                    let data = res.body.data;
+
+                    // console.log(res);
+                    let data = res.body;
+
+                    // console.log(data);
+                    console.log(this.parseCsvToJson(data));
+
+                    data = this.parseCsvToJson(data);
+
                     data = this.createIndex(data);
                     data = this.disJudge(data);
                     // console.log(data)
                     this.link_sites = data;
-
                     let link_CX = this.createBnakCx(data);
                     link_CX = this.createSeq(link_CX);
                     this.link_CX = link_CX;
-
                     let data_noCX = this.createBnakNoCx(data);
                     data_noCX = this.createSeq(data_noCX);
                     this.link_noCX = data_noCX;
-
                     this.count_card = this.getCountCard(data_noCX);
                     this.card_union = this.getCardUnion(data_noCX);
-
                     let head = this.createBankHead(data_noCX);
                     this.link_banks = head;
-
                     this.loan_sum = this.getLoanSum(head);
                     this.loan_splice_sum = this.getLoanSpliceSum(data);
-
                     this.count_bank = this.getCountBank(head);
                 },
                 function () { }
-                );
-                */
+            );
 
+
+            /*
             let data = [
                 {
                     is_top: 0,
@@ -1109,31 +1112,24 @@ var vm = new Vue({
                     is_on: "no"
                 }
             ];
-
-
             data = this.createIndex(data);
             data = this.disJudge(data);
             // console.log(data)
             this.link_sites = data;
-
             let link_CX = this.createBnakCx(data);
             link_CX = this.createSeq(link_CX);
             this.link_CX = link_CX;
-
             let data_noCX = this.createBnakNoCx(data);
             data_noCX = this.createSeq(data_noCX);
             this.link_noCX = data_noCX;
-
             this.count_card = this.getCountCard(data_noCX);
             this.card_union = this.getCardUnion(data_noCX);
-
             let head = this.createBankHead(data_noCX);
             this.link_banks = head;
-
             this.loan_sum = this.getLoanSum(head);
             this.loan_splice_sum = this.getLoanSpliceSum(data);
-
             this.count_bank = this.getCountBank(head);
+            */
 
         },
         createIndex: function (list_data) {
@@ -1279,5 +1275,44 @@ var vm = new Vue({
             }
             return card_u;
         },
+        parseCsvToJson: function (csvText) {
+            // 分割行，兼容\r\n / \n
+            const lines = csvText.split(/\r?\n/).filter(line => line.trim() !== "");
+            if (lines.length === 0) return [];
+            // 表头
+            const headers = this.splitCsvLine(lines[0]);
+            const result = [];
+            // 遍历数据行
+            for (let i = 1; i < lines.length; i++) {
+                const cells = this.splitCsvLine(lines[i]);
+                const row = {};
+                headers.forEach((key, idx) => {
+                    row[key] = cells[idx] ?? "";
+                });
+                // 核心：loan_splice 转数字，空/横杠默认0
+                const val = row.loan_splice.trim();
+                row.loan_splice = val === "" || val === "-" ? 0 : parseFloat(val);
+                result.push(row);
+            }
+            return result;
+        },
+        splitCsvLine: function (line) {
+            const arr = [];
+            let cell = "";
+            let quoteOpen = false;
+            for (const char of line) {
+                if (char === '"') {
+                    quoteOpen = !quoteOpen;
+                } else if (char === "," && !quoteOpen) {
+                    arr.push(cell);
+                    cell = "";
+                } else {
+                    cell += char;
+                }
+            }
+            arr.push(cell);
+            return arr;
+        }
+
     },
 });
