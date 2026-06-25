@@ -15,7 +15,7 @@ var vm = new Vue({
     },
     created: function () {
         let tittle_str = document.title;
-        this.createData("/data/" + tittle_str + ".csv");
+        this.createData("/home/data/" + tittle_str + ".csv");
         // this.createData(tittle_str);
     },
     mounted() {
