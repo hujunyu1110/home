@@ -6,8 +6,7 @@
 }
 
 body {
-    font-family: DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial, PMingLiu, MingLiu;
-    /* font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif; */
+    font-family: DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial, PMingLiu, MingLiu, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
     width: 98%;
     padding-left: 3%;
     /* background: url(../img/mcc.jpg) no-repeat fixed; */
