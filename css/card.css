@@ -13,7 +13,7 @@ body {
     /* background: url(../img/mcc.jpg) no-repeat fixed; */
     /* TODO:背景 */
     /* background: url(../img/st.jpg) fixed; */
-    background: linear-gradient(120deg, #ccd0da 0%, #dce0e8 100%);
+    background: linear-gradient(120deg, #949cbb 0%, #626880 100%);
     /* background-size: 100% 100%; */
     background-size: cover;
     scroll-behavior: smooth;
@@ -38,26 +38,6 @@ body {
     color: rgba(255, 255, 255, 0.75);
     transition: transform 0.5s ease;
 }
-
-/* 
-工商银行      #C7000A    https://sc.tanzhix.com/yhtb/gs.png
-交通银行      #00377A    https://sc.tanzhix.com/yhtb/jt.png
-招商银行      #A30030    https://sc.tanzhix.com/yhtb/zs.png
-民生银行      #0072BC    https://sc.tanzhix.com/yhtb/ms.png
-中信银行      #D70010    https://sc.tanzhix.com/yhtb/zx.png
-浦发银行      #000073    https://sc.tanzhix.com/yhtb/pf.png
-兴业银行      #003F97    https://sc.tanzhix.com/yhtb/xy.png
-光大银行      #6A1685    https://sc.tanzhix.com/yhtb/gd.png
-广发银行      #E60021    https://sc.tanzhix.com/yhtb/gf.png
-平安银行      #F15A25    https://sc.tanzhix.com/yhtb/pa.png
-北京银行      #CB030D    https://sc.tanzhix.com/yhtb/bj.png
-华夏银行      #DB0D17    https://sc.tanzhix.com/yhtb/hx.png
-农业银行      #319C8B    https://sc.tanzhix.com/yhtb/ny.png
-建设银行      #0066B3    https://sc.tanzhix.com/yhtb/js.png
-邮政银行      #02724A    https://sc.tanzhix.com/yhtb/yz.png
-中国银行      #A71E32    https://sc.tanzhix.com/yhtb/zg.png
-宁波银行      #EF8F38    https://sc.tanzhix.com/yhtb/nb.png 
-*/
 
 #app {
     margin-top: 3%;
@@ -304,12 +284,12 @@ table {
     font-weight: normal;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border-spacing: 1px;
+    border-spacing: 3px;
 }
 th,
 td {
-    border: 1px solid #dddddd97;
-    border-radius: 4px;
+    /* border: 1px solid #dddddd97; */
+    border-radius: 3px;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -324,18 +304,18 @@ td {
 }
 
 table thead tr {
-    background-color: rgba(52, 52, 52, 0.75);
+    background-color: #51576dd2;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
 }
 
-table tbody tr {
+/* table tbody tr {
     background-color: #eee;
-}
+} */
 
 table tbody tr:hover {
-    background-color: #74747497;
+    background-color: #c6d0f5c4;
 }
 
 table tfoot tr td {
@@ -345,47 +325,47 @@ table tfoot tr td {
 
 
 .back_BOB {
-    background-color: #cb030d97;
+    background-color: #dc8a78c4;
 }
 
 .back_BOC {
-    background-color: #A71E3297;
+    background-color: #f2d5cfc4;
 }
 
 .back_CCB {
-    background-color: #0066B397;
+    background-color: #8caaeec4;
 }
 
 .back_CEB {
-    background-color: #6A168597;
+    background-color: #babbf1c4;
 }
 
 .back_CGB {
-    background-color: #E6002197;
+    background-color: #e78284c4;
 }
 
 .back_CIB {
-    background-color: #003F9797;
+    background-color: #b5bfe2c4;
 }
 
 .back_CMB {
-    background-color: #A3003097;
+    background-color: #ef9f76c4;
 }
 
 .back_ICBC {
-    background-color: #C7000A97;
+    background-color: #ea999cc4;
 }
 
 .back_SPDB {
-    background-color: #00007397;
+    background-color: #81c8bec4;
 }
 
 .back_NS {
-    background-color: #319C8B97;
+    background-color: #a6d189c4;
 }
 
 .back_CITIC {
-    background-color: #D7001097;
+    background-color: #e5c890c4;
 }
 
 .top_part_div {
