@@ -1,4 +1,11 @@
 @font-face {
+    font-family: "NFFonts";
+    src: url("../fonts/Symbols-2048-em Nerd Font Complete.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "MapleMonoNF";
     src: url("../fonts/MapleMono-NF-CN-Regular.woff2") format("woff2");
     font-weight: normal;
@@ -7,7 +14,7 @@
 
 
 body {
-    font-family: MapleMonoNF, -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "Helvetica Neue", serif;
+    font-family: NFFonts, MapleMonoNF, -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "Helvetica Neue", serif;
     width: 98%;
     padding-left: 3%;
     background: linear-gradient(120deg, #949cbb 0%, #626880 100%);
