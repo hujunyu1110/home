@@ -1,9 +1,10 @@
 @font-face {
-    font-family: "DaddyTimeMonoNerdFontMono";
-    src: url("../fonts/DaddyTimeMonoNFM.woff2") format("truetype");
+    font-family: "MapleMonoNF";
+    src: url("../fonts/MapleMono-NF-CN-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
+
 
 body {
     /* background: url(../img/mcc.jpg) no-repeat fixed; */
@@ -70,7 +71,7 @@ input[type=text] {
 @media (orientation: landscape) {
     table {
         border-collapse: collapse;
-        font-family: DaddyTimeMonoNerdFontMono;
+        font-family: MapleMonoNF, serif;
         font-size: 12px;
         font-weight: normal;
         backdrop-filter: blur(15px);
@@ -99,7 +100,7 @@ input[type=text] {
 @media (orientation: portrait) {
     table {
         border-collapse: collapse;
-        font-family: DaddyTimeMonoNerdFontMono;
+        font-family: MapleMonoNF, serif;
         font-size: 34px;
         font-weight: normal;
         backdrop-filter: blur(15px);

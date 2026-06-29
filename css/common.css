@@ -1,25 +1,26 @@
 @font-face {
-    font-family: "DaddyTimeMonoNerdFontMono";
-    src: url("../fonts/DaddyTimeMonoNFM.woff2") format("woff2");
+    font-family: "NFFonts";
+    src: url("../fonts/Symbols-2048-em Nerd Font Complete.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MapleMonoNF";
+    src: url("../fonts/MapleMono-NF-CN-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     background-color: #e9e9e9;
-    font-family: DaddyTimeMonoNerdFontMono, Tahoma, Verdana, Arial, PMingLiu, MingLiu;
-    /* font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif; */
+    font-family: NFFonts, MapleMonoNF, -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "Helvetica Neue", serif;
     padding: 0;
     margin: 0;
     border: 0;
     width: 98%;
     transition: transform 0.5s ease;
 }
-
-/* .code,
-.num-table {
-    font-family: "SF Mono", Menlo, Consolas, "Courier New", monospace;
-} */
 
 .all_link {
     margin-left: 3%;

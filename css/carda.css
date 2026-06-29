@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "DaddyTimeMonoNerdFontMono";
-    src: url("../fonts/DaddyTimeMonoNFM.woff2") format("truetype");
+    font-family: "MapleMonoNF";
+    src: url("../fonts/MapleMono-NF-CN-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -121,7 +121,7 @@ body {
 }
 
 .tittle_name {
-    font-family: DaddyTimeMonoNerdFontMono;
+    font-family: MapleMonoNF, serif;
     padding-left: 5px;
     display: inline;
     font-weight: bold;
@@ -139,7 +139,7 @@ body {
 }
 
 .bank_name {
-    font-family: DaddyTimeMonoNerdFontMono;
+    font-family: MapleMonoNF, serif;
     font-weight: bold;
     font-size: 13px;
 }
@@ -151,7 +151,7 @@ body {
 .loan,
 .card_tax,
 .card_name {
-    font-family: DaddyTimeMonoNerdFontMono;
+    font-family: MapleMonoNF, serif;
 }
 
 .card_name {
@@ -159,17 +159,17 @@ body {
 }
 
 .card_union {
-    font-family: DaddyTimeMonoNerdFontMono;
+    font-family: MapleMonoNF, serif;
 }
 
 .card_level {
-    font-family: HFIntimate;
+    font-family: HFIntimate, serif;
 }
 
 .tax_free,
 .tax_status,
 .ext {
-    font-family: DaddyTimeMonoNerdFontMono;
+    font-family: MapleMonoNF, serif;
 }
 
 .ext {
@@ -197,7 +197,7 @@ body {
     }
 
     .tittle_name {
-        font-family: DaddyTimeMonoNerdFontMono;
+        font-family: MapleMonoNF, serif;
         padding-left: 5px;
         display: inline;
         font-weight: bold;
@@ -219,7 +219,7 @@ body {
     }
 
     .bank_name {
-        font-family: DaddyTimeMonoNerdFontMono;
+        font-family: MapleMonoNF, serif;
         font-weight: bold;
         font-size: 22px;
     }
