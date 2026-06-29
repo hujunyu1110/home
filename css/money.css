@@ -7,10 +7,7 @@
 
 
 body {
-    /* background: url(../img/mcc.jpg) no-repeat fixed; */
-    /* TODO: 背景 */
-    background: url(../img/st.jpg) fixed;
-    /* background-size: 100% 100%; */
+    background: linear-gradient(120deg, #949cbb 0%, #626880 100%);
     background-size: cover;
     scroll-behavior: smooth;
 }
