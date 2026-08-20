@@ -22,7 +22,7 @@ is_top,img,bank_type,bank_name,card_name,loan,loan_splice,bill_date,card_union,c
 0,img/card/CGB_LUCKY.jpg,商业银行,广发银行,Lucky卡,0,0.0, - ,AmericanExpress,Member, - , - , - , - ,储蓄卡,AmericanExpress借记卡,back_CGB,单卡单户|人民币/美元,no
 0,img/card/CGB_ZSB.jpg,商业银行,广发银行,臻尚白金卡,"10,000",2124.97,24,Union,Platinum,480,06-26,12次刷免,已免,4次高铁贵宾厅=2龙腾点,"4次高铁贵宾厅,共2龙腾点仅用于高铁",back_CGB,单卡单户|人民币/美元,credit
 0,img/card/CGB_DJB_0.jpg,商业银行,广发银行,鼎极白金卡（臻瑞版）,0,0.0, - ,Union,Platinum, - , - ,,,已注销，纪念,,back_CGB,单卡单户|人民币/美元,no
-0,img/card/CIB_HYRS.jpg,商业银行,兴业银行,寰宇人生卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,境外转账手续费优惠,back_CIB,单卡单户|人民币/美元,debit
+0,img/card/CIB_HYRS.jpg,商业银行,兴业银行,寰宇人生卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,境外转账手续费优惠,back_CIB,单卡单户|人民币/美元,no
 0,img/card/CIB_YK.jpg,商业银行,兴业银行,行卡,"15,000",0.0,10,AmericanExpress,Max,900,03-10,900刚性收取,已付,12贵宾厅 4接送机,贵宾厅:12境内 无限境外； 接送机:4境内 2次境外,back_CIB,单卡单户|人民币/美元,no
 0,img/card/SPDB_CX.jpg,商业银行,浦发银行,储蓄卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,II,back_SPDB,合并账户|人民币/美元,no
 0,img/card/SPDB_RVS.jpg,商业银行,浦发银行,红沙渲卡,0,0.0,24,Mastercard,World,360,05-24,6次刷免,已免,,万事达世界卡,back_SPDB,合并账户|人民币/美元,no
