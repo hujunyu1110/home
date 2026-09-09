@@ -12,6 +12,7 @@ var vm = new Vue({
         loan_splice_sum: 0,
         card_union: [],
         currentTime: "",
+        year: (new Date()).getFullYear(),
     },
     created: function () {
         let tittle_str = document.title;

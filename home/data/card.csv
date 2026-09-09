@@ -2,7 +2,7 @@ is_top,img,bank_type,bank_name,card_name,loan,loan_splice,bill_date,card_union,c
 0,img/card/CCB_BJUT.jpg,四大银行,建设银行,工大蓝卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,北工大纪念卡面,back_CCB,,debit
 0,img/card/CCB_HSK.jpg,四大银行,建设银行,贺岁卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,贺岁卡卡面,back_CCB,,debit
 0,img/card/CCB_BJUT_GOLD.jpg,四大银行,建设银行,工大金卡,0,0.0, - ,Mastercard,Gold, - , - ,,,已注销，纪念,北工大纪念卡面,back_CCB,单卡单户|人民币/美元,no
-0,img/card/CCB_CY.jpg,四大银行,建设银行,冲鸭卡,"20,000",122.88,24,Union,Platinum,580,09-24,10次刷免,已免,冲鸭,"加油鸭,仅有银联白金权益,云闪付",back_CCB,单卡单户|人民币/美元,credit
+0,img/card/CCB_CY.jpg,四大银行,建设银行,冲鸭卡,"20,000",0.0,24,Union,Platinum,580,09-24,10次刷免,已免,冲鸭,"加油鸭,仅有银联白金权益,云闪付",back_CCB,单卡单户|人民币/美元,credit
 0,img/card/CCB_MUSE.jpg,四大银行,建设银行,Muse卡,"20,000",0.0,24,Visa,Platinum,0, - ,有效期免,已免,建行自营币种直接转换,建行17种自营币种直接转换,back_CCB,单卡单户|人民币/美元,credit
 0,img/card/CCB_CX.jpeg,四大银行,建设银行,畅想留学卡,"20,000",0.0,24,Visa,Platinum,0, - ,有效期免,已免,建行自营币种直接转换,建行17种自营币种直接转换,back_CCB,单卡单户|人民币/美元,credit
 0,img/card/CCB_BONUS.jpg,四大银行,建设银行,Bonus卡,0,0.0, - ,Mastercard,Gold, - , - ,,,已注销，纪念,,back_CCB,单卡单户|人民币/美元,no
@@ -11,7 +11,7 @@ is_top,img,bank_type,bank_name,card_name,loan,loan_splice,bill_date,card_union,c
 0,img/card/BOC_MC.jpg,四大银行,中国银行,招财猫白金卡,"20,000",0.0,24,JCB,Platinum,0, - ,有效期免,已免,JCB白金卡,"JCB白金卡,日本贵宾厅和环球休息厅,日元实时转人民币入账",back_BOC,单卡单户|人民币/美元,credit
 0,img/card/BOC_ZCM.jpg,四大银行,中国银行,招财猫金卡,0,0.0, - ,JCB,Gold,0, - , - , - ,已注销，纪念,JCB金卡,back_BOC,单卡单户|人民币/美元,no
 0,img/card/ICBC_DEER.jpg,四大银行,工商银行,鹿卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,,back_ICBC,单卡单户|多币种,debit
-0,img/card/ICBC_HBC.jpg,四大银行,工商银行,黑白菜,"20,000",0.0,10,Mastercard,World,"2,000",05-10,20K|10K|15次刷免,已免,,"万事达世界卡,工行大白金,1次贵宾厅",back_ICBC,单卡单户|多币种,credit
+0,img/card/ICBC_HBC.jpg,四大银行,工商银行,黑白菜,"20,000",0.0,10,Mastercard,World,"2,000",05-10,20K|10K|15次刷免,已免,,"万事达世界卡,工行大白金,2次贵宾厅",back_ICBC,单卡单户|多币种,credit
 0,img/card/ICBC_CLEAR.jpg,四大银行,工商银行,Clear卡,0,0.0, - ,AmericanExpress,Clear, - , - ,,,已注销，纪念,,back_ICBC,单卡单户|多币种,no
 0,img/card/ICBC_JCB_P.jpeg,四大银行,工商银行,JCB旅行白金卡,0,0.0, - ,JCB,Platinum, - , - ,,,"收藏卡面,无此卡","收藏卡面,无此卡",back_ICBC,单卡单户|多币种,no
 0,img/card/BOB_CXK.jpg,城商银行,北京银行,储蓄卡,0,0.0, - ,Union, - , - , - , - , - ,"储蓄卡,已注销",,back_BOB,合并账户|人民币,no
@@ -32,9 +32,9 @@ is_top,img,bank_type,bank_name,card_name,loan,loan_splice,bill_date,card_union,c
 0,img/card/CMB_AIO.jpg,商业银行,招商银行,一卡通,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,,back_CMB,合并账户|人民币/美元,debit
 0,img/card/CMB_HJK.jpg,商业银行,招商银行,花嫁卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,招行理财卡,back_CMB,合并账户|人民币/美元,debit
 0,img/card/CMB_MC_S.jpg,商业银行,招商银行,万事达金卡,0,0.0, - ,Mastercard,Platinum, - , - , - , - ,储蓄卡,"收藏卡面,无此卡",back_CMB,合并账户|人民币/美元,no
-0,img/card/CMB_MP.jpg,商业银行,招商银行,万事达白金卡,"60,000",2470.69,24,Mastercard,Platinum,800,03-24,8W刷免,已免,,"300+酒店权益100积分,2次贵宾厅1999积分",back_CMB,合并账户|人民币/美元,credit
-0,img/card/CMB_VISA.jpeg,商业银行,招商银行,国际白金卡,"60,000",0,24,Visa,Signature,0, - ,有效期免,已免,,,back_CMB,合并账户|人民币/美元,credit
-0,img/card/CMB_COLLECTION.jpg,商业银行,招商银行,星座卡,"60,000",705.66,24,Union,Gold,300, - ,6次刷免,已免,,,back_CMB,合并账户|人民币/美元,credit
+0,img/card/CMB_MP.jpg,商业银行,招商银行,万事达白金卡,"60,000",1175.28,24,Mastercard,Platinum,800,03-24,8W刷免,已免,,"300+酒店权益100积分,2次贵宾厅1999积分",back_CMB,合并账户|人民币/美元,credit
+0,img/card/CMB_VISA.jpeg,商业银行,招商银行,国际白金卡,"60,000",313.95,24,Visa,Signature,0, - ,有效期免,已免,,Visa国际多币种转美元,back_CMB,合并账户|人民币/美元,credit
+0,img/card/CMB_COLLECTION.jpg,商业银行,招商银行,星座卡,"60,000",0.0,24,Union,Gold,300, - ,6次刷免,已免,,,back_CMB,合并账户|人民币/美元,no
 0,img/card/CMB_AD.jpg,商业银行,招商银行,全币种,"60,000",0.0,24,Visa,Signature,0, - ,有效期免,已免,近效期，不续卡,近效期，不续卡,back_CMB,合并账户|人民币/美元,no
 0,img/card/CMB_JDB.jpg,商业银行,招商银行,经典白,0,0.0, - ,Union|Visa,Platinum, - , - ,,,"收藏卡面,无此卡","收藏卡面,无此卡",back_CMB,合并账户|人民币/美元,no
 0,img/card/CMB_WORLD.jpg,商业银行,招商银行,世界卡,0,0.0, - ,Mastercard,World, - , - ,,,"收藏卡面,无此卡","收藏卡面,无此卡",back_CMB,合并账户|人民币/美元,no
