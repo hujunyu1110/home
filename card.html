@@ -39,13 +39,14 @@
                 <table class="table0">
                     <thead>
                         <tr>
-                            <th colspan="6">账单日&额度统计</th>
+                            <th colspan="7">账单日&额度统计</th>
                         </tr>
                         <tr>
                             <th>银行性质</th>
                             <th>银行</th>
                             <th>账单日</th>
                             <th>额度</th>
+                            <th>分期</th>
                             <th colspan="2">开户性质</th>
                         </tr>
                     </thead>
@@ -56,8 +57,10 @@
                             <td style="font-size: 14px;">{{ site.bill_date
                                 }}日</td>
                             <td>￥{{ site.loan }}</td>
+                            <td>￥{{ site.loan_splice0 }}</td>
                             <td>{{ site.account_type.split("|")[0] }}</td>
                             <td>{{ site.account_type.split("|")[1] }}</td>
+
                         </tr>
                     </tbody>
                 </table>
