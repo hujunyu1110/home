@@ -365,7 +365,7 @@ var vm = new Vue({
                     },
                     {
                         index: "2 4",
-                        url: "https://feijiyun11.xyz/user",
+                        url: "https://feiji666.net/",
                         icon_class: "icon_logo nf nf-fa-plane",
                         icon_color: "color: #6777ef;",
                         name_txt: " PlaneCloud ",
