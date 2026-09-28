@@ -1,10 +1,11 @@
 is_top,img,bank_type,bank_name,card_name,loan,loan_splice,bill_date,card_union,card_level,card_tax,card_tax_date,tax_free,tax_status,ext,ex_ext,back_color,account_type,is_on
-0,img/card/CCB_BJUT.jpg,四大银行,建设银行,工大蓝卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,北工大纪念卡面,back_CCB,,debit
+0,img/card/CCB_BJUT.jpg,四大银行,建设银行,工大蓝卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,北工大纪念卡面,back_CCB,,no
 0,img/card/CCB_HSK.jpg,四大银行,建设银行,贺岁卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,贺岁卡卡面,back_CCB,,debit
 0,img/card/CCB_BJUT_GOLD.jpg,四大银行,建设银行,工大金卡,0,0.0, - ,Mastercard,Gold, - , - ,,,已注销，纪念,北工大纪念卡面,back_CCB,单卡单户|人民币/美元,no
-0,img/card/CCB_CY.jpg,四大银行,建设银行,冲鸭卡,"20,000",0.0,24,Union,Platinum,580,09-24,10次刷免,已免,冲鸭,"加油鸭,仅有银联白金权益,云闪付",back_CCB,单卡单户|人民币/美元,credit
+0,img/card/CCB_CY.jpg,四大银行,建设银行,冲鸭卡,"20,000",0.0,24,Union,Platinum,580,09-24,10次刷免,已免,冲鸭,"加油鸭,仅有银联白金权益,云闪付",back_CCB,单卡单户|人民币/美元,no
 0,img/card/CCB_MUSE.jpg,四大银行,建设银行,Muse卡,"20,000",0.0,24,Visa,Platinum,0, - ,有效期免,已免,建行自营币种直接转换,建行17种自营币种直接转换,back_CCB,单卡单户|人民币/美元,credit
 0,img/card/CCB_CX.jpeg,四大银行,建设银行,畅想留学卡,"20,000",0.0,24,Visa,Platinum,0, - ,有效期免,已免,建行自营币种直接转换,建行17种自营币种直接转换,back_CCB,单卡单户|人民币/美元,credit
+0,img/card/CCB_CX.jpeg,四大银行,建设银行,生活卡,"20,000",0.0,24,AmericanExpress,Select,0, - ,3次刷免,已免, - , - ,back_CCB,单卡单户|人民币/美元,credit
 0,img/card/CCB_BONUS.jpg,四大银行,建设银行,Bonus卡,0,0.0, - ,Mastercard,Gold, - , - ,,,已注销，纪念,,back_CCB,单卡单户|人民币/美元,no
 0,img/card/CCB_DSB.jpg,四大银行,建设银行,大山白,0,0.0, - ,Union|Visa,Platinum, - , - ,,,"收藏卡面,无此卡","收藏卡面,无此卡",back_CCB,单卡单户|人民币/美元,no
 0,img/card/BOC_CQ.jpg,四大银行,中国银行,长情卡,0,0.0, - ,Union, - , - , - , - , - ,储蓄卡,,back_BOC,单卡单户|人民币/美元,debit
