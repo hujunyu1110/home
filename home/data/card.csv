@@ -37,7 +37,7 @@ is_top,img,bank_type,bank_name,card_name,loan,loan_splice,bill_date,card_union,c
 0,img/card/CMB_JDB.jpg,商业银行,招商银行,经典白,0,0.0," - ",Union|Visa,Platinum," - "," - ",,,"收藏卡面,无此卡","收藏卡面,无此卡",back_CMB,合并账户|人民币/美元,no
 0,img/card/CMB_WORLD.jpg,商业银行,招商银行,世界卡,0,0.0," - ",Mastercard,World," - "," - ",,,"收藏卡面,无此卡","收藏卡面,无此卡",back_CMB,合并账户|人民币/美元,no
 0,img/card/CEB_CXK.jpg,商业银行,光大银行,储蓄卡,0,0.0," - ",Union," - "," - "," - "," - "," - ",储蓄卡,,back_CEB,单卡单户|人民币/美元,debit
-0,img/card/CEB_CZB.jpg,商业银行,光大银行,车主白金卡,"8,2000",772.0,10/29,AmericanExpress,Max,500,09-10,10W积分,已免,主要权益卡,5点悦途权益,back_CEB,单卡单户|人民币/美元,credit
+0,img/card/CEB_CZB.jpg,商业银行,光大银行,车主白金卡,"8,2000",3005.16,10/29,AmericanExpress,Max,500,09-10,10W积分,已免,主要权益卡,5点悦途权益,back_CEB,单卡单户|人民币/美元,credit
 0,img/card/CEB_ZQL.jpg,商业银行,光大银行,紫麒麟卡,0,0.0," - ",Union,Platinum," - "," - ",,,"收藏卡面,无此卡","收藏卡面,无此卡",back_CEB,单卡单户|人民币/美元,no
 0,img/card/CEB_WORLDLITE.jpg,商业银行,光大银行,世界之极卡,0,0.0," - ",Mastercard,World Elite," - "," - ",,,"收藏卡面,无此卡","收藏卡面,无此卡",back_CEB,单卡单户|人民币/美元,no
 0,img/card/CGB_JL.jpg,商业银行,广发银行,锦鲤卡,0,0.0," - ",Mastercard,Platinum," - "," - "," - "," - ",储蓄卡,Mastercard借记卡,back_CGB,单卡单户|人民币/美元,debit
