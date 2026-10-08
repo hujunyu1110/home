@@ -42,7 +42,7 @@ is_top,img,bank_type,bank_name,card_name,loan,loan_splice,bill_date,card_union,c
 0,img/card/CEB_WORLDLITE.jpg,商业银行,光大银行,世界之极卡,0,0.0," - ",Mastercard,World Elite," - "," - ",,,"收藏卡面,无此卡","收藏卡面,无此卡",back_CEB,单卡单户|人民币/美元,no
 0,img/card/CGB_JL.jpg,商业银行,广发银行,锦鲤卡,0,0.0," - ",Mastercard,Platinum," - "," - "," - "," - ",储蓄卡,Mastercard借记卡,back_CGB,单卡单户|人民币/美元,debit
 0,img/card/CGB_LUCKY.jpg,商业银行,广发银行,Lucky卡,0,0.0," - ",AmericanExpress,Member," - "," - "," - "," - ",储蓄卡,AmericanExpress借记卡,back_CGB,单卡单户|人民币/美元,no
-0,img/card/CGB_ZSB.jpg,商业银行,广发银行,臻尚白金卡,"5,000",2124.97,24/13,Union,Platinum,480,06-26,12次刷免,已免,4次高铁贵宾厅=2龙腾点,"4次高铁贵宾厅,共2龙腾点仅用于高铁",back_CGB,单卡单户|人民币/美元,credit
+0,img/card/CGB_ZSB.jpg,商业银行,广发银行,臻尚白金卡,"5,000",3296.97,24/13,Union,Platinum,480,06-26,12次刷免,已免,4次高铁贵宾厅=2龙腾点,"4次高铁贵宾厅,共2龙腾点仅用于高铁",back_CGB,单卡单户|人民币/美元,credit
 0,img/card/CGB_DJB_0.jpg,商业银行,广发银行,鼎极白金卡（臻瑞版）,0,0.0," - ",Union,Platinum," - "," - ",,,已注销，纪念,,back_CGB,单卡单户|人民币/美元,no
 0,img/card/CITIC_MC.png,商业银行,中信银行,金貔貅卡,0,0.0," - ",Mastercard,Gold," - "," - "," - "," - ",储蓄卡,万事达借记卡,back_CITIC,单卡单户|人民币/美元,debit
 0,img/card/CITIC_AMX.jpg,商业银行,中信银行,百夫长金卡,0,0.0," - ",AmericanExpress,Classic," - "," - "," - "," - ",储蓄卡,运通借记卡,back_CITIC,单卡单户|人民币/美元,no
